@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场行情深度分析 | 2026年3月21日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0b0f19;--card:#151c2c;--border:#1e2a3a;--up:#ef4444;--up-bg:rgba(239,68,68,.1);--down:#22c55e;--down-bg:rgba(34,197,94,.1);--amber:#f59e0b;--blue:#3b82f6;--purple:#8b5cf6;--t:#e2e8f0;--t2:#94a3b8;--tw:#f8fafc}
+body{font-family:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;background:var(--bg);color:var(--t);line-height:1.65}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#0f172a,#1a1540,#0f172a);border-bottom:1px solid var(--border);padding:36px 0 32px}
+header h1{font-size:1.8rem;font-weight:800;color:var(--tw);margin-bottom:6px}
+.meta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;font-size:.82rem;color:var(--t2)}
+.badge{background:var(--blue);color:#fff;padding:3px 10px;border-radius:14px;font-size:.75rem;font-weight:600}
+section{padding:32px 0}
+.sec-t{font-size:1.2rem;font-weight:700;color:var(--tw);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.sec-t::after{content:'';flex:1;height:1px;background:var(--border)}
+.ov{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.oc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;transition:.2s}
+.oc:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.oc .lb{font-size:.72rem;color:var(--t2);text-transform:uppercase;letter-spacing:.4px;margin-bottom:2px}
+.oc .nm{font-size:.82rem;font-weight:600;color:var(--tw);margin-bottom:6px}
+.oc .vl{font-size:1.35rem;font-weight:800;margin-bottom:4px}
+.chg{font-size:.8rem;font-weight:700;padding:2px 8px;border-radius:5px;display:inline-block}
+.chg.up{color:var(--up);background:var(--up-bg)}
+.chg.dn{color:var(--down);background:var(--down-bg)}
+.src{font-size:.68rem;color:var(--t2);margin-top:4px;opacity:.7}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:16px}
+.sc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;transition:.2s}
+.sc:hover{border-color:var(--blue)}
+.sc-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.sc-n{font-size:1rem;font-weight:700;color:var(--tw)}
+.sb{font-size:.72rem;padding:3px 10px;border-radius:14px;font-weight:600}
+.sb.p{background:var(--up-bg);color:var(--up)}
+.sb.n{background:var(--down-bg);color:var(--down)}
+.sb.m{background:rgba(245,158,11,.12);color:var(--amber)}
+.sc-b{font-size:.82rem;color:var(--t2);line-height:1.75}
+.sc-b strong{color:var(--t)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-size:.72rem;padding:3px 8px;border-radius:6px;border:1px solid var(--border);background:rgba(255,255,255,.03)}
+.tag.u{color:var(--up);border-color:rgba(239,68,68,.25)}
+.tag.d{color:var(--down);border-color:rgba(34,197,94,.25)}
+.picks{margin-top:16px;padding-top:14px;border-top:1px dashed rgba(139,92,246,.25)}
+.picks-t{font-size:.8rem;font-weight:700;color:var(--purple);margin-bottom:10px}
+.pk{background:rgba(139,92,246,.04);border:1px solid rgba(139,92,246,.12);border-radius:8px;padding:12px 14px;margin-bottom:8px;transition:.2s}
+.pk:last-child{margin-bottom:0}
+.pk:hover{border-color:var(--purple)}
+.pk-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.pk-n{font-size:.88rem;font-weight:700;color:var(--tw)}
+.pk-c{font-size:.7rem;color:var(--t2);background:rgba(255,255,255,.04);padding:1px 6px;border-radius:3px}
+.pk-b{font-size:.78rem;color:var(--t2);line-height:1.7}
+.pk-b .lg{display:inline-block;font-size:.68rem;padding:1px 7px;border-radius:3px;font-weight:600;margin:3px 4px 0 0}
+.lg.b{background:rgba(59,130,246,.1);color:var(--blue)}
+.lg.g{background:rgba(34,197,94,.1);color:var(--down)}
+.lg.a{background:rgba(245,158,11,.1);color:var(--amber)}
+.lg.p{background:rgba(139,92,246,.1);color:var(--purple)}
+.ms{background:linear-gradient(180deg,rgba(139,92,246,.03),transparent);border:1px solid rgba(139,92,246,.12);border-radius:12px;padding:28px;margin:28px 0}
+.mg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.mc{background:rgba(0,0,0,.25);border:1px solid var(--border);border-radius:10px;padding:18px;transition:.2s}
+.mc:hover{border-color:var(--purple)}
+.mc-h{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px}
+.mc-n{font-size:1rem;font-weight:700;color:var(--tw)}
+.mc-s{font-size:.7rem;color:var(--t2);background:rgba(255,255,255,.04);padding:1px 7px;border-radius:3px}
+.mc-p{font-size:1.4rem;font-weight:800;margin-bottom:4px}
+.mc-d{font-size:.78rem;color:var(--t2);line-height:1.7}
+.mc-d dt{color:var(--t);font-weight:600;margin-top:6px}
+.mc-d dd{margin-left:0}
+.mp-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:22px;padding-top:22px;border-top:1px dashed rgba(245,158,11,.25)}
+.mp{background:linear-gradient(135deg,rgba(245,158,11,.04),rgba(139,92,246,.02));border:1px solid rgba(245,158,11,.15);border-radius:10px;padding:16px 18px;transition:.2s}
+.mp:hover{border-color:var(--amber);transform:translateY(-2px)}
+.pl{display:grid;gap:12px}
+.pi{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 20px;display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;transition:.2s}
+.pi:hover{border-color:var(--blue)}
+.pi-ic{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.pi-ic.a{background:rgba(59,130,246,.12)}.pi-ic.b{background:rgba(239,68,68,.12)}.pi-ic.c{background:rgba(245,158,11,.12)}.pi-ic.d{background:rgba(6,182,212,.12)}
+.pi-t h4{font-size:.88rem;font-weight:600;color:var(--tw);margin-bottom:4px}
+.pi-t p{font-size:.78rem;color:var(--t2);line-height:1.5}
+.im{font-size:.72rem;padding:3px 10px;border-radius:14px;font-weight:600;white-space:nowrap}
+.im.h{background:rgba(239,68,68,.12);color:var(--up)}.im.m{background:rgba(245,158,11,.12);color:var(--amber)}
+.sbox{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:16px}
+.sbox h4{font-size:.95rem;font-weight:700;margin-bottom:10px}
+.sbox ul{list-style:none;padding:0}
+.sbox li{font-size:.84rem;color:var(--t2);padding:5px 0 5px 16px;position:relative;line-height:1.7}
+.risk{background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(245,158,11,.04));border:1px solid rgba(239,68,68,.15);border-radius:12px;padding:24px;margin:28px 0}
+.risk h3{color:var(--amber);font-size:1rem;margin-bottom:14px}
+.risk li{font-size:.82rem;color:var(--t2);padding:5px 0 5px 18px;position:relative}
+.risk li::before{content:'⚠';position:absolute;left:0;font-size:.7rem}
+footer{border-top:1px solid var(--border);padding:28px 0;text-align:center;color:var(--t2);font-size:.78rem}
+footer a{color:var(--blue);text-decoration:none}
+@media(max-width:768px){.wrap{padding:0 14px}header{padding:24px 0}header h1{font-size:1.3rem}.ov{grid-template-columns:repeat(2,1fr)}.sg{grid-template-columns:1fr}.mg{grid-template-columns:1fr}.mp-row{grid-template-columns:1fr}.pi{grid-template-columns:1fr}.ms{padding:18px}}
+@media(max-width:480px){.ov{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+  <h1>📊 全球市场行情深度分析报告</h1>
+  <div class="meta">
+    <span class="badge">2026年3月21日 · 星期六</span>
+    <span>数据截至 2026-03-20 收盘</span>
+    <span>来源：东方财富网 / 华尔街见闻 / 金投网 / LME / CME / 新华社</span>
+  </div>
+</div>
+</header>
+<main class="wrap">
+
+<section>
+<h2 class="sec-t">🌐 全球市场概览</h2>
+<div class="ov">
+  <div class="oc"><div class="lb">A股 · 上证综指</div><div class="nm">3月20日 收盘</div><div class="vl">3,957.05</div><span class="chg dn">▼ -1.24%</span><div class="src">来源：华尔街见闻</div></div>
+  <div class="oc"><div class="lb">A股 · 深证成指</div><div class="nm">3月20日 收盘</div><div class="vl">13,866.20</div><span class="chg dn">▼ -0.25%</span></div>
+  <div class="oc"><div class="lb">A股 · 创业板指</div><div class="nm">3月20日 收盘</div><div class="vl">3,352.10</div><span class="chg up">▲ +1.30%</span></div>
+  <div class="oc"><div class="lb">美股 · 道琼斯</div><div class="nm">3月20日 收盘</div><div class="vl">45,577.47</div><span class="chg dn">▼ -0.96%</span><div class="src">周线四连跌 · 累跌2.11%</div></div>
+  <div class="oc"><div class="lb">美股 · 标普500</div><div class="nm">3月20日 收盘</div><div class="vl">6,506.48</div><span class="chg dn">▼ -1.51%</span><div class="src">周线四连跌 · 累跌1.90%</div></div>
+  <div class="oc"><div class="lb">美股 · 纳斯达克</div><div class="nm">3月20日 收盘</div><div class="vl">21,647.61</div><span class="chg dn">▼ -2.01%</span><div class="src">周线四连跌 · 累跌2.07%</div></div>
+  <div class="oc"><div class="lb">美元指数</div><div class="nm">DXY · 3月18日</div><div class="vl">100.09</div><span class="chg up">▲ +0.52%</span><div class="src">来源：新华社</div></div>
+  <div class="oc"><div class="lb">VIX 恐慌指数</div><div class="nm">3月18日</div><div class="vl">23.59</div><span class="chg up">▲ +1.22点</span><div class="src">3月9日曾触及35.02</div></div>
+  <div class="oc"><div class="lb">WTI 原油</div><div class="nm">3月20日 收盘</div><div class="vl">$98.09</div><span class="chg up">▲ +2.66%</span><div class="src">来源：NYMEX / 东方财富网</div></div>
+  <div class="oc"><div class="lb">现货黄金</div><div class="nm">3月20日 收盘</div><div class="vl">$4,494</div><span class="chg dn">▼ -3.36%</span><div class="src">从$5,400暴跌约17%</div></div>
+  <div class="oc"><div class="lb">现货白银</div><div class="nm">3月20日 收盘</div><div class="vl">$67.90</div><span class="chg dn">▼ -6.74%</span><div class="src">来源：COMEX / 东方财富网</div></div>
+  <div class="oc"><div class="lb">A股全天成交</div><div class="nm">3月20日</div><div class="vl">22,869亿</div><span class="chg dn">约4800只个股下跌</span><div class="src">来源：华尔街见闻</div></div>
+</div>
+</section>
+
+<section>
+<h2 class="sec-t">🌍 全球局势深度分析</h2>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:14px">
+  <h4 style="color:var(--tw);margin-bottom:10px">🔥 美以军事打击伊朗第三周 — 霍尔木兹海峡封锁持续</h4>
+  <p style="font-size:.84rem;color:var(--t2);line-height:1.8">
+    2月28日美以对伊朗发动军事打击，战事进入第三周。伊朗封锁霍尔木兹海峡（全球约20%石油运输）。
+    <strong style="color:var(--amber)">最新进展（3月20日）：</strong>
+    ①特朗普称"十分接近实现目标"，考虑逐步降级行动 ②美政府考虑占领或封锁哈尔克岛迫使伊朗重开海峡 ③五角大楼再度向中东增派数千名海军陆战队员 ④美防部已为向伊朗部署地面部队制定详尽方案 ⑤英国授权美军使用其军事基地。
+    <strong style="color:var(--up)">WTI收于$98.09/桶（+2.66%），黄金从$5,400暴跌至$4,494（-17%）。</strong>
+  </p>
+  <p style="font-size:.72rem;color:var(--t2);opacity:.6;margin-top:8px">来源：东方财富网 / 央视新闻 / 阿克西奥斯新闻网</p>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:14px">
+  <h4 style="color:var(--tw);margin-bottom:10px">🏦 美联储3月FOMC：维持利率不变，降息路径更谨慎</h4>
+  <p style="font-size:.84rem;color:var(--t2);line-height:1.8">
+    3月18日美联储维持利率不变，点阵图目标利率中枢 <strong style="color:var(--amber)">3.4%</strong>。
+    CME FedWatch（3月11日）：3月维持不变概率 <strong style="color:var(--tw)">99.4%</strong>，6月降息25bp概率43.9%。
+    美元指数3月18日收于100.09（+0.52%）。
+  </p>
+  <p style="font-size:.72rem;color:var(--t2);opacity:.6;margin-top:8px">来源：CME FedWatch / 证券之星 / 汇通网 / 新华社</p>
+</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px">
+  <h4 style="color:var(--tw);margin-bottom:10px">🇨🇳 两会政策加码 + 证监会"十五五"规划座谈会</h4>
+  <p style="font-size:.84rem;color:var(--t2);line-height:1.8">
+    政府工作报告明确加大逆周期调节，<strong style="color:var(--amber)">财政赤字率上调、超长期特别国债加码</strong>。
+    证监会3月19日召开"十五五"资本市场规划座谈会。新能源政策密集出台。
+    中美贸易关税维持高位，SCFI近两周跳涨约40%。
+  </p>
+  <p style="font-size:.72rem;color:var(--t2);opacity:.6;margin-top:8px">来源：华尔街见闻 / 新华社</p>
+</div>
+</section>
+
+<section>
+<h2 class="sec-t">📋 政策与全球事件</h2>
+<div class="pl">
+  <div class="pi"><div class="pi-ic a">🏛️</div><div class="pi-t"><h4>美联储3月FOMC维持利率不变，目标利率中枢3.4%</h4><p>CME：维持不变概率99.4%，6月降息概率43.9%</p></div><span class="im h">高影响</span></div>
+  <div class="pi"><div class="pi-ic b">⚔️</div><div class="pi-t"><h4>美以军事打击伊朗第三周，美考虑占领哈尔克岛</h4><p>WTI $98.09，黄金$4,494（从$5,400暴跌-17%），五角大楼增兵中东</p></div><span class="im h">高影响</span></div>
+  <div class="pi"><div class="pi-ic c">🇨🇳</div><div class="pi-t"><h4>两会：逆周期调节加码，证监会"十五五"规划</h4><p>财政赤字率上调，新能源政策密集，货币政策"稳健偏松"</p></div><span class="im h">高影响</span></div>
+  <div class="pi"><div class="pi-ic d">💱</div><div class="pi-t"><h4>欧央行3月维持利率不变</h4><p>能源通胀上行风险，预计Q2启动降息</p></div><span class="im m">中影响</span></div>
+  <div class="pi"><div class="pi-ic b">🚢</div><div class="pi-t"><h4>航运成本飙升，SCFI两周涨约40%</h4><p>出口企业物流成本承压</p></div><span class="im h">高影响</span></div>
+  <div class="pi"><div class="pi-ic a">📉</div><div class="pi-t"><h4>美股三大指数周线四连跌</h4><p>超微电脑暴跌33%，存储/光通信股集体下挫，纳指周累跌2.07%</p></div><span class="im h">高影响</span></div>
+</div>
+</section>
+
+<section>
+<h2 class="sec-t">📈 A股板块分析 & 产业链价值投资</h2>
+<div class="sg">
+
+<div class="sc">
+  <div class="sc-h"><span class="sc-n">💻 科技</span><span class="sb n">收跌 -1.5%</span></div>
+  <div class="sc-b">
+    <p>软件、游戏跌幅居前。美股纳指周线四连跌（累跌2.07%）传导+中东冲突压制风险偏好。超微电脑暴跌33%打击AI情绪。算力硬件受AI Capex支撑相对抗跌。</p>
+    <div class="tags"><span class="tag d">软件 -2.8%</span><span class="tag d">游戏 -2.3%</span><span class="tag u">CPO +0.8%</span><span class="tag d">算力 -0.5%</span></div>
+  </div>
+  <div class="picks">
+    <div class="picks-t">🎯 潜力股</div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">中际旭创</span> <span class="pk-c">300308</span></div><span class="chg dn" style="font-size:.78rem">-0.8%</span></div><div class="pk-b">全球光模块龙头，800G/1.6T持续放量，2025年营收增超60%。CPO技术领先。回调布局机会。<span class="lg b">AI算力</span><span class="lg g">业绩高增</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">工业富联</span> <span class="pk-c">601138</span></div><span class="chg dn" style="font-size:.78rem">-0.5%</span></div><div class="pk-b">AI服务器代工龙头，绑定英伟达/微软。PE~15x在AI板块中最低。<span class="lg b">业绩确定</span><span class="lg p">估值最低</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">海光信息</span> <span class="pk-c">688041</span></div><span class="chg dn" style="font-size:.78rem">-1.2%</span></div><div class="pk-b">国产GPU/CPU双龙头，信创+AI双驱动。政策支持国产算力芯片。<span class="lg b">国产替代</span><span class="lg a">估值偏高</span></div></div>
+  </div>
+</div>
+
+<div class="sc">
+  <div class="sc-h"><span class="sc-n">⚡ 新能源</span><span class="sb p">领涨 +3.5%</span></div>
+  <div class="sc-b">
+    <p><strong>全市场最强板块！</strong>光伏/储能/电池涨幅居前。两会政策加码+出口超预期+中东冲突推升能源转型叙事。资金大幅净流入。</p>
+    <div class="tags"><span class="tag u">光伏 +4.2%</span><span class="tag u">储能 +3.8%</span><span class="tag u">电池 +3.1%</span><span class="tag u">能源金属 +2.9%</span></div>
+  </div>
+  <div class="picks">
+    <div class="picks-t">🎯 潜力股</div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">宁德时代</span> <span class="pk-c">300750</span></div><span class="chg up" style="font-size:.78rem">+3.6%</span></div><div class="pk-b">动力电池+储能双料龙头。储能有望超越动力电池。2025年净利超500亿。PE~20x。<span class="lg g">储能爆发</span><span class="lg b">全球龙头</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">通威股份</span> <span class="pk-c">600438</span></div><span class="chg up" style="font-size:.78rem">+2.8%</span></div><div class="pk-b">硅料成本最低龙头。PB~1.2x历史低位。洗牌后份额集中。<span class="lg g">PB低位</span><span class="lg b">成本优势</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">亿纬锂能</span> <span class="pk-c">300014</span></div><span class="chg up" style="font-size:.78rem">+7.2%</span></div><div class="pk-b">锂电池多元化龙头，大圆柱量产领先。估值相对宁德有折价。<span class="lg g">储能高增</span><span class="lg p">弹性大</span></div></div>
+  </div>
+</div>
+
+<div class="sc">
+  <div class="sc-h"><span class="sc-n">🛒 消费</span><span class="sb n">微跌 -0.6%</span></div>
+  <div class="sc-b">
+    <p>旅游酒店逆势涨（清明+入境游政策）。白酒家电偏弱。汽车受中东出口冲击（占比约15%）。</p>
+    <div class="tags"><span class="tag u">旅游酒店 +1.5%</span><span class="tag d">白酒 -1.2%</span><span class="tag d">家电 -0.9%</span><span class="tag d">汽车 -1.8%</span></div>
+  </div>
+  <div class="picks">
+    <div class="picks-t">🎯 潜力股</div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">贵州茅台</span> <span class="pk-c">600519</span></div><span class="chg dn" style="font-size:.78rem">-0.8%</span></div><div class="pk-b">白酒龙头，品牌护城河全球顶级。ROE 30%+，分红率提升至75%+。PE~22x。<span class="lg b">渠道改革</span><span class="lg g">高分红</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">美的集团</span> <span class="pk-c">000333</span></div><span class="chg dn" style="font-size:.78rem">-0.6%</span></div><div class="pk-b">白电全球龙头。PE~12x，股息率4%+。海外收入占比超40%。<span class="lg p">PE最低</span><span class="lg g">高股息</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">中国中免</span> <span class="pk-c">601888</span></div><span class="chg up" style="font-size:.78rem">+1.2%</span></div><div class="pk-b">全球最大旅游零售商。入境游政策放开+海南自贸港红利。业绩拐点。<span class="lg g">入境游利好</span><span class="lg p">业绩拐点</span></div></div>
+  </div>
+</div>
+
+<div class="sc">
+  <div class="sc-h"><span class="sc-n">🏦 金融</span><span class="sb n">下跌 -0.8%</span></div>
+  <div class="sc-b">
+    <p>银行随大盘回落。保险相对抗跌（利率高位利好利差）。券商午后回落。地产延续弱势。</p>
+    <div class="tags"><span class="tag d">银行 -0.7%</span><span class="tag d">保险 -0.2%</span><span class="tag d">券商 -1.1%</span><span class="tag d">地产 -1.5%</span></div>
+  </div>
+  <div class="picks">
+    <div class="picks-t">🎯 潜力股</div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">招商银行</span> <span class="pk-c">600036</span></div><span class="chg dn" style="font-size:.78rem">-0.5%</span></div><div class="pk-b">零售银行龙头。PE~6x，股息率4.5%，ROE 15%+。防御首选。<span class="lg g">高股息</span><span class="lg b">ROE领先</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">中国平安</span> <span class="pk-c">601318</span></div><span class="chg dn" style="font-size:.78rem">-0.3%</span></div><div class="pk-b">综合金融龙头。PEV~0.7x历史低位。利率高位利好利差。<span class="lg p">PEV最低</span><span class="lg g">利差扩张</span></div></div>
+  </div>
+</div>
+
+<div class="sc">
+  <div class="sc-h"><span class="sc-n">💊 医疗健康</span><span class="sb n">下跌 -1.0%</span></div>
+  <div class="sc-b">
+    <p>创新药/CXO小幅调整。中药相对稳健。器械受集采预期承压。</p>
+    <div class="tags"><span class="tag d">创新药 -1.3%</span><span class="tag d">CXO -1.5%</span><span class="tag u">中药 +0.5%</span><span class="tag d">器械 -0.8%</span></div>
+  </div>
+  <div class="picks">
+    <div class="picks-t">🎯 潜力股</div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">恒瑞医药</span> <span class="pk-c">600276</span></div><span class="chg dn" style="font-size:.78rem">-0.9%</span></div><div class="pk-b">创新药龙头，管线国内第一。Q2 ASCO催化。<span class="lg g">创新药龙头</span><span class="lg a">ASCO催化</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">迈瑞医疗</span> <span class="pk-c">300760</span></div><span class="chg dn" style="font-size:.78rem">-0.6%</span></div><div class="pk-b">医疗器械龙头，ROE 30%+，毛利率65%+。AI+医疗打开新空间。<span class="lg b">全球化</span><span class="lg g">AI+医疗</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">药明康德</span> <span class="pk-c">603259</span></div><span class="chg dn" style="font-size:.78rem">-1.5%</span></div><div class="pk-b">全球CXO龙头。PE~18x历史低位。订单恢复增长。<span class="lg p">估值低位</span><span class="lg b">订单恢复</span></div></div>
+  </div>
+</div>
+
+<div class="sc">
+  <div class="sc-h"><span class="sc-n">🛢️ 能源</span><span class="sb m">分化 ±2%</span></div>
+  <div class="sc-b">
+    <p>WTI 3月20日收于$98.09（+2.66%）。油气板块冲高后回落。煤炭受能源替代提振。核电平稳。</p>
+    <div class="tags"><span class="tag u">油气 +1.8%</span><span class="tag u">煤炭 +0.9%</span><span class="tag u">核电 +0.3%</span><span class="tag d">炼化 -1.2%</span></div>
+  </div>
+  <div class="picks">
+    <div class="picks-t">🎯 潜力股</div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">中国海油</span> <span class="pk-c">600938</span></div><span class="chg up" style="font-size:.78rem">+2.5%</span></div><div class="pk-b">海上油气龙头。桶油成本~$30，油价$98+利润丰厚。PE~8x，股息率6%+。<span class="lg g">油价受益</span><span class="lg b">高股息</span></div></div>
+    <div class="pk"><div class="pk-h"><div><span class="pk-n">中国神华</span> <span class="pk-c">601088</span></div><span class="chg up" style="font-size:.78rem">+0.5%</span></div><div class="pk-b">煤炭龙头。长协煤锁定利润。分红率60%+，股息率5%+。PE~9x。<span class="lg g">最稳现金流</span><span class="lg b">最高分红</span></div></div>
+  </div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="ms">
+<h2 class="sec-t">⛏️ 有色金属板块专项分析</h2>
+<p style="font-size:.8rem;color:var(--t2);margin-bottom:20px">LME数据截至 2026-03-19 收盘 · COMEX/SHFE数据截至 2026-03-20 收盘 | 来源：<a href="https://www.lme.com" style="color:var(--blue)">LME</a> / <a href="https://youse.mysteel.com/a/26032009/7545D81963DD529F.html" style="color:var(--blue)">我的钢铁网</a> / <a href="https://finance.eastmoney.com/a/202603213679338417.html" style="color:var(--blue)">东方财富网</a> / <a href="https://www.cngold.org/c/2026-03-20/c10396017.html" style="color:var(--blue)">金投网</a></p>
+
+<div class="mg">
+  <div class="mc"><div class="mc-h"><div><div class="mc-n">🟤 铜 Copper</div><div class="mc-s">LME / SHFE</div></div><span class="chg dn" style="font-size:.85rem">▼ -2.0%</span></div><div class="mc-p" style="color:var(--down)">$12,146 /吨</div><dl class="mc-d"><dt>📊 LME期铜（3月19日）</dt><dd>收跌$249至$12,146/吨。SHFE沪铜CU2604收于94,780元/吨。</dd><dt>📦 库存</dt><dd>LME持续去化，全球显性库存近5年低位。</dd><dt>💡 研判</dt><dd style="color:var(--amber)">短期承压，中期产业买盘支撑。</dd></dl><div class="src" style="margin-top:8px">来源：LME / 我的钢铁网</div></div>
+  <div class="mc"><div class="mc-h"><div><div class="mc-n">⬜ 铝 Aluminum</div><div class="mc-s">LME / SHFE</div></div><span class="chg dn" style="font-size:.85rem">▼ -4.4%</span></div><div class="mc-p" style="color:var(--down)">$3,252 /吨</div><dl class="mc-d"><dt>📊 LME期铝（3月19日）</dt><dd>收跌$148至$3,252/吨。SHFE沪铝夜盘跌2.53%。</dd><dt>📦 供需</dt><dd>产能天花板4,500万吨。光伏/新能源车用铝增长。</dd></dl><div class="src" style="margin-top:8px">来源：LME / 我的钢铁网</div></div>
+  <div class="mc"><div class="mc-h"><div><div class="mc-n">🔋 锂 Lithium</div><div class="mc-s">SMM</div></div><span class="chg up" style="font-size:.85rem">▲ +2.1%</span></div><div class="mc-p" style="color:var(--up)">~10.5万 元/吨</div><dl class="mc-d"><dt>📊 碳酸锂现货</dt><dd>10-11万元/吨区间。赣锋锂业3月20日涨停。</dd><dt>📦 供需</dt><dd>供给扩产放缓。需求：新能源车渗透率超35%，储能爆发。</dd></dl><div class="src" style="margin-top:8px">来源：SMM / 证券时报</div></div>
+  <div class="mc"><div class="mc-h"><div><div class="mc-n">🔵 钴 Cobalt</div><div class="mc-s">LME / SMM</div></div><span class="chg dn" style="font-size:.85rem">▼ -0.8%</span></div><div class="mc-p" style="color:var(--down)">~$32,500 /吨</div><dl class="mc-d"><dt>📊 电解钴</dt><dd>弱势。刚果(金)产量增长+磷酸铁锂替代三元。</dd></dl><div class="src" style="margin-top:8px">来源：LME / SMM</div></div>
+  <div class="mc"><div class="mc-h"><div><div class="mc-n">🥇 黄金 Gold</div><div class="mc-s">COMEX / SHFE</div></div><span class="chg dn" style="font-size:.85rem">▼ -3.36%</span></div><div class="mc-p" style="color:var(--down)">$4,494 /盎司</div><dl class="mc-d"><dt>📊 现货黄金（3月20日）</dt><dd>$4,494.44（跌$156.33，-3.36%）。白银$67.90（跌$4.91，-6.74%）。沪金1,039.22元/克。</dd><dt>📉 回调</dt><dd>从$5,400暴跌约17%。央行购金+去美元化中期支撑仍在。</dd></dl><div class="src" style="margin-top:8px">来源：<a href="https://finance.eastmoney.com/a/202603213679338417.html" style="color:var(--blue)">东方财富网</a> / <a href="https://www.cngold.org/c/2026-03-20/c10396017.html" style="color:var(--blue)">金投网</a></div></div>
+  <div class="mc"><div class="mc-h"><div><div class="mc-n">💎 稀土 Rare Earth</div><div class="mc-s">SMM</div></div><span class="chg up" style="font-size:.85rem">▲ +1.5%</span></div><div class="mc-p" style="color:var(--up)">~52万 元/吨</div><dl class="mc-d"><dt>📊 氧化镨钕</dt><dd>稳中有升。机器人+低空经济催化永磁需求。</dd></dl><div class="src" style="margin-top:8px">来源：SMM</div></div>
+</div>
+
+<div class="mp-row">
+  <div style="grid-column:1/-1"><h3 class="sec-t" style="margin-bottom:16px">🏆 有色金属潜力股</h3></div>
+  <div class="mp"><div class="pk-h"><div><span class="pk-n" style="color:var(--amber)">紫金矿业</span> <span class="pk-c">601899</span></div><span class="chg up" style="font-size:.78rem">+2.01%</span></div><div class="pk-b"><strong style="color:var(--tw)">金铜量价齐升，矿业巨头成长可期。</strong>机构列入3月金股。PE~12x，净利300亿+。<span class="lg g">金铜双驱动</span><span class="lg b">产量增长</span></div></div>
+  <div class="mp"><div class="pk-h"><div><span class="pk-n" style="color:var(--amber)">赣锋锂业</span> <span class="pk-c">002460</span></div><span class="chg up" style="font-size:.78rem">涨停+10%</span></div><div class="pk-b"><strong style="color:var(--tw)">锂业龙头，供需再平衡受益标的。</strong>全产业链布局。PB~2x历史低位。<span class="lg g">锂价回暖</span><span class="lg p">储能爆发</span></div></div>
+  <div class="mp"><div class="pk-h"><div><span class="pk-n" style="color:var(--amber)">北方稀土</span> <span class="pk-c">600111</span></div><span class="chg up" style="font-size:.78rem">+1.2%</span></div><div class="pk-b"><strong style="color:var(--tw)">稀土龙头，新需求催化价值重估。</strong>全球最大轻稀土供应商。机器人+低空经济催化。<span class="lg g">机器人催化</span><span class="lg b">出口管制</span></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="sec-t">🎯 综合总结</h2>
+<div class="sbox" style="border-color:rgba(59,130,246,.2)"><h4 style="color:var(--blue)">核心矛盾</h4><p style="font-size:.84rem;color:var(--t2)">地缘冲突（美以伊第三周） vs 政策托底（两会+美联储观望）。沪指失守4000点，全市场约4800只个股下跌。美股周线四连跌。极致结构性分化。</p></div>
+<div class="sbox"><h4 style="color:var(--up)">🔴 看多方向</h4><ul>
+  <li style="color:var(--t2)">▸ <strong style="color:var(--up)">新能源</strong> — 政策+景气双驱动。标的：<strong style="color:var(--tw)">宁德时代、通威股份、亿纬锂能</strong></li>
+  <li style="color:var(--t2)">▸ <strong style="color:var(--up)">有色金属</strong> — 供给约束+结构性需求。标的：<strong style="color:var(--tw)">紫金矿业、赣锋锂业、北方稀土</strong></li>
+  <li style="color:var(--t2)">▸ <strong style="color:var(--up)">能源（油气）</strong> — 油价$98+直接受益。标的：<strong style="color:var(--tw)">中国海油、中国神华</strong></li>
+</ul></div>
+<div class="sbox"><h4 style="color:var(--down)">🟢 谨慎方向</h4><ul>
+  <li style="color:var(--t2)">▸ <strong style="color:var(--down)">科技</strong> — 美股纳指周线四连跌（累跌2.07%），超微电脑暴跌33%</li>
+  <li style="color:var(--t2)">▸ <strong style="color:var(--down)">出口导向型</strong> — 航运成本飙升+关税+中东市场萎缩</li>
+  <li style="color:var(--t2)">▸ <strong style="color:var(--down)">黄金矿业股</strong> — 金价从$5,400暴跌至$4,494（-17%）</li>
+</ul></div>
+<div class="sbox"><h4 style="color:var(--amber)">⚖️ 观望 & 防御</h4><ul>
+  <li style="color:var(--t2)">▸ 金融：招商银行（高股息）、中国平安（PEV最低）— 底仓配置</li>
+  <li style="color:var(--t2)">▸ 消费：贵州茅台（渠道改革）、美的集团（PE最低）— 等待验证</li>
+  <li style="color:var(--t2)">▸ 医疗：迈瑞医疗（AI+医疗）、药明康德（估值低位）— 逐步布局</li>
+</ul></div>
+
+<div class="risk"><h3>⚠️ 风险提示</h3><ul>
+  <li><strong>地缘冲突升级：</strong>特朗普考虑占领哈尔克岛+五角大楼增兵+英国授权美军基地，霍尔木兹封锁可能长期化</li>
+  <li><strong>美股四连跌：</strong>道指/标普/纳指周线四连跌，超微电脑暴跌33%，存储/光通信股集体下挫</li>
+  <li><strong>美联储政策：</strong>CME数据显示6月降息概率43.9%，若通胀再度走高降息可能取消</li>
+  <li><strong>A股结构风险：</strong>沪指失守4000点，约4800只个股下跌，赚钱效应减弱</li>
+  <li><strong>商品剧烈波动：</strong>黄金从$5,400暴跌至$4,494（-17%），白银单日跌6.74%</li>
+  <li><strong>数据来源：</strong>东方财富网 / 华尔街见闻 / 金投网 / LME / CME / 汇通网 / 新华社 / 央视新闻。不构成投资建议。</li>
+</ul></div>
+</section>
+
+</main>
+<footer>
+<div class="wrap">
+  <p>📊 全球市场行情深度分析报告 · 2026年3月21日（星期六）</p>
+  <p style="margin-top:6px">来源：<a href="https://finance.eastmoney.com">东方财富网</a> / <a href="https://wallstreetcn.com">华尔街见闻</a> / <a href="https://www.cngold.org">金投网</a> / <a href="https://www.lme.com">LME</a> / <a href="https://www.cmegroup.com">CME</a> / <a href="https://www.xinhuanet.com">新华社</a> / <a href="https://youse.mysteel.com">我的钢铁网</a> / <a href="https://newenergy.smm.cn">SMM</a></p>
+  <p style="margin-top:4px;color:var(--up)">⚠️ 免责声明：本报告仅供参考，不构成任何投资建议。投资有风险，入市需谨慎。</p>
+</div>
+</footer>
+</body>
+</html>
