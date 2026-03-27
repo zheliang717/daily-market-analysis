@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球行情深度分析报告 | 2026年3月24日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f7f8fc;color:#2d3436;line-height:1.75;font-size:15px}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+header{text-align:center;padding:48px 24px 36px;background:linear-gradient(135deg,#0a1628,#1a2744,#2c3e6b);color:#fff;border-radius:16px;margin-bottom:32px}
+header h1{font-size:26px;font-weight:700;letter-spacing:1px}
+header .sub{font-size:14px;opacity:.8;margin-top:6px}
+header .date{display:inline-block;background:rgba(255,255,255,.12);padding:6px 20px;border-radius:20px;margin-top:14px;font-size:13px}
+h2{font-size:19px;font-weight:700;color:#1a2744;margin:32px 0 14px;padding-bottom:8px;border-bottom:2.5px solid #2c3e6b}
+h2 .ic{margin-right:6px}
+.card{background:#fff;border-radius:12px;padding:22px;margin-bottom:18px;box-shadow:0 1px 8px rgba(0,0,0,.05);border:1px solid #eee}
+.card-t{font-size:16px;font-weight:700;color:#1a2744;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th{background:#1a2744;color:#fff;padding:9px 10px;text-align:left;font-weight:600;font-size:12px;letter-spacing:.3px}
+td{padding:9px 10px;border-bottom:1px solid #f0f0f0;font-size:13px}
+tr:nth-child(even){background:#fafbfc}
+.up{color:#e74c3c;font-weight:600}
+.dn{color:#27ae60;font-weight:600}
+.flat{color:#95a5a6}
+.src{font-size:11px;color:#95a5a6;font-style:italic}
+.brief{font-size:14px;color:#555;margin:6px 0 12px;line-height:1.7}
+.chain{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:12px 0}
+.chain .st{background:#eef2ff;border-radius:8px;padding:10px 12px;border:1px solid #d5ddf5}
+.chain .st b{display:block;font-size:11px;color:#2c3e6b;margin-bottom:4px}
+.chain .st span{font-size:13px}
+.stock{background:#f8f9fb;border-radius:8px;padding:12px 14px;margin-bottom:8px;border-left:3px solid #2c3e6b}
+.stock h4{font-size:14px;color:#1a2744;margin-bottom:4px}
+.stock p{font-size:13px;color:#666;line-height:1.6}
+.event-tbl th{background:#34495e}
+.risk{background:linear-gradient(135deg,#fff8e1,#ffeaa7);border-radius:12px;padding:20px;margin-top:16px;border:1px solid #f0c040}
+.risk h3{color:#e67e22;font-size:15px;margin-bottom:10px}
+.risk ul{list-style:none;padding:0}
+.risk li{padding:5px 0;font-size:14px}
+.risk li::before{content:"⚠ ";font-size:13px}
+.alert{background:linear-gradient(135deg,#ffe0e0,#ffb3b3);border-radius:12px;padding:20px;margin-top:16px;border:1px solid #ff6b6b}
+.alert h3{color:#c0392b;font-size:15px;margin-bottom:10px}
+.alert ul{list-style:none;padding:0}
+.alert li{padding:5px 0;font-size:14px}
+.alert li::before{content:"🔴 ";font-size:13px}
+.success{background:linear-gradient(135deg,#d4edda,#a8e6a1);border-radius:12px;padding:20px;margin-top:16px;border:1px solid #27ae60}
+.success h3{color:#1e7e34;font-size:15px;margin-bottom:10px}
+.success ul{list-style:none;padding:0}
+.success li{padding:5px 0;font-size:14px}
+.success li::before{content:"🟢 ";font-size:13px}
+.advice{border-left:3px solid #2c3e6b;padding-left:16px;margin-top:16px}
+.advice p{font-size:14px;margin:6px 0;color:#555}
+.disclaimer{background:#fff9e6;border:1px solid #ffd93d;border-radius:10px;padding:14px;margin-top:20px;font-size:12px;color:#856404}
+.footer{text-align:center;padding:28px 16px;color:#aaa;font-size:11px;border-top:1px solid #eee;margin-top:28px;line-height:1.8}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
+.kpi{background:#fff;border-radius:10px;padding:14px;border:1px solid #eee;text-align:center}
+.kpi .label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.5px}
+.kpi .value{font-size:22px;font-weight:700;margin:4px 0}
+.kpi .chg{font-size:12px;font-weight:600}
+@media(max-width:700px){.wrap{padding:12px}header h1{font-size:20px}table{font-size:11px}th,td{padding:6px 5px}.chain{grid-template-columns:1fr}.kpi-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📈 全球行情深度分析报告</h1>
+  <div class="sub">宏观局势 · 板块分析 · 有色金属 · 价值投资筛选</div>
+  <div class="date">📅 报告日期：2026年3月24日（周二）| A股今日收盘 | 美股/商品3/23收盘 | 数据截至24日20:00</div>
+</header>
+
+<!-- ===== 突发事件 ===== -->
+<div class="success">
+  <h3>🟢 关键转折：特朗普暂停打击伊朗能源设施5天，全球市场剧烈波动</h3>
+  <ul>
+    <li>3/23特朗普称与伊朗在过去两天进行了<b>"富有成效"的对话</b>，将<b>暂停打击伊朗能源设施五天</b></li>
+    <li>特朗普称已与伊朗达成<b>15项共识</b>，包括伊朗不拥有核武</li>
+    <li><b>伊朗否认</b>：伊外交部、高级领导层、伊朗媒体均否认与美国进行了谈判；伊朗官员称已通过埃及和土耳其传递信息，美方未接受核心条件</li>
+    <li>伊朗国防委员会声明：若沿海或岛屿遭攻击，将<b>切断海湾航线</b>并在海上布设水雷</li>
+    <li><b>IEA 3/23报告</b>：超过40个中东能源资产"遭到严重损坏"，冲突影响为三次能源危机之和（来源：IEA/汇通网/财新网）</li>
+  </ul>
+  <p class="src">来源：金投网早间速递/中华网军事/21经济网/IEA/汇通网/财新网, 2026-03-23~24</p>
+</div>
+
+<!-- ===== 一、全球市场概览 ===== -->
+<h2><span class="ic">🌐</span>一、全球市场概览</h2>
+
+<div class="kpi-grid">
+  <div class="kpi">
+    <div class="label">上证指数（3/24收盘）</div>
+    <div class="value">3,881.28</div>
+    <div class="chg up">+1.78%</div>
+    <div class="src">东方财富网/新京报, 3/24</div>
+  </div>
+  <div class="kpi">
+    <div class="label">深证成指（3/24收盘）</div>
+    <div class="value">13,536.56</div>
+    <div class="chg up">+1.43%</div>
+    <div class="src">搜狐证券, 3/24</div>
+  </div>
+  <div class="kpi">
+    <div class="label">上证指数（3/23收盘）</div>
+    <div class="value">~3,830</div>
+    <div class="chg dn">-3.20%</div>
+    <div class="src">每经AI, 3/23</div>
+  </div>
+  <div class="kpi">
+    <div class="label">道琼斯（3/23收盘）</div>
+    <div class="value">—</div>
+    <div class="chg up">+1.38%</div>
+    <div class="src">金投网早间速递, 3/24</div>
+  </div>
+  <div class="kpi">
+    <div class="label">现货黄金</div>
+    <div class="value">$4,405.69</div>
+    <div class="chg dn">-2.03%</div>
+    <div class="src">金投网早间速递, 3/24</div>
+  </div>
+  <div class="kpi">
+    <div class="label">WTI原油</div>
+    <div class="value">$88.87</div>
+    <div class="chg dn">-9.28%</div>
+    <div class="src">金投网早间速递, 3/24</div>
+  </div>
+  <div class="kpi">
+    <div class="label">Brent原油（ICE）</div>
+    <div class="value">$96.75</div>
+    <div class="chg dn">-10.27%</div>
+    <div class="src">金投网早间速递, 3/24</div>
+  </div>
+  <div class="kpi">
+    <div class="label">美元指数</div>
+    <div class="value">98.958</div>
+    <div class="chg dn">-0.69%</div>
+    <div class="src">中华网, 3/24</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-t">A股（3月23日 vs 3月24日）— 先暴跌后反弹</div>
+  <table>
+    <thead><tr><th>指数</th><th>3/23收盘</th><th>3/23涨跌</th><th>3/24收盘</th><th>3/24涨跌</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>上证指数</td><td>~3,830</td><td class="dn">-3.20%</td><td>3,881.28</td><td class="up">+1.78%</td><td>每经AI/东方财富网</td></tr>
+      <tr><td>深证成指</td><td>~13,428</td><td class="dn">-3.16%</td><td>13,536.56</td><td class="up">+1.43%</td><td>每经AI/搜狐证券</td></tr>
+      <tr><td>创业板指</td><td>—</td><td class="dn">-3.49%</td><td>—</td><td class="up">+0.50%</td><td>金投网/新京报</td></tr>
+      <tr><td>科创综指</td><td>—</td><td>—</td><td>—</td><td class="up">+3.24%</td><td>新浪, 3/24</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>3/23</b>：A股三大指数均跌超3%，有色金属、养殖业、机场航运、医药生物跌幅居前。（来源：每经AI, 3/23）<br><b>3/24</b>：超5100只个股上涨，成交额2.10万亿，行业板块罕见全线上扬。反弹受美股3/23大涨+特朗普暂停打击信号驱动。（来源：新京报/Wind/证券时报, 3/24）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">美股（3月23日收盘 — 受特朗普信号提振）</div>
+  <table>
+    <thead><tr><th>指数</th><th>3/23涨跌</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>道琼斯工业</td><td class="up">+1.38%</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>标普500</td><td class="up">+1.15%</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>纳斯达克综合</td><td class="up">+1.38%</td><td>金投网早间速递, 3/24</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">美股三大股指涨超1%。热门中概股多数上涨。（来源：金投网早间速递/中华网, 3/24）</p>
+</div>
+
+<!-- ===== 二、大宗商品 ===== -->
+<h2><span class="ic">💰</span>二、大宗商品与贵金属</h2>
+<div class="card">
+  <div class="card-t">贵金属（3月23日收盘 — 权威数据）</div>
+  <table>
+    <thead><tr><th>品种</th><th>3/23收盘价</th><th>涨跌</th><th>备注</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>现货黄金</td><td>$4,405.69/oz</td><td class="dn">-2.03%</td><td>连续九天下跌（2023年以来最长）</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>COMEX黄金（4月合约）</td><td>$4,374.90/oz</td><td class="dn">-2.61%（昨收$4,492.00）</td><td>日内$4,322~$4,537</td><td>金投网, 3/23</td></tr>
+      <tr><td>现货白银</td><td>$69.07/oz</td><td class="up">+1.87%</td><td>一度从68跌至61，随后大幅反弹</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>COMEX白银</td><td>$69.32/oz</td><td class="dn">-0.49%</td><td>—</td><td>中华网, 3/24</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>SPDR Gold Trust</b>持仓减少4.286吨至1052.705吨。<b>iShares Silver Trust</b>持仓增加264.76吨至15513.67吨。（来源：金投网早间速递, 3/24）</p>
+  <p class="src">现货黄金日内一度从$4,500上方暴跌至$4,100下方，随后受特朗普消息回升。连续九天下跌为自2023年以来最长。（来源：金投网早间速递, 3/24）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">原油（3月23日收盘 — ICE/CME权威数据）</div>
+  <table>
+    <thead><tr><th>品种</th><th>3/23收盘价</th><th>涨跌</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>WTI原油（CME）</td><td>$88.87/桶</td><td class="dn">-9.28%</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>布伦特原油（ICE）</td><td>$96.75/桶</td><td class="dn">-10.27%</td><td>金投网早间速递, 3/24</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">油价暴跌：特朗普暂停打击伊朗能源设施5天→地缘风险溢价大幅消退。<b>IEA 3/23</b>：超过40个中东能源资产"遭到严重损坏"，冲突影响为<b>三次能源危机之和</b>。（来源：IEA/汇通网/财新网/金十数据, 3/23）</p>
+  <p class="src"><b>沙特</b>下调4月对亚洲买家的原油供应。（来源：金投网早间速递, 3/24）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">LME基本金属（最新确认数据）</div>
+  <table>
+    <thead><tr><th>品种</th><th>3/21收盘</th><th>周涨跌</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>LME期铜</td><td>$11,930/吨</td><td class="dn">-217美元（周累跌6.65%）</td><td>每经AI/我的钢铁网, 3/21</td></tr>
+      <tr><td>LME期铝</td><td>$3,215/吨</td><td class="dn">-37美元（周累跌6.54%）</td><td>每经AI/我的钢铁网, 3/21</td></tr>
+      <tr><td>LME期锌</td><td>$3,067/吨</td><td class="dn">-4美元（周累跌约6.95%）</td><td>每经AI/我的钢铁网, 3/21</td></tr>
+      <tr><td>LME期铅</td><td>$1,888/吨</td><td class="up">+9美元</td><td>每经AI, 3/21</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">⚠️ LME 3/23（周一）收盘数据尚未在权威渠道确认。以上为3/21（上周五）LME官方收盘数据。3/23受全球risk-on情绪影响，LME金属预计反弹。COMEX期铜3/20收盘530.20美分/磅（来源：我的钢铁网）。</p>
+  <p class="src">A股3/24开盘有色金属板块涨幅居前，有色·锑、有色·锌、有色·铜概念走强。紫金矿业3/24收32.20元涨5.30%。（来源：界面新闻/搜狐证券, 3/24）</p>
+</div>
+
+<!-- ===== 三、全球局势 ===== -->
+<h2><span class="ic">🌍</span>三、全球局势分析</h2>
+
+<div class="alert">
+  <h3>🔴 中东局势：美伊冲突升级 — IEA称40+能源设施严重损坏</h3>
+  <ul>
+    <li><b>IEA 3/23</b>：超过40个中东能源资产"遭到严重损坏"，冲突影响为<b>三次能源危机之和</b>（来源：IEA/汇通网/财新网）</li>
+    <li>特朗普暂停打击伊朗能源设施5天——但伊朗否认谈判，美方通过埃及和土耳其传递信息，伊方称美方未接受核心条件</li>
+    <li>伊朗国防委员会声明：若遭攻击将<b>切断海湾航线</b>并在海上布设爆炸性水雷</li>
+    <li>美媒：美军考虑向伊朗派遣空降部队，数千名海军陆战队员将抵达中东</li>
+    <li>数千名海军陆战队员将在特朗普设定的最后期限当天抵达中东</li>
+  </ul>
+  <p class="src">来源：IEA/金投网早间速递/汇通网/财新网/中华网军事, 2026-03-23~24</p>
+  <p class="brief" style="margin-top:10px"><b>市场影响</b>：3/23 A股暴跌3%+（反应冲突升级），但特朗普暂停打击信号提振美股+1.38%，3/24 A股反弹+1.78%。油价暴跌10%消退地缘溢价，但IEA称冲突影响为三次能源危机之和——若5天后谈判破裂，油价将再度飙升。</p>
+</div>
+
+<div class="success">
+  <h3>🟢 美联储：古尔斯比表态 — 通胀成首要风险</h3>
+  <ul>
+    <li>芝加哥联储主席古尔斯比3/23表示：鉴于失业率保持相对稳定，<b>通胀目前是美国经济面临的主要风险</b></li>
+    <li>可以设想某些情况下<b>美联储可能需要加息</b></li>
+    <li>但如果伊朗冲突迅速解决，<b>今年晚些时候仍可能降息</b></li>
+    <li>美元指数3/23下跌0.69%，收于98.958（来源：中华网, 3/24）</li>
+  </ul>
+  <p class="src">来源：中华网/金投网早间速递, 2026-03-23~24</p>
+</div>
+
+<div class="card">
+  <div class="card-t">🇺🇸 其他重要动态</div>
+  <p class="brief"><b>俄罗斯</b>：许多国家正考虑增加从俄采购石油，印度积极考虑利用美国暂缓制裁政策购买俄油。（来源：金投网早间速递, 3/24）</p>
+  <p class="brief"><b>高盛</b>：预计标普500年底涨至7600点（约15%上涨空间）。（来源：网易/财联社, 3/16）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">🇨🇳 国内政策与数据</div>
+  <p class="brief"><b>央行</b>：3/23开展80亿元7天期逆回购操作，因有1373亿元到期，当日净回笼1293亿元。（来源：金投网早间速递, 3/24）</p>
+  <p class="brief"><b>上海航运</b>：截至3/23，上海出口集装箱结算运价指数（欧洲航线）报1693.26点，较上期涨8.8%。（来源：上海航运交易所/金投网早间速递, 3/24）</p>
+  <p class="brief"><b>EIA</b>：美国至3/13当周EIA原油库存+615.6万桶，预期+38.3万桶，前值+382.4万桶，远超预期。（来源：EIA/金十数据/证券之星, 3/18）</p>
+  <p class="brief"><b>IEA（2月报告）</b>：下调2026年全球石油需求增长预测至85万桶/日（前值93万桶/日），供应过剩预估基本维持不变。（来源：IEA/格隆汇, 2/12）</p>
+</div>
+
+<!-- ===== 四、A股板块分析 ===== -->
+<h2><span class="ic">📊</span>四、A股板块分析（3月24日反弹）</h2>
+<p class="brief">今日A股三大指数集体上涨，行业板块<b>罕见全线上扬</b>。全市场超5100只个股上涨。成交额2.10万亿。涨幅居前：地面兵装、电力、贸易、环保、医疗服务、装修建材、工业金属、公用事业、纺织服装。（来源：证券时报/新京报/新浪, 3/24）</p>
+<p class="brief" style="color:#c0392b"><b>对比3/23</b>：沪指-3.20%，有色金属、养殖业、机场航运、医药生物跌幅居前。3/24全面反弹，主要受美股3/23收涨+特朗普暂停打击信号驱动。（来源：每经AI, 3/23）</p>
+
+<div class="card">
+  <div class="card-t">💰 有色金属板块 — 今日最强主线！主力净流入40.26亿</div>
+  <p class="brief"><b>今日表现</b>：<span class="up">有色金属板块领涨全市场</span>。有色·锑、有色·锌、有色·铜概念走强。主力资金净流入40.26亿元，居行业之首。紫金矿业涨5.30%，主力净买入11.22亿元。（来源：网易/证券时报/界面新闻, 3/24）</p>
+  <div class="chain">
+    <div class="st"><b>⬆ 上游 资源矿企</b><span>紫金矿业+5.30%，铜金矿龙头领涨</span></div>
+    <div class="st"><b>🔄 中游 冶炼加工</b><span>工业金属板块涨幅居前</span></div>
+    <div class="st"><b>⬇ 下游 新材料</b><span>液态金属概念走强</span></div>
+  </div>
+  <div class="stock"><h4>紫金矿业（601899）— 主力净买入11.22亿，涨5.30%</h4><p><b>核心优势</b>：全球化矿业巨头，铜金锌锂多品种布局。铜储量7,500万吨+金3,200吨，"矿+冶+贸"一体化，成本控制行业领先。<br><b>催化剂</b>：有色·铜概念走强；LME铜上周五$11,930（周累跌6.65%后反弹预期）；COMEX期铜530.20美分/磅。<br><b>估值</b>：PE~12倍（历史中枢18倍），PB~2.5倍，股息率~3%。<br><b>产业链位置</b>：上游资源端核心标的，铜+金双轮驱动。</p></div>
+  <div class="stock"><h4>中国铝业（601600）— 铝业龙头</h4><p><b>核心优势</b>：氧化铝+电解铝全产业链布局，受益国内产能天花板（4,500万吨）约束。<br><b>催化剂</b>：LME铝$3,215（周累跌6.54%）；工业金属板块涨幅居前。<br><b>估值</b>：PE~10倍，PB~1.2倍，股息率~4%。</p></div>
+  <div class="stock"><h4>华友钴业（603799）— 钴镍锂一体化</h4><p><b>核心优势</b>：钴镍锂一体化龙头，绑定宁德时代等核心客户。印尼镍项目产能释放。<br><b>催化剂</b>：有色·锌概念走强；碳酸锂产业链盈利修复。<br><b>估值</b>：回调后PB历史低位。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">💻 科技板块 — 科创综指+3.24%，光纤板块领涨</div>
+  <p class="brief"><b>今日表现</b>：科创综指涨3.24%领涨宽基指数。光纤板块涨幅居前。电力设备板块净流出超41亿元（阳光电源、华工科技等净流出居前）。中际旭创、江波龙尾盘获主力大幅净流入。（来源：证券时报/网易, 3/24）</p>
+  <div class="stock"><h4>中际旭创（300308）— 尾盘获主力大幅净流入</h4><p><b>核心优势</b>：全球光模块龙头，800G/1.6T产品领先，深度绑定海外云厂商。<br><b>催化剂</b>：光纤板块涨幅居前；AI算力基建需求持续增长。<br><b>估值</b>：PE~28倍，调整后PEG<1。</p></div>
+  <div class="stock"><h4>汉缆股份（002498）— 主力净流入9.93亿</h4><p><b>核心优势</b>：电网电缆龙头，2025年营收104.67亿同比+13.04%，220kV电缆附件中标量创新高。<br><b>催化剂</b>：电网设备板块涨幅居前；国网/南网招标放量。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">🏥 医疗/消费/金融</div>
+  <p class="brief"><b>今日表现</b>：医疗服务板块涨幅居前，CRO概念走强。纺织服装涨3.99%居第二。环保涨4.29%居首。金融板块随大盘上涨。（来源：中华网/证券时报, 3/24）</p>
+  <div class="stock"><h4>贵州茅台（600519）</h4><p><b>核心优势</b>：品牌护城河极深，现金流充沛。估值PE~26倍（低于5年中枢30倍），股息率≈2%。</p></div>
+  <div class="stock"><h4>招商银行（600036）</h4><p><b>核心优势</b>：零售银行标杆，不良率<1%。PB~0.9倍，股息率≈5.5%。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">⛽ 能源板块 — 油价暴跌冲击，石油石化/煤炭走弱</div>
+  <p class="brief"><b>今日表现</b>：<span class="dn">石油石化、煤炭板块走弱</span>。WTI跌9.28%至$88.87，ICE Brent跌10.27%至$96.75——油价暴跌直接冲击能源板块。（来源：金投网早间速递/界面新闻, 3/24）</p>
+  <p class="brief"><b>IEA关键警告</b>：超过40个中东能源资产"严重损坏"，冲突影响为三次能源危机之和。若5天后谈判破裂，油价将再度飙升。（来源：IEA/财新网, 3/23）</p>
+  <p class="brief" style="color:#c0392b"><b>⚠️ 策略</b>：短期回避能源板块，等待油价企稳或谈判明朗化。</p>
+</div>
+
+<div class="card">
+  <div class="card-t">🛡 兵装重组概念 — 今日涨幅第一！+7.80%</div>
+  <p class="brief"><b>今日表现</b>：<span class="up">兵装重组概念涨7.80%位居概念板块涨幅第一</span>。湖南天雁、建设工业、长城军工涨停。主力净流入5.55亿。国防军工行业主力净流入超3亿元。（来源：东方财富网, 3/24）</p>
+</div>
+
+<!-- ===== 五、行业资金流向 ===== -->
+<h2><span class="ic">💹</span>五、行业主力资金流向（3月24日）</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>排名</th><th>净流入行业</th><th>净流入金额</th><th>净流出行业</th><th>净流出金额</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="up">有色金属</td><td class="up">+40.26亿</td><td class="dn">电力设备</td><td class="dn">-23.73亿</td></tr>
+      <tr><td>2</td><td class="up">通信</td><td class="up">+26.40亿</td><td class="dn">汽车</td><td class="dn">-10.24亿</td></tr>
+      <tr><td>3</td><td class="up">公用事业</td><td class="up">+3亿+</td><td class="dn">轻工制造</td><td class="dn">-5亿+</td></tr>
+      <tr><td>4</td><td class="up">建筑材料</td><td class="up">+3亿+</td><td class="dn">农林牧渔</td><td class="dn">-5亿+</td></tr>
+      <tr><td>5</td><td class="up">国防军工</td><td class="up">+3亿+</td><td class="dn">基础化工</td><td class="dn">-5亿+</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">沪深两市全天主力资金净流出12.36亿元。10个行业净流入，21个行业净流出。（来源：证券时报, 3/24）</p>
+  <p class="src">个股：德明利净流入10.99亿居首（高分红），汉缆股份净流入9.93亿（业绩超预期）。阳光电源、华工科技、比亚迪等净流出超5亿。尾盘电子、有色金属、通信净流入均超10亿。（来源：证券时报, 3/24）</p>
+</div>
+
+<!-- ===== 六、政策事件量化表 ===== -->
+<h2><span class="ic">📋</span>六、政策与全球事件量化影响</h2>
+<div class="card">
+  <table class="event-tbl">
+    <thead><tr><th>事件</th><th>时间</th><th>影响</th><th>量化评估</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td><b>特朗普暂停打击伊朗能源设施5天</b></td><td>3/23</td><td class="up">全球risk-on</td><td>美股+1.38%，A股3/24反弹+1.78%，WTI-9.28%，Brent-10.27%</td><td>金投网/IEA</td></tr>
+      <tr><td><b>IEA：40+中东能源设施严重损坏</b></td><td>3/23</td><td class="dn">能源供给冲击</td><td>冲突影响为三次能源危机之和</td><td>IEA/汇通网/财新</td></tr>
+      <tr><td>A股3/23暴跌：沪指-3.20%</td><td>3/23</td><td class="dn">恐慌抛售</td><td>有色金属、养殖、机场航运、医药生物领跌</td><td>每经AI</td></tr>
+      <tr><td>现货黄金连续九天下跌，日内$4,500→$4,100</td><td>3/23</td><td class="dn">避险退潮</td><td>2023年以来最长连跌；SPDR持仓-4.286吨</td><td>金投网</td></tr>
+      <tr><td>古尔斯比：通胀首要风险，不排除加息</td><td>3/23</td><td class="dn">降息不确定性</td><td>美元指数-0.69%至98.958</td><td>中华网</td></tr>
+      <tr><td>EIA原油库存+615.6万桶（预期+38.3万桶）</td><td>3/18</td><td class="dn">油价承压</td><td>远超预期，实际+615.6万桶</td><td>EIA/金十数据</td></tr>
+      <tr><td>IEA 2月报告：需求+85万桶/日，供应过剩</td><td>2/12</td><td class="dn">中期油价偏空</td><td>下调需求增长（前值93万桶/日）</td><td>IEA/格隆汇</td></tr>
+      <tr><td>沙特下调4月对亚洲买家原油供应</td><td>3/23</td><td class="up">供给收紧</td><td>—</td><td>金投网早间速递</td></tr>
+      <tr><td>上海出口集装箱运价指数（欧洲航线）+8.8%</td><td>3/23</td><td class="up">航运景气</td><td>报1693.26点</td><td>上海航运交易所</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== 七、有色金属专项 ===== -->
+<h2><span class="ic">🔶</span>七、有色金属板块专项分析</h2>
+<div class="card">
+  <div class="card-t">LME基本金属（最新确认数据：3月21日收盘）</div>
+  <table>
+    <thead><tr><th>品种</th><th>LME收盘价</th><th>日涨跌</th><th>周累计</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>期铜</td><td>$11,930/吨</td><td class="dn">-$217</td><td class="dn">周累跌6.65%</td><td>每经AI/我的钢铁网, 3/21</td></tr>
+      <tr><td>期铝</td><td>$3,215/吨</td><td class="dn">-$37</td><td class="dn">周累跌6.54%</td><td>每经AI/我的钢铁网, 3/21</td></tr>
+      <tr><td>期锌</td><td>$3,067/吨</td><td class="dn">-$4</td><td class="dn">周累跌约6.95%</td><td>每经AI/我的钢铁网, 3/21</td></tr>
+      <tr><td>期铅</td><td>$1,888/吨</td><td class="up">+$9</td><td>—</td><td>每经AI, 3/21</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">⚠️ LME 3/23（周一）收盘数据尚未在LME官网或我的钢铁网等权威渠道确认。以上为3/21（上周五）官方收盘数据。3/23受全球risk-on情绪影响，A股有色金属板块3/24开盘涨幅居前。（来源：每经AI/我的钢铁网/LME）</p>
+  <p class="src">COMEX期铜3/20收盘530.20美分/磅。（来源：我的钢铁网, 3/23）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">贵金属详情</div>
+  <table>
+    <thead><tr><th>品种</th><th>3/23收盘价</th><th>涨跌</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>现货黄金</td><td>$4,405.69/oz</td><td class="dn">-2.03%</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>COMEX黄金（4月）</td><td>$4,374.90/oz</td><td class="dn">-2.61%</td><td>金投网, 3/23</td></tr>
+      <tr><td>现货白银</td><td>$69.07/oz</td><td class="up">+1.87%</td><td>金投网早间速递, 3/24</td></tr>
+      <tr><td>COMEX白银</td><td>$69.32/oz</td><td class="dn">-0.49%</td><td>中华网, 3/24</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">现货黄金日内一度从$4,500上方暴跌至$4,100下方，连续九天下跌（2023年以来最长连跌）。SPDR Gold Trust持仓减少4.286吨至1052.705吨。iShares Silver Trust持仓增加264.76吨至15513.67吨。（来源：金投网早间速递/金投网, 3/24）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">供需面与产业链分析</div>
+  <div class="chain">
+    <div class="st"><b>🔩 铜</b><span>LME铜$11,930（周累跌6.65%），大幅回调后反弹预期增强。全球铜矿供给偏紧，新能源需求持续增长。A股有色·铜概念3/24走强。</span></div>
+    <div class="st"><b>🪶 铝</b><span>LME铝$3,215（周累跌6.54%）。国内产能天花板约束供给。光伏铝型材需求提供增量。</span></div>
+    <div class="st"><b>⚡ 锂/钴</b><span>碳酸锂价格自2025年11月以来累计涨逾70%（中华网, 3/24）。供需格局持续优化，锂电产业链盈利修复。</span></div>
+    <div class="st"><b>🥇 黄金</b><span>现货$4,405（-2.03%），连续九天下跌。但央行持续增持+美元长期走弱预期支撑中长期走势。</span></div>
+  </div>
+</div>
+
+<!-- ===== 八、有色潜力股 ===== -->
+<h2><span class="ic">🏆</span>八、有色金属价值投资潜力股</h2>
+<div class="card">
+  <div class="stock">
+    <h4>紫金矿业（601899）— 今日涨5.30%，主力净买入11.22亿</h4>
+    <p><b>核心优势</b>：全球化矿业巨头，铜金锌锂多品种布局。铜储量7,500万吨+金3,200吨，"矿+冶+贸"一体化，成本控制行业领先。海外矿山遍布塞尔维亚、刚果金、秘鲁等。<br>
+    <b>近期催化剂</b>：有色·铜概念3/24走强；LME铜大幅回调后反弹预期增强；A股有色金属板块主力净流入40.26亿居首；今日成交活跃，量比1.25（来源：搜狐证券, 3/24）。<br>
+    <b>估值</b>：PE~12倍（历史中枢18倍），PB~2.5倍，近5年30%分位，股息率~3%。<br>
+    <b>产业链位置</b>：上游资源端核心标的。铜（新能源/电网需求）+金（避险属性）双轮驱动，资源自给率高。</p>
+  </div>
+  <div class="stock">
+    <h4>华友钴业（603799）— 钴镍锂一体化</h4>
+    <p><b>核心优势</b>：钴镍锂一体化龙头，绑定宁德时代等核心客户。印尼镍项目产能持续释放，湿法冶炼成本优势显著。<br>
+    <b>近期催化剂</b>：碳酸锂自2025.11月累计涨逾70%（中华网, 3/24），锂电产业链盈利修复；有色·锌概念3/24走强。<br>
+    <b>估值</b>：回调后PB历史低位，安全边际充足。<br>
+    <b>产业链位置</b>：中游冶炼+前驱体一体化，下游绑定深度行业最高。</p>
+  </div>
+  <div class="stock">
+    <h4>中国铝业（601600）— 铝业龙头</h4>
+    <p><b>核心优势</b>：氧化铝+电解铝全产业链布局，受益国内产能天花板（4,500万吨）约束下的供给刚性。<br>
+    <b>近期催化剂</b>：LME铝$3,215大幅回调后估值修复空间大；工业金属板块3/24涨幅居前。<br>
+    <b>估值</b>：PE~10倍，PB~1.2倍，股息率~4%。<br>
+    <b>产业链位置</b>：全产业链布局，抗周期波动能力强。</p>
+  </div>
+</div>
+
+<!-- ===== 九、风险与展望 ===== -->
+<h2><span class="ic">⚠</span>九、风险提示与展望</h2>
+
+<div class="success">
+  <h3>🟢 积极信号</h3>
+  <ul>
+    <li><b>A股3/24全面反弹</b>：5100+个股上涨，行业板块罕见全线上扬，成交额2.10万亿</li>
+    <li><b>特朗普暂停打击5天</b>：外交斡旋窗口打开，全球risk-on情绪提振</li>
+    <li><b>有色金属领涨</b>：主力净流入40.26亿居首，紫金矿业+5.30%</li>
+    <li><b>碳酸锂涨70%+</b>：锂电产业链盈利修复（中华网, 3/24）</li>
+    <li><b>上海航运运价+8.8%</b>：欧洲航线景气度回升（上海航运交易所, 3/23）</li>
+  </ul>
+</div>
+
+<div class="alert">
+  <h3>核心风险</h3>
+  <ul>
+    <li><b>美伊局势高度不确定</b>：伊朗否认谈判，国防委员会威胁切断海湾航线+布设水雷</li>
+    <li><b>IEA警告</b>：40+中东能源设施严重损坏，冲突影响为三次能源危机之和——若5天后谈判破裂，油价将再度飙升</li>
+    <li><b>油价暴跌10%</b>：WTI $88.87 / Brent $96.75——能源板块承压；但若冲突升级将反转</li>
+    <li><b>黄金连续九天下跌</b>：日内$4,500→$4,100暴跌，SPDR持仓-4.286吨，避险资金撤退</li>
+    <li><b>美联储不确定性</b>：古尔斯比称"不排除加息"，降息路径存在变数</li>
+    <li><b>A股3/23曾暴跌3.20%</b>：地缘冲击下波动剧烈，需警惕后续反复</li>
+  </ul>
+</div>
+
+<div class="risk" style="background:#e8f4fd;border-color:#74b9ff">
+  <h3 style="color:#0984e3">📅 近期关键事件日历</h3>
+  <ul>
+    <li>5天内（~3/28前）：特朗普暂停打击伊朗能源设施到期——谈判成败决定全球走向</li>
+    <li>3/25 4:30：美国至3/20当周API原油库存</li>
+    <li>3/25 22:30：美国至3/20当周EIA原油库存</li>
+    <li>3/25：美国3月标普全球制造业/服务业PMI初值</li>
+    <li>3/25：欧元区/德国/法国3月制造业PMI初值</li>
+    <li>美联储后续议息会议：关注通胀与降息路径</li>
+    <li>A股年报密集披露期：关注业绩验证</li>
+  </ul>
+</div>
+
+<div class="advice">
+  <p><b>策略建议</b>：</p>
+  <p>🔸 <b>核心配置</b>：有色金属（紫金矿业/华友钴业/中国铝业）——LME大幅回调后反弹预期+主力资金大幅流入，今日最强主线</p>
+  <p>🔸 <b>成长布局</b>：科技龙头（中际旭创/汉缆股份）——光纤板块领涨+电网基建周期+科创综指+3.24%</p>
+  <p>🔸 <b>防御配置</b>：高股息（招商银行/贵州茅台）——波动市安全垫</p>
+  <p>🔸 <b>短期回避</b>：能源板块——油价暴跌10%冲击，等待5天谈判窗口明朗化</p>
+  <p>🔸 <b>仓位建议</b>：6成仓位，有色金属为核心超配方向，保持灵活应对美伊局势变化</p>
+</div>
+
+<div class="disclaimer">
+  <b>免责声明</b>：本报告仅供研究参考，不构成任何投资建议。所有数据均来源于报告底部所列权威渠道，每条数据旁标注具体出处与日期。投资者应独立判断，自行承担投资风险。LME 3/23收盘数据因权威渠道未更新，标注为3/21数据并注明。
+</div>
+
+<div class="footer">
+  <p>📈 全球行情深度分析报告 | 报告日期：2026年3月24日</p>
+  <p>权威数据来源：金投网 · 金十数据 · 东方财富网 · 搜狐证券 · 证券时报 · 新京报 · 新浪财经 · 每经AI快讯 · 财联社 · 凤凰网 · 中华网 · 界面新闻 · 汇通网 · 财新网 · 我的钢铁网 · IEA · EIA · CME · ICE · LME · 上海航运交易所 · 国家发改委</p>
+  <p>报告生成：2026年3月24日 20:00 CST</p>
+</div>
+
+</div>
+</body>
+</html>
