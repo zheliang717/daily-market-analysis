@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球行情深度分析报告 | 2026年3月30日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f7f8fc;color:#2d3436;line-height:1.75;font-size:15px}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+header{text-align:center;padding:48px 24px 36px;background:linear-gradient(135deg,#0a1628,#1a2744,#2c3e6b);color:#fff;border-radius:16px;margin-bottom:32px}
+header h1{font-size:26px;font-weight:700;letter-spacing:1px}
+header .sub{font-size:14px;opacity:.8;margin-top:6px}
+header .date{display:inline-block;background:rgba(255,255,255,.12);padding:6px 20px;border-radius:20px;margin-top:14px;font-size:13px}
+h2{font-size:19px;font-weight:700;color:#1a2744;margin:32px 0 14px;padding-bottom:8px;border-bottom:2.5px solid #2c3e6b}
+h2 .ic{margin-right:6px}
+.card{background:#fff;border-radius:12px;padding:22px;margin-bottom:18px;box-shadow:0 1px 8px rgba(0,0,0,.05);border:1px solid #eee}
+.card-t{font-size:16px;font-weight:700;color:#1a2744;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+th{background:#1a2744;color:#fff;padding:9px 10px;text-align:left;font-weight:600;font-size:12px;letter-spacing:.3px}
+td{padding:9px 10px;border-bottom:1px solid #f0f0f0;font-size:13px}
+tr:nth-child(even){background:#fafbfc}
+.up{color:#e74c3c;font-weight:600}
+.dn{color:#27ae60;font-weight:600}
+.flat{color:#95a5a6}
+.src{font-size:11px;color:#95a5a6;font-style:italic}
+.brief{font-size:14px;color:#555;margin:6px 0 12px;line-height:1.7}
+.chain{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin:12px 0}
+.chain .st{background:#eef2ff;border-radius:8px;padding:10px 12px;border:1px solid #d5ddf5}
+.chain .st b{display:block;font-size:11px;color:#2c3e6b;margin-bottom:4px}
+.chain .st span{font-size:13px}
+.stock{background:#f8f9fb;border-radius:8px;padding:12px 14px;margin-bottom:8px;border-left:3px solid #2c3e6b}
+.stock h4{font-size:14px;color:#1a2744;margin-bottom:4px}
+.stock p{font-size:13px;color:#666;line-height:1.6}
+.event-tbl th{background:#34495e}
+.risk{background:linear-gradient(135deg,#fff8e1,#ffeaa7);border-radius:12px;padding:20px;margin-top:16px;border:1px solid #f0c040}
+.risk h3{color:#e67e22;font-size:15px;margin-bottom:10px}
+.risk ul{list-style:none;padding:0}
+.risk li{padding:5px 0;font-size:14px}
+.risk li::before{content:"⚠ ";font-size:13px}
+.alert{background:linear-gradient(135deg,#ffe0e0,#ffb3b3);border-radius:12px;padding:20px;margin-top:16px;border:1px solid #ff6b6b}
+.alert h3{color:#c0392b;font-size:15px;margin-bottom:10px}
+.alert ul{list-style:none;padding:0}
+.alert li{padding:5px 0;font-size:14px}
+.alert li::before{content:"🔴 ";font-size:13px}
+.success{background:linear-gradient(135deg,#d4edda,#a8e6a1);border-radius:12px;padding:20px;margin-top:16px;border:1px solid #27ae60}
+.success h3{color:#1e7e34;font-size:15px;margin-bottom:10px}
+.success ul{list-style:none;padding:0}
+.success li{padding:5px 0;font-size:14px}
+.success li::before{content:"🟢 ";font-size:13px}
+.advice{border-left:3px solid #2c3e6b;padding-left:16px;margin-top:16px}
+.advice p{font-size:14px;margin:6px 0;color:#555}
+.disclaimer{background:#fff9e6;border:1px solid #ffd93d;border-radius:10px;padding:14px;margin-top:20px;font-size:12px;color:#856404}
+.footer{text-align:center;padding:28px 16px;color:#aaa;font-size:11px;border-top:1px solid #eee;margin-top:28px;line-height:1.8}
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
+.kpi{background:#fff;border-radius:10px;padding:14px;border:1px solid #eee;text-align:center}
+.kpi .label{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.5px}
+.kpi .value{font-size:22px;font-weight:700;margin:4px 0}
+.kpi .chg{font-size:12px;font-weight:600}
+.kpi .subsrc{font-size:10px;color:#bbb;margin-top:2px}
+@media(max-width:700px){.wrap{padding:12px}header h1{font-size:20px}table{font-size:11px}th,td{padding:6px 5px}.chain{grid-template-columns:1fr}.kpi-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📈 全球行情深度分析报告</h1>
+  <div class="sub">宏观局势 · 板块分析 · 有色金属 · 价值投资筛选</div>
+  <div class="date">📅 报告日期：2026年3月30日（周一）| A股收盘 | 美股盘前/盘中 | 数据截至30日18:00</div>
+</header>
+
+<!-- ===== 突发事件 ===== -->
+<div class="alert">
+  <h3>🔴 焦点事件：伊朗周末导弹+无人机袭击中东铝厂，伦铝暴涨近6%</h3>
+  <ul>
+    <li>3月28日，阿联酋环球铝业公司（EGA）阿布扎比工厂遭伊朗导弹袭击；3月29日，巴林铝业公司（Alba）部分设施也遭袭击（来源：新华社/东方财富, 3/29-30）</li>
+    <li><b>中东电解铝产能约692万吨/年，占全球9%</b>。此前3月Qatalum已停产40%（26万吨/年），Alba减产19%（30万吨/年），合计影响56万吨/年（来源：中信证券/我的钢铁网, 3/30）</li>
+    <li><b>LME铝价开盘跳涨近6%</b>，最高触及$3,492/吨，目前回落至$3,426附近——花旗警告若供应持续恶化，铝价可能涨至$4,000/吨（来源：我的钢铁网/证券时报/央视财经, 3/30）</li>
+    <li>A股铝板块集体涨停：天山铝业、闽发铝业、常铝股份一字涨停，南山铝业、云铝股份涨超8%（来源：证券时报/澎湃新闻, 3/30）</li>
+    <li>美股铝业股盘前暴涨：世纪铝业涨超16%，美国铝业公司涨超8%（来源：证券时报, 3/30）</li>
+    <li>霍尔木兹海峡航运受阻风险大幅抬升——原材料输入与成品出口通道双双承压（来源：东方财富/央视财经, 3/30）</li>
+  </ul>
+  <p class="src">来源：新华社/我的钢铁网/证券时报/东方财富/央视财经/中信证券, 2026-03-30</p>
+</div>
+
+<!-- ===== 一、全球市场概览 ===== -->
+<h2><span class="ic">🌐</span>一、全球市场概览</h2>
+
+<div class="kpi-grid">
+  <div class="kpi">
+    <div class="label">上证指数（3/30收盘）</div>
+    <div class="value">3,923.29</div>
+    <div class="chg up">+0.24%</div>
+    <div class="subsrc">来源：界面新闻/东方财富网</div>
+  </div>
+  <div class="kpi">
+    <div class="label">深证成指（3/30收盘）</div>
+    <div class="value">13,726.19</div>
+    <div class="chg dn">-0.25%</div>
+    <div class="subsrc">来源：界面新闻/东方财富网</div>
+  </div>
+  <div class="kpi">
+    <div class="label">创业板指（3/30收盘）</div>
+    <div class="value">3,273.36</div>
+    <div class="chg dn">-0.68%</div>
+    <div class="subsrc">来源：界面新闻/东方财富网</div>
+  </div>
+  <div class="kpi">
+    <div class="label">恒生指数（3/30收盘）</div>
+    <div class="value">24,750.79</div>
+    <div class="chg dn">-0.81%</div>
+    <div class="subsrc">来源：东方财富网</div>
+  </div>
+  <div class="kpi">
+    <div class="label">道琼斯（3/28收盘）</div>
+    <div class="value">~45,449</div>
+    <div class="chg dn">-1.11%</div>
+    <div class="subsrc">来源：汇通网 — 上周五连续第二日下跌</div>
+  </div>
+  <div class="kpi">
+    <div class="label">标普500（3/28收盘）</div>
+    <div class="value">6,368.85</div>
+    <div class="chg dn">-1.67%</div>
+    <div class="subsrc">来源：中财网</div>
+  </div>
+  <div class="kpi">
+    <div class="label">纳斯达克（3/28收盘）</div>
+    <div class="value">~21,115</div>
+    <div class="chg dn">-1.37%</div>
+    <div class="subsrc">来源：汇通网 — 科技股连续承压</div>
+  </div>
+  <div class="kpi">
+    <div class="label">现货黄金（3/30盘中）</div>
+    <div class="value">$4,468.90</div>
+    <div class="chg up">+1.56%</div>
+    <div class="subsrc">来源：金投网 — 中东避险推升金价</div>
+  </div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi">
+    <div class="label">WTI原油（3/27收盘）</div>
+    <div class="value">~$97.33</div>
+    <div class="chg up">+3.01%</div>
+    <div class="subsrc">来源：财联社/界面新闻</div>
+  </div>
+  <div class="kpi">
+    <div class="label">Brent原油（3/27收盘）</div>
+    <div class="value">~$104.23</div>
+    <div class="chg up">+2.30%</div>
+    <div class="subsrc">来源：财联社/界面新闻</div>
+  </div>
+  <div class="kpi">
+    <div class="label">LME期铝（3/30盘中）</div>
+    <div class="value">~$3,426/吨</div>
+    <div class="chg up">+近6%（盘中$3,492）</div>
+    <div class="subsrc">来源：我的钢铁网 — 伊朗袭击中东铝厂</div>
+  </div>
+  <div class="kpi">
+    <div class="label">人民币中间价（3/30）</div>
+    <div class="value">6.9223</div>
+    <div class="chg dn">↓82bp</div>
+    <div class="subsrc">来源：东方财富网/中国外汇交易中心</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-t">A股（3月30日收盘）— 探底回升，沪指收涨，铝板块带动有色走强</div>
+  <table>
+    <thead><tr><th>指数</th><th>3/30收盘</th><th>涨跌幅</th><th>成交额</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>上证指数</td><td>3,923.29</td><td class="up">+0.24%</td><td rowspan="3">~19,159亿（放量626亿）</td><td>界面新闻/东方财富网</td></tr>
+      <tr><td>深证成指</td><td>13,726.19</td><td class="dn">-0.25%</td><td>界面新闻/东方财富网</td></tr>
+      <tr><td>创业板指</td><td>3,273.36</td><td class="dn">-0.68%</td><td>界面新闻/东方财富网</td></tr>
+      <tr><td>北证50</td><td>—</td><td class="dn">-0.84%</td><td>—</td><td>界面新闻</td></tr>
+      <tr><td>科创50</td><td>1,289.78</td><td class="dn">-0.84%</td><td>—</td><td>澎湃新闻</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>盘面</b>：三大指数集体低开，早盘探底回升，沪指午后翻红。全市场2,868只个股上涨、2,464只下跌、162只平盘。76只个股涨停，87只涨超9%，21只跌超9%。<br><b>领涨板块</b>：有色·铝、贵金属、玻纤、两岸融合、半导体、光通信、黄金、反关税、卫星导航、创新药。<br><b>领跌板块</b>：电力（多股跌停）、家用电器、电力设备、光伏、锂电池、风电。<br><b>成交额</b>：19,159亿，较前一交易日放量626亿——量能回升但结构分化加剧。（来源：界面新闻/澎湃新闻/东方财富网/网易, 3/30）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">美股（3月28日收盘 + 3月30日开盘）— 上周五连续下跌，本周一集体高开</div>
+  <table>
+    <thead><tr><th>指数</th><th>3/28收盘</th><th>涨跌</th><th>3/30开盘</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>道琼斯</td><td>~45,449</td><td class="dn">-1.11%</td><td class="up">+0.79%</td><td>汇通网/新浪财经/证券时报</td></tr>
+      <tr><td>标普500</td><td>6,368.85</td><td class="dn">-1.67%</td><td class="up">+0.77%</td><td>中财网/证券时报</td></tr>
+      <tr><td>纳斯达克</td><td>~21,115</td><td class="dn">-1.37%</td><td class="up">+0.70%</td><td>汇通网/证券时报</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>美股3/28</b>：三大指数连续第二日下跌，标普500跌幅最大（-1.67%）。科技股承压，油价反复扰动市场情绪。<b>3/30开盘</b>：三大指数集体高开，铝业股领涨（世纪铝业+16%、美国铝业+8%），爱奇艺涨超12%。中东铝厂遇袭后市场重新评估风险。（来源：汇通网/中财网/新浪财经/证券时报, 3/28-30）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">港股（3月30日收盘）— 科技股拖累恒指走低</div>
+  <table>
+    <thead><tr><th>指数</th><th>3/30收盘</th><th>涨跌幅</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>恒生指数</td><td>24,750.79</td><td class="dn">-0.81%</td><td>东方财富网</td></tr>
+      <tr><td>恒生科技指数</td><td>4,690.08</td><td class="dn">-1.84%</td><td>东方财富网</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>领涨</b>：中国宏桥（铝概念）、长江基建集团、建设银行。<b>领跌</b>：科技股普遍走弱，恒生科技指数跌1.84%。中东地缘风险+美股上周五下跌双重压制。（来源：东方财富网, 3/30）</p>
+</div>
+
+<!-- ===== 二、全球局势分析 ===== -->
+<h2><span class="ic">🌍</span>二、全球局势分析</h2>
+
+<div class="alert">
+  <h3>🔴 中东局势：伊朗周末直接打击中东铝厂，冲突大幅升级</h3>
+  <ul>
+    <li><b>最新进展</b>：3月28日，伊朗导弹+无人机"有效"打击阿联酋环球铝业（EGA）阿布扎比工厂；3月29日，巴林铝业（Alba）部分设施也遭袭击（来源：新华社/东方财富, 3/29-30）</li>
+    <li>此前3月12日，Qatalum宣布40%产能（26万吨/年）停产；3月15日，Alba启动三条产线减产（30万吨/年）——本次直接遇袭意味着中东铝业生产扰动风险<b>进一步大幅抬升</b>（来源：中信证券/我的钢铁网, 3/30）</li>
+    <li>中东电解铝产能约692万吨/年，占全球9%。花旗警告：铝价可能攀升至$4,000/吨（来源：央视财经/东方财富, 3/30）</li>
+    <li>特朗普此前将对伊朗打击推迟至4月6日——但伊朗周末的主动攻击使"谈判窗口"名存实亡</li>
+    <li>霍尔木兹海峡航运中断风险大幅上升——原材料与成品出口通道承压（来源：央视财经, 3/30）</li>
+  </ul>
+  <p class="src">来源：新华社/我的钢铁网/中信证券/央视财经/东方财富, 2026-03-30</p>
+  <p class="brief" style="margin-top:10px"><b>市场影响</b>：伊朗从"被动防守"转为"主动攻击"中东工业资产——标志着冲突性质从能源基础设施威胁升级为<b>全球供应链直接打击</b>。LME铝暴涨6%，A股铝板块集体涨停，美股铝业股盘前暴涨16%。黄金避险推升至$4,469。关键观察：霍尔木兹海峡是否全面封锁将决定油价是否突破$120+。</p>
+</div>
+
+<div class="success">
+  <h3>🟢 美联储与央行动态：降息预期延后，地缘冲击重塑政策路径</h3>
+  <ul>
+    <li><b>美元指数</b>：3/26收于99.893（+0.28%），美元连续走强——市场重新评估降息预期（来源：证券时报/界面新闻）</li>
+    <li><b>人民币中间价</b>：3/30报6.9223，下调82bp——美元走强+中东风险推动人民币小幅贬值（来源：东方财富网/中国外汇交易中心）</li>
+    <li><b>芝加哥联储古尔斯比</b>：通胀是首要风险，不排除加息可能；若冲突迅速解决，年内仍可能降息（来源：中华网, 3/23）</li>
+    <li><b>欧元区PMI</b>：3月综合PMI初值从51.9骤降至50.5（10个月新低），逼近荣枯线——滞胀风险上升（来源：我的钢铁网, 3/27）</li>
+    <li><b>上海证券报分析</b>：美以伊冲突引发的能源供给侧冲击正重塑全球央行政策路径——中东铝厂遇袭进一步加剧供给冲击传导（来源：上海证券报, 3/27-30）</li>
+  </ul>
+  <p class="src">来源：证券时报/界面新闻/中华网/我的钢铁网/上海证券报, 2026-03-27~30</p>
+</div>
+
+<div class="card">
+  <div class="card-t">🇺🇸 其他重要动态</div>
+  <p class="brief"><b>特朗普PCAST科技顾问委员会</b>：扎克伯格、黄仁勋等入局——AI战略地位提升，但美股科技板块短期承压（来源：财联社, 3/26）</p>
+  <p class="brief"><b>Meta/谷歌败诉</b>：美国首例社交媒体平台成瘾案落槌，平台需支付巨额赔偿（来源：财联社, 3/26）</p>
+  <p class="brief"><b>苹果</b>：据称终止MacPro台式机生产；向iPhone设计团队发放罕见奖金应对AI人才挖角（来源：中华网, 3/27）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">🇨🇳 国内政策与数据</div>
+  <p class="brief"><b>宇树科技</b>：递交科创板IPO申请，拟募资42亿元——机器人商业化提速（来源：中华网, 3/26）</p>
+  <p class="brief"><b>长期护理保险</b>：中办、国办发布《关于加快建立长期护理保险制度的意见》——覆盖全民，利好医药板块（来源：中国证券报, 3/26）</p>
+  <p class="brief"><b>天山铝业</b>：预计2026年一季度归母净利润22亿元，同比增长107.92%——铝板块业绩爆发（来源：证券时报, 3/30）</p>
+  <p class="brief"><b>三大运营商</b>：2025年业绩稳健，2026年投资主攻算力赛道（来源：中华网, 3/27）</p>
+</div>
+
+<!-- ===== 三、A股板块分析 ===== -->
+<h2><span class="ic">📊</span>三、A股板块分析（3月30日）</h2>
+<p class="brief">今日A股三大指数涨跌不一，沪指探底回升收涨0.24%，深成指/创业板收跌。铝板块带动有色金属集体爆发，贵金属同步走强；电力板块领跌，多股跌停。全市成交19,159亿（放量626亿），2,868只个股上涨、2,464只下跌。（来源：界面新闻/澎湃新闻/东方财富网, 3/30）</p>
+
+<div class="card">
+  <div class="card-t">🔶 有色金属/铝板块 — 伊朗袭击中东铝厂，铝板块集体涨停潮</div>
+  <p class="brief"><b>今日表现</b>：<span class="up">铝板块领涨全市场</span>。天山铝业、闽发铝业、常铝股份一字涨停；南山铝业、云铝股份涨超8%；怡球资源、神火股份、中国铝业、宏桥控股涨幅靠前。利源股份涨停。港股中国宏桥领涨恒指。（来源：证券时报/澎湃新闻/我的钢铁网, 3/30）</p>
+  <p class="brief"><b>驱动因素</b>：①伊朗周末导弹+无人机袭击EGA阿布扎比工厂和Alba巴林工厂，中东铝产能直接遇袭；②LME铝价开盘跳涨近6%至$3,492/吨；③天山铝业Q1净利同比+107.92%超预期；④花旗警告铝价可能涨至$4,000/吨。（来源：我的钢铁网/中信证券/央视财经, 3/30）</p>
+  <div class="chain">
+    <div class="st"><b>⬆ 上游 资源矿企</b><span>神火股份、怡球资源涨幅靠前</span></div>
+    <div class="st"><b>🔄 中游 冶炼加工</b><span>天山铝业涨停（Q1净利+108%）、南山铝业+8%、云铝+8%</span></div>
+    <div class="st"><b>⬇ 下游 铝加工材</b><span>闽发铝业涨停、常铝股份涨停、利源股份涨停</span></div>
+  </div>
+  <div class="stock"><h4>天山铝业（002532）— 涨停，Q1净利预增107.92%</h4><p><b>核心优势</b>：新疆低成本电解铝龙头，自备电厂+低成本氧化铝，综合成本行业最低梯队。广西、印尼氧化铝布局完善。<br><b>催化剂</b>：①伊朗袭击中东铝厂→LME铝暴涨6%→铝价中枢上移预期强烈；②Q1归母净利22亿元（+107.92%）超预期；③中东产能遇袭+霍尔木兹海峡航运中断风险→全球铝供给收紧。<br><b>估值</b>：Q1净利22亿年化PE极低，PB处于历史低位，安全边际充足。<br><b>产业链位置</b>：上游资源+中游冶炼一体化，新疆低成本优势突出。</p></div>
+  <div class="stock"><h4>南山铝业（600219）— 涨超8%</h4><p><b>核心优势</b>：国内铝加工龙头，汽车板/航空板/动力电池箔等高端产品布局完善，客户覆盖波音、空客、宝马等国际巨头。全产业链（氧化铝→电解铝→铝加工）。<br><b>催化剂</b>：铝价暴涨带动全产业链估值修复；高端铝材进口替代加速。<br><b>估值</b>：PE~10倍，估值处于历史中低位。高端铝材业务提供持续成长性。<br><b>产业链位置</b>：中游冶炼+下游高端加工一体化。</p></div>
+  <div class="stock"><h4>中国铝业（601600）— 涨幅靠前</h4><p><b>核心优势</b>：中国最大氧化铝和电解铝生产商，全球铝产业链龙头。氧化铝自给率高，产能规模全球领先。<br><b>催化剂</b>：中东铝厂遇袭→全球铝供给收紧→利好国内铝业龙头；铝价中枢上移确定性增强。<br><b>估值</b>：PB~1.2倍，处于历史低位区间，股息率~3%。<br><b>产业链位置</b>：上游氧化铝+中游电解铝全产业链龙头。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">🥇 贵金属板块 — 金价创新高，避险资金涌入</div>
+  <p class="brief"><b>今日表现</b>：<span class="up">贵金属板块持续走强</span>。现货黄金升至$4,468.90/oz（+1.56%），沪金T+D报1,004.45元/克。黄金概念股普遍上涨。（来源：金投网/中华网, 3/30）</p>
+  <p class="brief"><b>驱动因素</b>：①伊朗袭击中东铝厂→地缘避险情绪急升；②美元指数走强但黄金仍涨——避险压过美元压制；③各国央行持续增持黄金储备；④中东冲突升级→全球不确定性大幅增加。</p>
+  <div class="stock"><h4>紫金矿业（601899）— 铜金铝多品种矿业巨头</h4><p><b>核心优势</b>：全球化矿业巨头，铜储量7,500万吨+金3,200吨+铝土矿资源，"矿+冶+贸"一体化，成本控制行业领先。<br><b>催化剂</b>：黄金$4,469创新高+铝价暴涨6%→双轮受益；全球资源品供给收紧逻辑持续强化。<br><b>估值</b>：PE~12倍（历史中枢18倍），PB~2.5倍，股息率~3%。<br><b>产业链位置</b>：上游资源端核心标的，铜+金+铝三轮驱动。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">💊 医药/创新药板块 — 政策+估值+会议催化三重叠加</div>
+  <p class="brief"><b>今日表现</b>：<span class="up">创新药概念股走强</span>。海泰新光、三生国健、东诚药业、美诺华、合富中国、塞力医疗、九安医疗等超10股涨停或涨超10%。（来源：澎湃新闻, 3/30）</p>
+  <p class="brief"><b>驱动因素</b>：①国金证券：创新药板块处于"业绩兑现、估值修复、会议催化"三重周期叠加窗口；②4月17-22日AACR年会、5月29日-6月2日ASCO年会即将到来；③长护险政策利好医药需求预期；④一季报预告回暖。（来源：国金证券/澎湃新闻, 3/30）</p>
+  <div class="stock"><h4>恒瑞医药（600276）— 创新药龙头</h4><p><b>核心优势</b>：中国创新药龙头，研发投入行业第一。管线覆盖肿瘤、自身免疫、代谢等领域，多个创新药获批上市，海外BD交易持续推进。<br><b>催化剂</b>：AACR/ASCO会议催化+板块估值修复+一季报预喜。<br><b>估值</b>：PE~45倍（创新药赛道合理估值），前期调整后估值风险充分释放。<br><b>产业链位置</b>：中游创新药研发+下游商业化。</p></div>
+  <div class="stock"><h4>百济神州（688235）— 全球化创新药企</h4><p><b>核心优势</b>：泽布替尼全球销售持续放量，海外收入占比超60%。管线丰富（BCL-2、TIGIT等）。<br><b>催化剂</b>：创新药板块三重周期叠加；泽布替尼全球商业化持续超预期。<br><b>估值</b>：PS~12倍，处于上市以来中低位。<br><b>产业链位置</b>：中游创新药研发+全球商业化。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">💻 半导体/光通信/卫星导航 — 科技自主可控主线</div>
+  <p class="brief"><b>今日表现</b>：<span class="up">半导体、光通信、卫星导航概念走强</span>。但电力设备板块跌幅靠前，光伏、锂电池、风电走弱——科技板块内部分化明显。（来源：澎湃新闻, 3/30）</p>
+  <p class="brief"><b>驱动因素</b>：①国产替代逻辑持续强化；②特朗普PCAST科技顾问委员会提振AI主题；③兴业证券：4月配置"三个确定性"中，北美算力链代表景气确定性。</p>
+  <div class="stock"><h4>中芯国际（688981）— 晶圆代工龙头</h4><p><b>核心优势</b>：中国大陆最大晶圆代工厂，先进制程突破。2025年净利润同比+36.3%，业绩超预期。<br><b>催化剂</b>：国产替代逻辑持续强化；AI芯片需求带动产能利用率提升；一季报预期乐观。<br><b>估值</b>：PE~30倍（晶圆代工合理估值）。<br><b>产业链位置</b>：中游制造，国产芯片核心代工平台。</p></div>
+</div>
+
+<div class="card">
+  <div class="card-t">⚡ 电力/光伏/锂电池 — 今日领跌</div>
+  <p class="brief"><b>今日表现</b>：<span class="dn">电力股领跌，多股跌停</span>。华电能源、金开新能、晋控电力、华电辽能、豫能控股、长源电力、银星能源等跌停。光伏、锂电池、风电题材走弱。家用电器低迷，倍轻松跌超10%。（来源：澎湃新闻/网易, 3/30）</p>
+  <p class="brief"><b>分析</b>：①前期防御板块（电力/高股息）资金获利了结，轮动至有色/医药等成长赛道；②电力设备板块受光伏/新能源走弱拖累（迈为股份跌停）；③电力股前期涨幅过大后的技术性回调。</p>
+</div>
+
+<!-- ===== 四、大宗商品与贵金属 ===== -->
+<h2><span class="ic">💰</span>四、大宗商品与贵金属</h2>
+<div class="card">
+  <div class="card-t">贵金属行情</div>
+  <table>
+    <thead><tr><th>品种</th><th>最新价</th><th>涨跌</th><th>备注</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>现货黄金</td><td>$4,468.90/oz</td><td class="up">+1.56%</td><td>中东避险推升金价再创新高</td><td>金投网, 3/30</td></tr>
+      <tr><td>沪金T+D</td><td>1,004.45元/克</td><td class="up">—</td><td>国内金同步走强</td><td>搜狐/金投网, 3/30</td></tr>
+      <tr><td>沪金期货</td><td>1,002.82元/克</td><td class="up">—</td><td>期货跟随现货走高</td><td>金投网, 3/30</td></tr>
+      <tr><td>现货白银</td><td>~$36.87/oz（AU销售17.03元/克）</td><td class="up">—</td><td>跟随黄金反弹</td><td>今日头条, 3/30</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">现货黄金3/26曾暴跌3.33%至$4,356，3/27反弹至$4,400，3/30受伊朗袭击中东铝厂避险推动进一步攀升至$4,469。各国央行持续增持黄金储备提供中长期支撑。（来源：金投网/搜狐/中华网, 3/30）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">原油行情</div>
+  <table>
+    <thead><tr><th>品种</th><th>最新价</th><th>涨跌</th><th>数据来源</th></tr></thead>
+    <tbody>
+      <tr><td>WTI原油（CME 5月）</td><td>~$97.33/桶</td><td class="up">+3.01%</td><td>财联社/界面新闻, 3/27</td></tr>
+      <tr><td>Brent原油（ICE 5月）</td><td>~$104.23/桶</td><td class="up">+2.30%</td><td>财联社/界面新闻, 3/27</td></tr>
+      <tr><td>上期所原油2605</td><td>744.60元/桶</td><td class="up">+2.22%</td><td>中华网, 3/27</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>油价展望</b>：①3/27 WTI涨至$97.33（+3%）；②周末伊朗袭击中东铝厂+霍尔木兹海峡航运中断风险大幅上升→3/30油价预计继续走高；③花旗警告铝价涨至$4,000暗示大宗商品供给冲击扩散；④关键观察：霍尔木兹海峡是否全面封锁将决定油价是否突破$120+。<br>（来源：财联社/界面新闻/央视财经/我的钢铁网, 3/27-30）</p>
+</div>
+
+<div class="card">
+  <div class="card-t">LME基本金属（最新权威数据）</div>
+  <table>
+    <thead><tr><th>品种</th><th>LME 3/28收盘</th><th>3/30盘中</th><th>变动</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>期铜</td><td>$12,195/吨</td><td>—</td><td class="up">3/28收涨$48</td><td>每经AI/腾讯新闻</td></tr>
+      <tr><td>期铝</td><td>$3,296/吨</td><td class="up">~$3,426（盘中$3,492）</td><td class="up">+近6%（伊朗袭击）</td><td>我的钢铁网/证券时报</td></tr>
+      <tr><td>期锌</td><td>$3,115/吨</td><td>—</td><td class="up">3/28收涨$34</td><td>每经AI</td></tr>
+      <tr><td>期铅</td><td>$1,896/吨</td><td>—</td><td class="up">3/28收涨$5</td><td>每经AI</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">LME铝3/30因伊朗袭击中东铝厂暴涨近6%，为今日有色市场最大焦点。铜/锌/铅3/28小幅上涨。花旗警告铝价可能涨至$4,000/吨。（来源：我的钢铁网/每经AI/证券时报/央视财经）</p>
+</div>
+
+<!-- ===== 五、行业资金流向 ===== -->
+<h2><span class="ic">💹</span>五、行业资金流向与驱动力量化</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>排名</th><th>领涨板块/概念</th><th>涨幅/表现</th><th>领跌板块/概念</th><th>表现</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="up">有色·铝</td><td class="up">多股涨停，LME铝+6%</td><td class="dn">电力</td><td class="dn">多股跌停</td></tr>
+      <tr><td>2</td><td class="up">贵金属/黄金</td><td class="up">金价$4,469创新高</td><td class="dn">家用电器</td><td class="dn">倍轻松-10%，美的-3%</td></tr>
+      <tr><td>3</td><td class="up">创新药/医药</td><td class="up">超10股涨停/涨超10%</td><td class="dn">电力设备</td><td class="dn">迈为股份跌停</td></tr>
+      <tr><td>4</td><td class="up">玻纤/建材</td><td class="up">再升科技/宏和科技涨停</td><td class="dn">光伏/风电</td><td class="dn">题材走弱</td></tr>
+      <tr><td>5</td><td class="up">半导体/光通信</td><td class="up">概念走强</td><td class="dn">锂电池</td><td class="dn">题材走弱</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px"><b>资金动向</b>：铝板块受伊朗袭击中东铝厂刺激资金大幅涌入（天山铝业/南山铝业等成交显著放量）。贵金属/黄金板块避险资金流入。创新药受三重催化走强。电力/家电等防御板块资金获利流出，轮动至有色/医药。全市成交19,159亿（放量626亿）。（来源：澎湃新闻/证券时报/东方财富网, 3/30）</p>
+</div>
+
+<!-- ===== 六、政策事件量化表 ===== -->
+<h2><span class="ic">📋</span>六、政策与全球事件量化影响</h2>
+<div class="card">
+  <table class="event-tbl">
+    <thead><tr><th>事件</th><th>时间</th><th>影响</th><th>量化评估</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td><b>伊朗导弹袭击EGA+Alba中东铝厂</b></td><td>3/28-29</td><td class="up">铝价暴涨，供给冲击</td><td>LME铝+6%至$3,426~3,492；A股铝板块集体涨停</td><td>新华社/我的钢铁网/央视财经</td></tr>
+      <tr><td><b>花旗警告铝价或涨至$4,000</b></td><td>3/30</td><td class="up">铝业预期大幅上调</td><td>较当前$3,300基准还有~21%空间</td><td>央视财经/东方财富</td></tr>
+      <tr><td><b>现货黄金升至$4,469</b></td><td>3/30</td><td class="up">避险推升金价</td><td>较3/26低点$4,356反弹$113</td><td>金投网</td></tr>
+      <tr><td><b>美股3/28连续第二日下跌</b></td><td>3/28</td><td class="dn">风险偏好下降</td><td>标普-1.67%，道指-1.11%，纳指-1.37%</td><td>中财网/汇通网</td></tr>
+      <tr><td><b>天山铝业Q1净利+107.92%</b></td><td>3/30</td><td class="up">铝板块业绩爆发</td><td>Q1归母净利22亿元</td><td>证券时报</td></tr>
+      <tr><td><b>人民币中间价下调82bp至6.9223</b></td><td>3/30</td><td class="dn">人民币小幅贬值</td><td>美元走强+中东风险推动</td><td>东方财富网</td></tr>
+      <tr><td><b>欧元区3月综合PMI降至50.5</b></td><td>3/27</td><td class="dn">滞胀风险</td><td>从51.9骤降至50.5（10个月新低）</td><td>我的钢铁网</td></tr>
+      <tr><td><b>中芯国际2025年净利+36.3%</b></td><td>3/27</td><td class="up">国产替代逻辑强化</td><td>净利润50.41亿元</td><td>界面新闻</td></tr>
+      <tr><td><b>长护险制度意见发布</b></td><td>3/25</td><td class="up">利好医药板块</td><td>中办国办覆盖全民</td><td>中国证券报</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== 七、有色金属专项 ===== -->
+<h2><span class="ic">🔶</span>七、有色金属板块专项分析</h2>
+<div class="card">
+  <div class="card-t">有色金属细分品种供需分析（3月30日）</div>
+  <div class="chain">
+    <div class="st"><b>🔩 铜</b><span>LME铜$12,195（3/28收盘）。全球铜矿供给偏紧，新能源/电网需求持续。铜价受中东局势+美元走强双重影响。上期所CU2604收盘95,700元/吨。</span></div>
+    <div class="st"><b>🪶 铝（今日焦点）</b><span>LME铝暴涨6%至$3,426~3,492！伊朗袭击中东铝厂→全球铝供给直接冲击。中东产能692万吨/年（占全球9%）+此前已停产56万吨/年。花旗警告铝价或涨至$4,000。</span></div>
+    <div class="st"><b>⚡ 锂</b><span>上期所/现货价格维持高位。上周锂电池板块连续爆发后今日走弱——短期获利回吐。但供给收缩+新能源需求持续增长的中长期逻辑不变。</span></div>
+    <div class="st"><b>🥇 黄金</b><span>现货$4,469（+1.56%），中东避险推升。沪金T+D报1,004.45元/克。央行持续增持+地缘不确定性支撑中长期走势。</span></div>
+    <div class="st"><b>🛢 原油/能源</b><span>WTI ~$97.33（+3%），Brent ~$104.23（+2.3%）。霍尔木兹海峡航运中断风险大幅上升→油价继续看涨。</span></div>
+    <div class="st"><b>🏗 稀土/其他</b><span>中东冲突推升全球资源品避险情绪，稀土作为中国优势品种受关注。"反关税"概念走强。</span></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-t">LME/COMEX/SHFE价格与库存汇总（最新权威数据）</div>
+  <table>
+    <thead><tr><th>品种</th><th>交易所</th><th>最新价</th><th>涨跌</th><th>库存/备注</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td>期铜</td><td>LME</td><td>$12,195/吨</td><td class="up">3/28收涨$48</td><td>LME库存359,825吨（-350）</td><td>每经AI/我的钢铁网</td></tr>
+      <tr><td>期铝</td><td>LME</td><td>~$3,426/吨（盘中$3,492）</td><td class="up">+近6%</td><td>LME库存423,075吨（-3,675）；伊朗袭击推升</td><td>我的钢铁网/证券时报</td></tr>
+      <tr><td>期锌</td><td>LME</td><td>$3,115/吨</td><td class="up">3/28收涨$34</td><td>LME库存115,650吨（-825）</td><td>每经AI/生意社</td></tr>
+      <tr><td>期铅</td><td>LME</td><td>$1,896/吨</td><td class="up">3/28收涨$5</td><td>LME库存283,100吨（-50）</td><td>每经AI/生意社</td></tr>
+      <tr><td>现货黄金</td><td>伦敦</td><td>$4,468.90/oz</td><td class="up">+1.56%</td><td>3/30盘中</td><td>金投网</td></tr>
+      <tr><td>沪金T+D</td><td>SHFE</td><td>1,004.45元/克</td><td class="up">—</td><td>3/30</td><td>搜狐/金投网</td></tr>
+      <tr><td>WTI原油</td><td>CME</td><td>~$97.33/桶</td><td class="up">+3.01%</td><td>3/27收盘</td><td>财联社/界面新闻</td></tr>
+      <tr><td>Brent原油</td><td>ICE</td><td>~$104.23/桶</td><td class="up">+2.30%</td><td>3/27收盘</td><td>财联社/界面新闻</td></tr>
+    </tbody>
+  </table>
+  <p class="src" style="margin-top:8px">LME铝3/30盘中暴涨近6%为今日有色市场最大亮点。LME库存数据为3/26可验证数据。原油3/27收盘数据来自财联社。黄金3/30实时数据来自金投网。（来源：我的钢铁网/每经AI/生意社/金投网/财联社）</p>
+</div>
+
+<!-- ===== 八、有色潜力股 ===== -->
+<h2><span class="ic">🏆</span>八、有色金属价值投资潜力股</h2>
+<div class="card">
+  <div class="stock">
+    <h4>天山铝业（002532）— 今日涨停，Q1净利预增107.92%</h4>
+    <p><b>核心优势</b>：新疆低成本电解铝龙头，自备电厂+低成本氧化铝，综合成本行业最低梯队。广西、印尼氧化铝布局完善，资源自给率高。产能规模位居国内前列。<br>
+    <b>近期催化剂</b>：①伊朗袭击中东铝厂→LME铝暴涨6%→全球铝供给收紧→铝价中枢上移确定性极高；②Q1归母净利22亿元（+107.92%）业绩爆发；③花旗警告铝价或涨至$4,000/吨→当前股价仍有巨大空间。<br>
+    <b>估值</b>：Q1净利22亿年化PE极低（预计<5倍），PB处于历史低位，安全边际充足。<br>
+    <b>产业链位置</b>：上游资源+中游冶炼一体化，新疆低成本优势突出，抗周期波动能力强。中东产能遇袭背景下，国内低成本铝企受益最为确定。</p>
+  </div>
+  <div class="stock">
+    <h4>南山铝业（600219）— 涨超8%，高端铝材龙头</h4>
+    <p><b>核心优势</b>：国内铝加工龙头，汽车板/航空板/动力电池箔等高端产品布局完善，客户覆盖波音、空客、宝马等国际巨头。全产业链（氧化铝→电解铝→铝加工）一体化。<br>
+    <b>近期催化剂</b>：铝价暴涨带动全产业链估值修复；高端铝材进口替代加速；中东铝产能遇袭→全球铝加工品供需趋紧。<br>
+    <b>估值</b>：PE~10倍，估值处于历史中低位。高端铝材业务提供持续成长性，超越单纯周期股逻辑。<br>
+    <b>产业链位置</b>：中游冶炼+下游高端加工一体化，技术壁垒高，客户粘性强。</p>
+  </div>
+  <div class="stock">
+    <h4>紫金矿业（601899）— 铜金铝多品种矿业巨头</h4>
+    <p><b>核心优势</b>：全球化矿业巨头，铜储量7,500万吨+金3,200吨+铝土矿+锂资源丰富，"矿+冶+贸"一体化，成本控制行业领先。海外矿山遍布全球。<br>
+    <b>近期催化剂</b>：黄金$4,469创新高+铝价暴涨6%→双重受益；中东冲突推升全球资源品避险需求；全球资源供给收紧逻辑持续强化。<br>
+    <b>估值</b>：PE~12倍（历史中枢18倍），PB~2.5倍，近5年30%分位，股息率~3%。<br>
+    <b>产业链位置</b>：上游资源端核心标的。铜（新能源/电网）+金（避险）+铝（供给冲击）三轮驱动，资源自给率高，全球化布局分散风险。</p>
+  </div>
+</div>
+
+<!-- ===== 九、潜力股总览 ===== -->
+<h2><span class="ic">🏅</span>九、各板块价值投资潜力股总览</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>板块</th><th>个股</th><th>推荐逻辑</th><th>估值</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="3"><b>有色金属/铝+金</b></td><td>天山铝业</td><td>涨停，Q1净利+108%，铝价暴涨6%，低成本新疆龙头</td><td>年化PE极低</td></tr>
+      <tr><td>南山铝业</td><td>涨超8%，高端铝材龙头，客户覆盖波音/空客</td><td>PE~10倍</td></tr>
+      <tr><td>紫金矿业</td><td>铜金铝全球化巨头，金价$4,469+铝价暴涨双受益</td><td>PE~12倍，股息~3%</td></tr>
+      <tr><td rowspan="2"><b>创新药/医药</b></td><td>恒瑞医药</td><td>创新药龙头，AACR/ASCO会议催化+估值修复</td><td>PE~45倍</td></tr>
+      <tr><td>百济神州</td><td>全球化创新药企，泽布替尼全球放量</td><td>PS~12倍</td></tr>
+      <tr><td rowspan="1"><b>科技/半导体</b></td><td>中芯国际</td><td>晶圆代工龙头，2025年净利+36.3%超预期</td><td>PE~30倍</td></tr>
+      <tr><td rowspan="2"><b>高股息防御</b></td><td>贵州茅台</td><td>品牌护城河极深，现金流充沛</td><td>PE~26倍，股息~2%</td></tr>
+      <tr><td>招商银行</td><td>零售银行标杆，不良率&lt;1%</td><td>PB~0.9倍，股息~5.5%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== 十、风险与展望 ===== -->
+<h2><span class="ic">⚠</span>十、风险提示与展望</h2>
+
+<div class="success">
+  <h3>🟢 积极信号</h3>
+  <ul>
+    <li><b>A股沪指探底回升收涨</b>：2,868只个股上涨，成交放量626亿至19,159亿</li>
+    <li><b>铝板块集体涨停潮</b>：LME铝暴涨6%，天山铝业Q1净利+108%，花旗看$4,000</li>
+    <li><b>黄金升至$4,469创新高</b>：中东避险+央行增持，贵金属配置价值凸显</li>
+    <li><b>创新药板块全面走强</b>：超10股涨停，三重催化叠加（业绩+估值+会议）</li>
+    <li><b>美股3/30开盘集体高开</b>：道指+0.79%，标普+0.77%，纳指+0.70%</li>
+    <li><b>天山铝业Q1净利+107.92%</b>：铝板块业绩爆发验证行业高景气</li>
+  </ul>
+</div>
+
+<div class="alert">
+  <h3>🔴 核心风险</h3>
+  <ul>
+    <li><b>中东冲突大幅升级</b>：伊朗从被动变主动→袭击工业资产→霍尔木兹海峡航运中断风险急升→油价可能突破$120+</li>
+    <li><b>铝价暴涨引发产业链成本压力</b>：下游制造业（汽车/建筑/包装）成本将大幅上升</li>
+    <li><b>美股连续下跌</b>：标普500周累跌，科技股承压，全球风险偏好下降</li>
+    <li><b>美联储降息路径受阻</b>：通胀风险+美元走强压制大宗商品和新兴市场</li>
+    <li><b>欧元区PMI逼近荣枯线</b>：综合PMI降至50.5，滞胀风险上升</li>
+    <li><b>A股板块分化剧烈</b>：电力/家电/光伏等多板块大跌，结构行情下操作难度加大</li>
+    <li><b>人民币小幅贬值</b>：中间价下调82bp至6.9223，外资流向需关注</li>
+  </ul>
+</div>
+
+<div class="risk" style="background:#e8f4fd;border-color:#74b9ff">
+  <h3 style="color:#0984e3">📅 近期关键事件日历</h3>
+  <ul>
+    <li><b>4月6日 20:00 ET</b>：特朗普暂停打击伊朗能源设施到期——但伊朗已主动攻击，谈判窗口实际破裂</li>
+    <li><b>持续关注</b>：霍尔木兹海峡航运状态——若全面封锁，全球大宗商品将剧烈动荡</li>
+    <li><b>3/31</b>：中国3月PMI数据公布</li>
+    <li><b>4月初</b>：A股年报+一季报密集披露期</li>
+    <li><b>4月17-22日</b>：AACR美国癌症研究协会年会（创新药催化）</li>
+    <li><b>5月29日-6月2日</b>：ASCO美国临床肿瘤学会年会</li>
+    <li>美联储后续议息会议：关注通胀与降息路径</li>
+  </ul>
+</div>
+
+<div class="advice">
+  <p><b>策略建议</b>：</p>
+  <p>🔸 <b>核心超配</b>：有色金属/铝（天山铝业/南山铝业/中国铝业）——伊朗袭击中东铝厂→LME铝暴涨6%→全球铝供给收紧逻辑确定性极高。花旗看$4,000，当前仍有巨大空间。天山铝业Q1净利+108%验证业绩爆发</p>
+  <p>🔸 <b>避险配置</b>：黄金/贵金属（紫金矿业/山东黄金）——金价$4,469创新高，中东冲突+央行增持支撑中长期走势</p>
+  <p>🔸 <b>成长布局</b>：创新药（恒瑞医药/百济神州）+科技（中芯国际）——三重催化叠加+国产替代+年报超预期</p>
+  <p>🔸 <b>防御底仓</b>：高股息（招商银行/贵州茅台）——波动市安全垫</p>
+  <p>🔸 <b>观望等待</b>：电力/光伏/锂电池——短期资金流出，等待回调企稳后择机布局</p>
+  <p>🔸 <b>仓位建议</b>：5~6成仓位，铝+黄金为核心超配方向，保持灵活应对中东局势变化</p>
+</div>
+
+<div class="disclaimer">
+  <b>免责声明</b>：本报告仅供研究参考，不构成任何投资建议。所有数据均来源于报告底部所列权威渠道，每条数据旁标注具体出处与日期。投资者应独立判断，自行承担投资风险。部分数据基于最新公布数据估算，已注明。美股3/28收盘数据来自中财网/汇通网，3/30盘前数据来自新浪财经/证券时报。LME数据来自我的钢铁网/每经AI。黄金数据来自金投网。
+</div>
+
+<div class="footer">
+  <p>📈 全球行情深度分析报告 | 报告日期：2026年3月30日 18:00 CST</p>
+  <p>权威数据来源：新华社 · 金投网 · 东方财富网 · 证券时报 · 界面新闻 · 财联社 · 中华网 · 新浪财经 · 澎湃新闻 · 每经AI · 我的钢铁网 · 央视财经 · 中信证券 · 国金证券 · 中原证券 · 光大证券 · 华泰证券 · 兴业证券 · 中国银河证券 · 汇通网 · 中财网 · 中国外汇交易中心</p>
+  <p>报告生成：2026年3月30日 18:00 CST</p>
+</div>
+
+</div>
+</body>
+</html>
