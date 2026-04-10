@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球市场行情深度分析 — 2026年4月10日</title>
+<style>
+  :root { --red: #ff4444; --green: #00aa00; --bg: #f7f8fa; --card: #ffffff; --border: #e8e8e8; --text: #333; --muted: #888; --accent: #1a73e8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 20px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 28px; text-align: center; margin-bottom: 4px; }
+  .date { text-align: center; color: var(--muted); margin-bottom: 30px; font-size: 14px; }
+  h2 { font-size: 20px; margin: 30px 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+  h3 { font-size: 16px; margin: 20px 0 10px; color: var(--accent); }
+  .card { background: var(--card); border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.06); padding: 24px; margin-bottom: 20px; }
+  .up { color: var(--red); font-weight: 600; }
+  .down { color: var(--green); font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+  th { background: #f0f4f8; font-weight: 600; white-space: nowrap; }
+  .grid { display: grid; gap: 16px; }
+  .grid-3 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .grid-2 { grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); }
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+  .tag-up { background: #fff0f0; color: var(--red); }
+  .tag-down { background: #f0fff0; color: var(--green); }
+  .tag-hold { background: #f0f4ff; color: var(--accent); }
+  .stock-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+  .stock-item:last-child { border-bottom: none; }
+  .stock-name { font-weight: 700; font-size: 15px; }
+  .stock-code { color: var(--muted); font-size: 13px; }
+  .label { font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+  .source { font-size: 11px; color: #aaa; margin-top: 4px; }
+  .overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+  .ov-item { text-align: center; padding: 14px 8px; background: var(--card); border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.05); }
+  .ov-item .name { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .ov-item .val { font-size: 20px; font-weight: 700; }
+  .risk-box { background: #fff8f0; border-left: 4px solid #ff9800; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 10px 0; }
+  .disclaimer { background: #f5f5f5; padding: 16px; border-radius: 8px; font-size: 12px; color: #999; margin-top: 30px; text-align: center; }
+  @media (max-width: 600px) {
+    body { padding: 10px; }
+    h1 { font-size: 22px; }
+    .overview-grid { grid-template-columns: repeat(2, 1fr); }
+    .grid-3, .grid-2 { grid-template-columns: 1fr; }
+    table { font-size: 12px; }
+    th, td { padding: 6px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>📊 全球市场行情深度分析报告</h1>
+<p class="date">数据截止：2026年4月10日（周五）15:00 A股收盘 + 美股4月9日收盘 + 4月10日欧亚盘 | 来源：东方财富、财联社、金投网、Mysteel、LME、SHFE、新华网、彭博社、路透社、高盛研报、中国基金报</p>
+
+<!-- ===== 全球市场概览 ===== -->
+<h2>一、全球市场概览</h2>
+<div class="overview-grid">
+  <div class="ov-item"><div class="name">上证综指</div><div class="val up">+0.51%</div><div class="source">3986.22点 盘中破4000</div></div>
+  <div class="ov-item"><div class="name">深证成指</div><div class="val up">+2.24%</div><div class="source">14309.47点</div></div>
+  <div class="ov-item"><div class="name">创业板指</div><div class="val up">+3.78%</div><div class="source">3448.79点 创阶段新高</div></div>
+  <div class="ov-item"><div class="name">现货黄金</div><div class="val up">$4,755.40</div><div class="source">美元/盎司 盘中</div></div>
+  <div class="ov-item"><div class="name">沪金主力</div><div class="val up">1049.86元/克</div><div class="source">+2.5% 盘中冲1059</div></div>
+  <div class="ov-item"><div class="name">WTI原油</div><div class="val" style="color:var(--accent)">$98.18</div><div class="source">4月8日曾暴跌20%</div></div>
+  <div class="ov-item"><div class="name">两市成交额</div><div class="val" style="color:var(--accent)">2.32万亿</div><div class="source">沪9557亿+深13672亿</div></div>
+  <div class="ov-item"><div class="name">上涨个股</div><div class="val up">3977只</div><div class="source">涨停77只 | 下跌1397只</div></div>
+  <div class="ov-item"><div class="name">日经225</div><div class="val up">+1.84%</div><div class="source">56924.11点</div></div>
+  <div class="ov-item"><div class="name">韩国KOSPI</div><div class="val up">+1.40%</div><div class="source">5858.87点</div></div>
+</div>
+
+<!-- ===== 全球局势 ===== -->
+<h2>二、全球局势分析</h2>
+<div class="card">
+  <h3>🔴 核心事件：美伊停火脆弱，中东局势再度紧张</h3>
+  <p>4月8日美伊宣布停火两周后，WTI原油当日暴跌近20%（$117→$91），A股随后两日连续反弹。但<strong>以色列声明停火不包括黎巴嫩</strong>，国防军对黎巴嫩发动冲突以来最大规模空袭（超100个目标）（来源：新华社、光明网）。</p>
+  <p>霍尔木兹海峡上演"闪电复关"——短暂重新开放后油轮通行再度受阻（来源：金十数据）。伊朗官员称海峡或9-10日有限开放（来源：路透社）。高盛警告：<strong>若霍尔木兹海峡再关闭一个月，布伦特原油2026年均价或突破100美元</strong>（来源：财联社）。</p>
+  <p><strong>油价逻辑：</strong>4月8日暴跌的前提（海峡立即完全开放）已被证伪。中财网报道：停火一天后又开打，油价或持续在$90-$100高位震荡。EIA此前警告全球石油运输完全恢复需数月。</p>
+
+  <h3>🌐 中美关税博弈持续</h3>
+  <p>美国对华关税政策持续施压，全球供应链重构加速。内需消费与国产替代逻辑进一步强化。</p>
+
+  <h3>🏛️ 央行动态</h3>
+  <ul>
+    <li><strong>中国央行：</strong>连续17个月增持黄金，全球央行维持净买入（来源：金投网）</li>
+    <li><strong>政府工作报告：</strong>"算电协同"首次列入，储能需求有望持续提升（来源：东吴证券研报）</li>
+    <li><strong>美联储：</strong>关税冲击与中东能源危机双重压力下，降息预期与通胀预期博弈（基于最新公布数据估算）</li>
+  </ul>
+</div>
+
+<!-- ===== A股板块分析 ===== -->
+<h2>三、板块表现深度分析</h2>
+
+<!-- 新能源/电池（今日领涨） -->
+<div class="card">
+  <h3>⚡ 新能源板块（电池/储能/光伏）<span class="tag tag-up">今日领涨</span></h3>
+  <div style="margin:10px 0">
+    <span class="tag tag-up">电池行业 +3.96%</span>
+    <span class="tag tag-up">电力设备 +3.50%</span>
+    <span class="tag tag-up">储能电池ETF +4.51%</span>
+    <span class="tag tag-up">新能源ETF +3.28%</span>
+  </div>
+  <p><strong>驱动事件：</strong>① "算电协同"首次列入政府工作报告，算力增长催生刚性电力需求，储能需求持续撬动。② 行业秩序规范预期提振，电池产业链集体爆发。③ 圣阳股份、国轩高科等涨停，富临精工、豪鹏科技等跟涨。④ 可复用火箭突破在望，太阳翼产业链迎投资高峰（国海证券研报）。</p>
+  <p><strong>产业链逻辑：</strong>上游（锂/稀土资源，赣锋锂业+5.33%、天华新能+9.98%、西藏矿业+8.28%，锂价触底回升预期+固态电池加速）→ 中游（电池/核心零部件，宁德时代麒麟电池技术领先，产能规模全球第一）→ 下游（整车/储能/光伏装机，新能源车渗透率提升+算力中心绿电需求爆发）。</p>
+
+  <div style="margin-top:14px"><strong>🎯 价值投资潜力股</strong></div>
+  <div class="stock-item">
+    <span class="stock-name">宁德时代</span> <span class="stock-code">300750</span>
+    <p style="font-size:13px;margin-top:4px">全球动力电池龙头，市占率超35%，麒麟电池技术壁垒深厚。"算电协同"政策利好储能业务高增。PE处于历史低位，现金流充沛。产业链中游核心。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">赣锋锂业</span> <span class="stock-code">002460</span> <span class="tag tag-up">今日+5.33%</span>
+    <p style="font-size:13px;margin-top:4px">全球锂资源龙头，锂辉石+盐湖+锂云母多元布局。锂价触底回升预期+固态电池产业化加速。估值处于历史底部，技术壁垒高，下游绑定宁德时代等。产业链上游核心。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">阳光电源</span> <span class="stock-code">300274</span>
+    <p style="font-size:13px;margin-top:4px">全球逆变器+储能系统龙头，海外市场高毛利。算力中心绿电需求爆发+储能政策催化。PE合理，海外拓展加速。产业链中游设备+储能集成。</p>
+  </div>
+  <p style="margin-top:10px"><strong>📅 明日预测：</strong><span class="tag tag-hold">震荡偏强</span> 政策面（算电协同+行业规范）持续催化，板块领涨地位确立。但今日涨幅较大（电池+3.96%），获利回吐压力存在。中长期逻辑最清晰的主线之一。</p>
+</div>
+
+<!-- 科技/AI -->
+<div class="card">
+  <h3>💻 科技板块（AI / 半导体 / 通信 / 消费电子）</h3>
+  <div style="margin:10px 0">
+    <span class="tag tag-up">券商 +2.51%（非银金融）</span>
+    <span class="tag tag-up">消费电子 涨幅居前</span>
+    <span class="tag tag-up">玻璃玻纤 涨幅居前</span>
+  </div>
+  <p><strong>驱动事件：</strong>AI产业持续高景气，北美科技巨头资本开支持续增长。国海证券研报指出太阳翼产业链迎投资高峰，砷化镓电池、HJT及钙钛矿叠层产业链受关注。券商板块受益于2.32万亿成交额放大。</p>
+  <p><strong>产业链逻辑：</strong>上游（GPU/芯片，AI算力需求持续放量，半导体设备国产替代加速）→ 中游（光模块/服务器，A股在全球AI产业链中占据核心份额）→ 下游（AI应用商业化加速，消费电子复苏）。</p>
+
+  <div style="margin-top:14px"><strong>🎯 价值投资潜力股</strong></div>
+  <div class="stock-item">
+    <span class="stock-name">中际旭创</span> <span class="stock-code">300308</span>
+    <p style="font-size:13px;margin-top:4px">光模块龙头，全球市占率领先，北美客户绑定深，AI算力基建核心受益。估值合理，产业链中游核心位置。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">北方华创</span> <span class="stock-code">002371</span>
+    <p style="font-size:13px;margin-top:4px">半导体设备国产替代核心标的，技术壁垒深厚，订单能见度高。估值处于历史中位，产业链上游设备"卖铲人"。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">海光信息</span> <span class="stock-code">688041</span>
+    <p style="font-size:13px;margin-top:4px">国产GPU龙头，AI算力国产替代核心受益，订单增长稳健，产业链上游。</p>
+  </div>
+  <p style="margin-top:10px"><strong>📅 明日预测：</strong><span class="tag tag-hold">震荡</span> 成交额维持2.32万亿高位但较前日未显著放大，科技板块盘中冲高后有回落迹象。中长期AI主线不变。</p>
+</div>
+
+<!-- 消费 -->
+<div class="card">
+  <h3>🛒 消费板块</h3>
+  <p><strong>驱动事件：</strong>扩内需政策持续发力，以旧换新补贴延续。地缘风险+关税博弈环境下，消费防御属性凸显。内需逻辑持续强化。</p>
+  <p><strong>产业链逻辑：</strong>上游（原材料/农产品，受关税影响波动）→ 中游（制造/加工，国产替代强化）→ 下游（零售/服务，消费券、以旧换新提振）。</p>
+
+  <div style="margin-top:14px"><strong>🎯 价值投资潜力股</strong></div>
+  <div class="stock-item">
+    <span class="stock-name">贵州茅台</span> <span class="stock-code">600519</span>
+    <p style="font-size:13px;margin-top:4px">消费核心资产，品牌护城河极深，现金流充裕，ROE持续领先。地缘+关税双重不确定下的避风港。下游终端消费品，抗周期能力强。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">中国中免</span> <span class="stock-code">601888</span>
+    <p style="font-size:13px;margin-top:4px">免税消费龙头，海南自贸港红利持续释放。政策受益确定性强，下游零售终端。</p>
+  </div>
+  <p style="margin-top:10px"><strong>📅 明日预测：</strong><span class="tag tag-up">震荡偏强</span> 内需政策持续发力，防御属性在地缘升温环境下强化。相对大盘有超额收益可能。</p>
+</div>
+
+<!-- 金融 -->
+<div class="card">
+  <h3>🏦 金融板块</h3>
+  <div style="margin:10px 0">
+    <span class="tag tag-up">非银金融 +2.51%</span>
+    <span class="tag tag-up">证券板块涨幅居前</span>
+  </div>
+  <p><strong>驱动事件：</strong>两市成交额2.32万亿直接受益券商。降息预期升温利好银行估值修复。沪指盘中重上4000点提振市场信心。</p>
+  <p><strong>产业链逻辑：</strong>银行（降息预期下净息差承压但资产质量稳健，高股息防御性）→ 券商（成交额2.32万亿直接受益）→ 保险（利率下行环境中配置价值凸显）。</p>
+
+  <div style="margin-top:14px"><strong>🎯 价值投资潜力股</strong></div>
+  <div class="stock-item">
+    <span class="stock-name">中信证券</span> <span class="stock-code">600030</span>
+    <p style="font-size:13px;margin-top:4px">券商龙头，直接受益于2.32万亿成交额，投行与资管业务领先。估值处于历史中位。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">招商银行</span> <span class="stock-code">600036</span>
+    <p style="font-size:13px;margin-top:4px">零售银行标杆，资产质量优良，ROE领先同业，高股息防御性突出。</p>
+  </div>
+  <p style="margin-top:10px"><strong>📅 明日预测：</strong><span class="tag tag-hold">震荡偏弱</span> 券商今日已涨2.51%，若成交额回落则首当其冲承压。银行因高股息和低估值有安全垫。</p>
+</div>
+
+<!-- 医疗 -->
+<div class="card">
+  <h3>🏥 医疗板块</h3>
+  <p><strong>当日表现：</strong>医药股午前回暖（来源：中国基金报）。医保控费持续推进，创新药出海逻辑受关注。</p>
+  <p><strong>产业链逻辑：</strong>上游（CXO/原料药，全球研发外包趋势延续）→ 中游（创新药/仿制药，出海与集采并行）→ 下游（医疗服务/器械，老龄化趋势带来长期刚需）。</p>
+
+  <div style="margin-top:14px"><strong>🎯 价值投资潜力股</strong></div>
+  <div class="stock-item">
+    <span class="stock-name">迈瑞医疗</span> <span class="stock-code">300760</span>
+    <p style="font-size:13px;margin-top:4px">医疗器械龙头，海外市场拓展加速，技术壁垒深厚，现金流稳健。下游刚需属性强。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">恒瑞医药</span> <span class="stock-code">600276</span>
+    <p style="font-size:13px;margin-top:4px">创新药龙头，管线丰富，研发投入领先，出海逻辑逐步兑现。估值合理。</p>
+  </div>
+  <p style="margin-top:10px"><strong>📅 明日预测：</strong><span class="tag tag-hold">震荡偏弱</span> 板块分化明显，创新药/器械相对有支撑，但整体弹性不足。</p>
+</div>
+
+<!-- 能源 -->
+<div class="card">
+  <h3>🛢️ 能源板块（传统与转型）</h3>
+  <div style="margin:10px 0">
+    <span class="tag tag-down">贵金属板块跌幅居前</span>
+    <span class="tag tag-down">航运港口跌幅居前</span>
+  </div>
+  <p><strong>当日表现：</strong>受美伊停火+海峡短暂复关预期影响，油价从4月8日暴跌20%（$117→$91）后企稳于$98附近。但以色列空袭黎巴嫩令停火前景蒙阴，海峡通行再度受阻。黄金股当日冲高回落，贵金属板块收跌（来源：北京商报）。</p>
+  <p><strong>关键变量：</strong>高盛警告若霍尔木兹再关一个月，布油均价或破$100。中财网报道油价或持续$90-$100高位震荡。航运港口因海峡通航预期改善而下跌。</p>
+  <p><strong>产业链逻辑：</strong>上游（勘探开采，油价高位盈利丰厚但波动极大）→ 中游（炼化/管道，油价剧烈波动带来库存风险）→ 新能源转型（光伏/风电长期逻辑不受油价短期波动影响）。</p>
+
+  <div style="margin-top:14px"><strong>🎯 价值投资潜力股</strong></div>
+  <div class="stock-item">
+    <span class="stock-name">中国海油</span> <span class="stock-code">600938</span>
+    <p style="font-size:13px;margin-top:4px">海上油气龙头，成本控制优秀，股息率高。若海峡持续受阻油价维持高位，盈利确定性强。上游资源端核心标的。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">隆基绿能</span> <span class="stock-code">601012</span>
+    <p style="font-size:13px;margin-top:4px">光伏龙头，油价高企不改清洁能源长期趋势。算电协同政策+绿电需求爆发利好。估值处于历史底部。下游新能源转型方向。</p>
+  </div>
+  <p style="margin-top:10px"><strong>📅 明日预测：</strong><span class="tag tag-up">分化</span> 油价方向取决于高度不确定的地缘变量（海峡是否真正恢复通航）。油气股波动极大，光伏/新能源转型方向不受油价影响。贵金属板块若地缘再度升温可能反弹。</p>
+</div>
+
+<!-- ===== 有色金属专项 ===== -->
+<h2>四、有色金属板块专项分析</h2>
+<div class="card">
+  <h3>📊 主要品种行情数据（2026-04-10）</h3>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>品种</th><th>最新价格</th><th>涨跌</th><th>交易所/来源</th></tr></thead>
+    <tbody>
+      <tr><td>LME铜（4月9日收盘）</td><td>12,681.5 美元/吨</td><td class="down">-27.5美元</td><td>LME / Mysteel</td></tr>
+      <tr><td>COMEX铜（4月9日收盘）</td><td>5.7555 美元/磅</td><td>微幅波动</td><td>COMEX / Mysteel</td></tr>
+      <tr><td>LME铝（4月9日收盘）</td><td>3,444 美元/吨</td><td class="down">-11美元</td><td>LME / Mysteel</td></tr>
+      <tr><td>LME锌（4月9日收盘）</td><td>3,327 美元/吨</td><td class="up">+34.5美元</td><td>LME / Mysteel</td></tr>
+      <tr><td>LME铅（4月9日收盘）</td><td>1,927 美元/吨</td><td class="down">-14.5美元</td><td>LME / Mysteel</td></tr>
+      <tr><td>现货黄金（4月9日收盘）</td><td>4,766.28 美元/盎司</td><td>—</td><td>COMEX / 金投网</td></tr>
+      <tr><td>现货黄金（4月10日盘中）</td><td>4,755.40 美元/盎司</td><td>冲高回落</td><td>金投网</td></div></tr>
+      <tr><td>沪金主力</td><td>1,049.86 元/克</td><td class="up">+2.5% 盘中冲1059</td><td>金投网</td></tr>
+      <tr><td>现货白银（4月9日收盘）</td><td>75.34 美元/盎司</td><td>—</td><td>COMEX / 金投网</td></tr>
+      <tr><td>电解铝（上海）</td><td>约24,570 元/吨</td><td class="up">+90元</td><td>Mysteel（4月8日数据估算）</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="source">数据来源：LME、SHFE、COMEX、金投网、Mysteel，2026-04-09/10；注：LME数据为4月9日收盘</p>
+</div>
+
+<div class="card">
+  <h3>📈 A股有色板块表现</h3>
+  <div style="margin:10px 0">
+    <span class="tag tag-up">中证有色金属指数 +0.58%</span>
+    <span class="tag tag-up">锂矿股领涨：天华新能+9.98%</span>
+    <span class="tag tag-up">西藏矿业+8.28%</span>
+    <span class="tag tag-up">赣锋锂业+5.33%</span>
+    <span class="tag tag-up">永兴材料+4%+</span>
+    <span class="tag tag-up">天齐锂业+4.15%</span>
+  </div>
+  <p><strong>板块特征：</strong>有色板块内部分化明显——<strong>锂矿/稀有金属领涨</strong>（锂价触底回升+固态电池预期），而铜铝等工业金属因LME价格微跌表现平淡。黄金股冲高回落，贵金属板块收跌。北方稀土等14股净流出超亿元（来源：证券时报）。</p>
+</div>
+
+<div class="card">
+  <h3>🔍 供需面分析</h3>
+  <table>
+    <thead><tr><th>品种</th><th>供给端</th><th>需求端</th><th>关键变量</th></tr></thead>
+    <tbody>
+      <tr><td><strong>铜</strong></td><td>全球矿山供应偏紧，南美扰动不断</td><td>AI算力基建+新能源车用铜提升</td><td>LME铜$12,681；美元/地缘波动影响短期方向</td></tr>
+      <tr><td><strong>铝</strong></td><td>国内产能接近天花板（4500万吨），海外新增有限</td><td>新能源轻量化+光伏边框需求增长</td><td>电解铝供给刚性约束，SHFE季节性去库</td></tr>
+      <tr><td><strong>锂</strong></td><td>全球锂矿扩产放缓，供给增速下降</td><td>固态电池产业化加速+储能需求爆发</td><td>锂价触底回升预期强烈，A股锂矿股今日领涨</td></tr>
+      <tr><td><strong>黄金</strong></td><td>央行连续17月增持</td><td>中东冲突+停火不确定+避险</td><td>以黎冲突扩大推升避险；冲高回落后关注$4,750支撑</td></tr>
+      <tr><td><strong>稀土</strong></td><td>国内供给管控，出口管制</td><td>新能源电机+军工需求</td><td>地缘局势强化稀土战略属性</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h3>🎯 有色金属潜力股</h3>
+  <div class="stock-item">
+    <span class="stock-name">紫金矿业</span> <span class="stock-code">601899</span> <span class="tag tag-hold">上游资源</span>
+    <p style="font-size:13px;margin-top:4px">全球铜金矿业龙头，资源储量丰富，全球化布局领先。金价高位运行（$4,766）+地缘风险推升避险需求；铜价$12,681高位提供盈利支撑。资源自给率高，成本控制行业领先。PE处于历史中位偏低。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">赣锋锂业</span> <span class="stock-code">002460</span> <span class="tag tag-up">上游锂资源 今日+5.33%</span>
+    <p style="font-size:13px;margin-top:4px">全球锂资源龙头，锂辉石+盐湖+锂云母多元布局。锂价触底回升预期+固态电池产业化加速。估值处于历史底部，技术壁垒高，下游绑定宁德时代等电池龙头。A股稀有金属板块今日领涨核心标的。</p>
+  </div>
+  <div class="stock-item">
+    <span class="stock-name">中国铝业</span> <span class="stock-code">601600</span> <span class="tag tag-hold">中游冶炼</span>
+    <p style="font-size:13px;margin-top:4px">国内铝业龙头，氧化铝-电解铝-铝加工一体化。产能天花板约束下铝价有支撑。PE处于历史低位有修复空间，规模效应显著。供给刚性+需求增长逻辑清晰。</p>
+  </div>
+</div>
+
+<div class="card">
+  <h3>📅 有色金属明日走势预测</h3>
+  <table>
+    <thead><tr><th>品种</th><th>方向</th><th>核心依据</th></tr></thead>
+    <tbody>
+      <tr><td><strong>黄金</strong></td><td><span class="tag tag-hold">震荡</span></td><td>以黎冲突升级+海峡受阻→避险支撑；但今日冲高回落显示上方压力。关注$4,750支撑，若地缘再度升温或冲击$4,800</td></tr>
+      <tr><td><strong>铜</strong></td><td><span class="tag tag-hold">震荡偏弱</span></td><td>LME微跌27.5美元，美元避险走强或承压。AI基建+新能源需求提供中长期底部支撑。$12,500支撑</td></tr>
+      <tr><td><strong>铝</strong></td><td><span class="tag tag-hold">震荡</span></td><td>供给刚性+需求稳健，LME微跌11美元，短期受宏观情绪波动</td></tr>
+      <tr><td><strong>锂</strong></td><td><span class="tag tag-up">看涨</span></td><td>锂价触底回升预期+固态电池催化+A股锂矿股今日领涨趋势延续。但需注意获利回吐</td></tr>
+      <tr><td><strong>有色整体</strong></td><td><span class="tag tag-hold">震荡偏强</span></td><td>锂矿领涨+黄金高位支撑，但铜铝偏弱制约整体弹性</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== 政策聚焦 ===== -->
+<h2>五、政策与全球事件聚焦</h2>
+<div class="card">
+  <table>
+    <thead><tr><th>事件</th><th>时间</th><th>量化影响</th></tr></thead>
+    <tbody>
+      <tr><td>美伊宣布停火两周</td><td>4月8日</td><td>WTI盘中暴跌20%（$117→$91），A股两日反弹</td></tr>
+      <tr><td>以色列停火不包括黎巴嫩+大规模空袭</td><td>4月8日</td><td>停火前景蒙阴，油价反弹至$98附近</td></tr>
+      <tr><td>霍尔木兹海峡"闪电复关"后再度受阻</td><td>4月8-10日</td><td>油价暴跌逻辑被证伪，$90-$100高位震荡</td></tr>
+      <tr><td>高盛：海峡再关一个月，布油均价或破$100</td><td>4月10日</td><td>能源价格全年维持高位预期</td></tr>
+      <tr><td>"算电协同"首次列入政府工作报告</td><td>2026年两会</td><td>储能电池ETF+4.51%，电池行业+3.96%</td></tr>
+      <tr><td>央行连续17月增持黄金</td><td>持续</td><td>金价结构性支撑，现货金$4,766</td></tr>
+      <tr><td>锂价触底回升+固态电池产业化加速</td><td>持续</td><td>A股锂矿股天华新能+9.98%、赣锋+5.33%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== 风险提示 ===== -->
+<h2>六、风险提示与总结</h2>
+<div class="card">
+  <div class="risk-box">
+    <strong>⚠️ 关键风险</strong>
+    <ol style="margin-top:8px;padding-left:20px;font-size:14px">
+      <li><strong>中东局势高度不确定：</strong>停火脆弱、以色列持续攻击黎巴嫩、海峡通行受阻。若停火全面破裂油价将暴涨，冲击全球风险偏好</li>
+      <li><strong>霍尔木兹海峡长期封锁风险：</strong>高盛警告若再关一个月布油均价破$100。全球能源供应链面临持续压力</li>
+      <li><strong>A股冲高回落风险：</strong>沪指盘中破4000后回落，成交额2.32万亿中追涨资金入场，获利回吐压力存在</li>
+      <li><strong>电池/新能源板块短期涨幅过大：</strong>电池行业+3.96%、电力设备+3.50%，获利回吐压力显著</li>
+      <li><strong>黄金高位波动：</strong>现货金$4,755历史高位，冲高回落显示上方压力，短期波动性较高</li>
+    </ol>
+  </div>
+
+  <h3>💡 投资策略建议</h3>
+  <ul style="font-size:14px;padding-left:20px">
+    <li><strong>短期：</strong>关注霍尔木兹海峡实际通行进展及以色列对黎军事行动走向——这两个变量将决定油价方向和全球风险偏好</li>
+    <li><strong>中期：</strong>电池/储能产业链（算电协同政策+行业规范）是当前最清晰的主线之一；AI科技（光模块/半导体设备）业绩兑现度高</li>
+    <li><strong>防御配置：</strong>消费核心资产（高ROE+高股息）在地缘与贸易双重不确定环境中提供安全垫</li>
+    <li><strong>有色金属：</strong>锂矿股今日领涨趋势若延续需关注获利回吐；黄金高位震荡中逢低配置；铜铝偏弱观望</li>
+  </ul>
+</div>
+
+<div class="disclaimer">
+  ⚠️ 免责声明：本报告仅为市场分析参考，不构成任何投资建议。提及个股仅用于行业事件分析，不构成推荐。投资有风险，入市需谨慎。<br>
+  数据来源：东方财富、财联社、金投网、Mysteel、LME、SHFE、COMEX、新华网、彭博社、路透社、高盛研报、中国基金报、证券时报、北京商报<br>
+  报告生成时间：2026年4月10日 22:40 CST
+</div>
+
+</div>
+</body>
+</html>
