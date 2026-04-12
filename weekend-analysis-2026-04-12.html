@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A股周末深度分析与周一开盘预判 | 2026年4月12日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f4f5fb;--card:#fff;--text:#1e1e2f;--sub:#5a5d7a;--muted:#9498b3;--accent:#4361ee;--red:#e63946;--green:#2d9c4a;--gold:#d4a017;--border:#e8eaf2;--radius:14px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 20px 60px}
+header{text-align:center;margin-bottom:36px}
+header h1{font-size:26px;font-weight:800;letter-spacing:.5px}
+header .sub{color:var(--muted);font-size:13px;margin-top:6px}
+header .note{display:inline-block;margin-top:10px;padding:5px 16px;background:#fff3cd;color:#856404;border-radius:20px;font-size:12px;font-weight:600}
+h2{font-size:20px;font-weight:700;margin:32px 0 16px;padding-left:14px;border-left:4px solid var(--accent);line-height:1.3}
+h3{font-size:16px;font-weight:700;margin:18px 0 10px;color:var(--text)}
+.card{background:var(--card);border-radius:var(--radius);padding:22px 24px;margin-bottom:16px;box-shadow:0 1px 6px rgba(0,0,0,.04);border:1px solid var(--border)}
+.card-inner{background:#f8f9fe;border-radius:10px;padding:14px 16px;margin:10px 0}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:800px){.g2,.g3{grid-template-columns:1fr}}
+.up{color:var(--red);font-weight:700}
+.dn{color:var(--green);font-weight:700}
+.tag{display:inline-block;padding:2px 10px;border-radius:16px;font-size:11px;font-weight:700;vertical-align:middle}
+.tag-up{background:#fde8ea;color:var(--red)}
+.tag-dn{background:#e6f5eb;color:var(--green)}
+.tag-n{background:#fff8e1;color:#b8860b}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:8px 0}
+th{background:#f0f2fa;padding:9px 12px;text-align:left;font-weight:600;font-size:12.5px;border-bottom:2px solid var(--border);white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--border)}
+tbody tr:hover td{background:#fafbff}
+.src{font-size:11px;color:var(--muted);margin-top:6px;font-style:italic}
+.desc{font-size:13.5px;color:var(--sub);margin-bottom:8px}
+.stock{padding:14px 16px;background:#f8f9fe;border-radius:10px;border-left:3px solid var(--accent)}
+.stock .nm{font-weight:700;font-size:14.5px;margin-bottom:4px}
+.stock .rs{font-size:12.5px;color:var(--sub);line-height:1.7}
+.stock.hl{border-left-color:var(--gold)}
+.pred{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:10px;margin-top:12px;font-size:13.5px;font-weight:600}
+.pred-up{background:#fef2f2;color:var(--red);border-left:3px solid var(--red)}
+.pred-dn{background:#f0faf3;color:var(--green);border-left:3px solid var(--green)}
+.pred-n{background:#fffce8;color:#b8860b;border-left:3px solid #e6c200}
+.box-dark{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#fff;border-radius:var(--radius);padding:24px;margin-top:20px}
+.box-dark h3{color:#fff}
+.box-dark .tip{display:inline-block;padding:10px 14px;background:rgba(255,255,255,.08);border-radius:10px;font-size:13px}
+.hope{background:linear-gradient(135deg,#e6ffed,#f0fff4);border:1px solid #b7ebc6;border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.hope h3{color:#137333;font-size:16px;margin-bottom:10px}
+.hope ul{margin:6px 0 0 18px;font-size:13.5px;color:var(--sub)}
+.hope li{margin-bottom:6px}
+.alert-box{background:linear-gradient(135deg,#fff5f5,#fff);border:1px solid #fecaca;border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.alert-box h3{color:var(--red);font-size:16px;margin-bottom:10px}
+.alert-box ul{margin:6px 0 0 18px;font-size:13.5px;color:var(--sub)}
+.alert-box li{margin-bottom:6px}
+.warn-box{background:linear-gradient(135deg,#fffbeb,#fff);border:1px solid #fde68a;border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.warn-box h3{color:#b45309;font-size:16px;margin-bottom:10px}
+.warn-box ul{margin:6px 0 0 18px;font-size:13.5px;color:var(--sub)}
+.warn-box li{margin-bottom:6px}
+footer{text-align:center;margin-top:40px;padding:24px 16px;color:var(--muted);font-size:11.5px;line-height:1.8;border-top:1px solid var(--border)}
+.live{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);animation:pulse 1.5s infinite;margin-right:6px;vertical-align:middle}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>📊 A股周末深度分析与周一开盘预判</h1>
+  <div class="sub">美伊21小时谈判无果 · 特朗普威胁封锁霍尔木兹海峡 · A股主力净流入131亿 · 下周中国Q1 GDP公布</div>
+  <div class="note"><span class="live"></span>2026年4月12日（周六）| A股专题报告 | 数据截止4月10日收盘 + 金十数据4/12实时快讯</div>
+</header>
+
+<!-- ===== 实时快讯 ===== -->
+<div class="alert-box">
+  <h3>🔴 金十数据4/12实时快讯（今日最新·核心变量）</h3>
+  <ul>
+    <li><b>美伊21小时谈判无果</b>：伊斯兰堡马拉松谈判"无协议达成"。美方要核承诺，伊方要战后一揽子安排——双方根本不在同一张谈判桌上。停火可延续，但协议很难落地。（金十数据/华尔街见闻/腾讯新闻 4/12）</li>
+    <li><b>特朗普最新威胁</b>："将封锁霍尔木兹海峡，措施类似对委内瑞拉"；"将把伊朗残余力量终结"；"可能打击伊朗海水淡化厂和发电厂"。NATO愿意帮助维护海峡安全，英国等国派扫雷舰。（金十数据/新华社 4/12 22:05~22:38）</li>
+    <li><b>伊朗强硬回应</b>：革命卫队海军发布监控画面，强调海峡"在严密监控与完全掌控之下"，警告"任何错误举动将使敌人陷入致命漩涡"。（金十数据/央视新闻 4/12 22:21）</li>
+    <li><b>伊朗议长率团离开巴基斯坦</b>：卡利巴夫12日傍晚率谈判代表团飞离。（金十数据/新华社 4/12 21:20）</li>
+    <li><b>特朗普称"大多数问题达成一致"</b>：除核问题外美伊多数议题已有共识，但伊朗"不愿放弃核野心"。美方将继续推动谈判。（金十数据/央视新闻 4/12 21:15）</li>
+    <li><b>以色列战争支出350亿谢克尔</b>：其中220亿用于国防。（金十数据 4/12 21:19）</li>
+    <li><b>阿富汗首都连续爆炸</b>：喀布尔传出爆炸声和枪声。（金十数据/央视新闻 4/12 21:51）</li>
+  </ul>
+  <p class="src">来源：金十数据www.jin10.com实时快讯, 2026-04-12 21:15~22:38</p>
+</div>
+
+<div class="hope">
+  <h3>🟢 本周A股核心结论</h3>
+  <ul>
+    <li><b>A股4/10强势收官</b>：上证3986.22（+0.51%），深证14309.47（+2.24%），创业板3448.79（+3.78%创4年半新高）。主力全天净流入131.52亿。（证券时报）</li>
+    <li><b>电子板块吸金76亿居首</b>：立讯精密净流入23.17亿居个股第一。券商、新能源、消费电子涨幅居前。（证券时报）</li>
+    <li><b>周末地缘局势恶化</b>：美伊谈判未果+特朗普威胁封锁海峡+伊朗强硬回应→周一开盘风险偏好可能承压</li>
+    <li><b>下周密集事件</b>：周四中国Q1 GDP、周二贸易帐/PPI、周三美联储密集发言、台积电财报（金十数据）</li>
+  </ul>
+  <p class="src">来源：证券时报/金十数据, 2026-04-10~12</p>
+</div>
+
+<!-- ===== 一、A股4/10行情总览 ===== -->
+<h2>一、A股4月10日行情总览（精确数据）</h2>
+
+<div class="card">
+  <table>
+    <thead><tr><th>指数</th><th>收盘点位</th><th>涨跌额</th><th>涨跌幅</th><th>盘中高点</th><th>来源</th></tr></thead>
+    <tbody>
+      <tr><td><b>上证指数（000001）</b></td><td>3,986.22</td><td>+20.05</td><td class="up">+0.51%</td><td>4,011.02（重返4000点）</td><td>东方财富</td></tr>
+      <tr><td><b>深证成指（399001）</b></td><td>14,309.47</td><td>—</td><td class="up">+2.24%</td><td>—</td><td>证券时报</td></tr>
+      <tr><td><b>创业板指（399006）</b></td><td>3,448.79</td><td>—</td><td class="up">+3.78%</td><td>刷新2021年底以来新高</td><td>证券时报</td></tr>
+      <tr><td><b>北证50</b></td><td>—</td><td>—</td><td class="up">+1.66%</td><td>—</td><td>证券时报</td></tr>
+    </tbody>
+  </table>
+  <p class="desc" style="margin-top:8px">盘面上，券商、电工电网、能源金属、消费电子、锂矿、半导体等板块涨幅居前。沪深京三市上涨个股超4800只。上证盘中最高4011.02，时隔14个交易日重返4000点。（中新网/界面新闻）</p>
+  <p class="src">来源：东方财富/证券时报/中新网/界面新闻, 2026-04-10</p>
+</div>
+
+<!-- ===== 二、资金流向 ===== -->
+<h2>二、4月10日A股资金流向（证券时报精确数据）</h2>
+
+<div class="card">
+  <h3>💰 主力资金全天净流入131.52亿元</h3>
+  <table>
+    <thead><tr><th>维度</th><th>净流入（亿元）</th><th>备注</th></tr></thead>
+    <tbody>
+      <tr><td><b>A股市场全天</b></td><td class="up">+131.52</td><td>开盘净流入69.7亿，尾盘净流出26.53亿</td></tr>
+      <tr><td><b>沪深300</b></td><td class="up">+144.97</td><td>大盘蓝筹吸金能力强</td></tr>
+      <tr><td><b>创业板</b></td><td class="up">+53.78</td><td>成长风格受追捧</td></tr>
+      <tr><td><b>科创板</b></td><td class="up">+0.80</td><td>流入较少</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:18px">📊 行业资金净流入TOP（申万一级）</h3>
+  <table>
+    <thead><tr><th>排名</th><th>行业</th><th>净流入（亿元）</th><th>判断</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><b>电子</b></td><td class="up">+76.47</td><td>AI+消费电子驱动，主力最看好</td></tr>
+      <tr><td>2-8</td><td>其他7个行业</td><td>—</td><td>共8个行业实现净流入</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:18px">🏆 个股主力净流入居首</h3>
+  <div class="stock" style="margin-top:8px">
+    <div class="nm">立讯精密（002475）— 主力净流入23.17亿元居首</div>
+    <div class="rs">消费电子龙头，苹果产业链核心供应商。AI终端+AR/VR新品周期催化。机构龙虎榜显示机构抢筹多股。</div>
+  </div>
+  <p class="src">来源：证券时报【10日资金路线图】, 2026-04-10</p>
+</div>
+
+<!-- ===== 三、全球环境对A股影响 ===== -->
+<h2>三、全球环境对A股的影响传导</h2>
+
+<div class="card">
+  <h3>🌐 美股4/10收盘（中财网精确数据）</h3>
+  <table>
+    <thead><tr><th>指数</th><th>收盘</th><th>涨跌幅</th><th>驱动</th></tr></thead>
+    <tbody>
+      <tr><td>道琼斯</td><td>47,916.57</td><td class="dn">-0.56%</td><td>CPI超预期→降息推迟→蓝筹承压</td></tr>
+      <tr><td>纳斯达克</td><td>22,902.89</td><td class="up">+0.35%</td><td>AI产业链支撑（闪迪+9%，亚马逊+5%）</td></tr>
+      <tr><td>标普500</td><td>6,816.89</td><td class="dn">-0.11%</td><td>CPI冲击+纳指对冲→窄幅震荡</td></tr>
+    </tbody>
+  </table>
+  <p class="desc" style="margin-top:8px"><b>对A股传导</b>：①道指-0.56%对A股偏负面但影响有限（A股4/10已收盘时美股尚未交易）；②纳指+0.35%利好A股科技板块情绪；③美国CPI+3.3%→降息推迟→中美利差维持→人民币承压但央行有工具应对。</p>
+</div>
+
+<div class="warn-box">
+  <h3>⚠️ 周末地缘局势对A股周一的关键影响</h3>
+  <ul>
+    <li><b>美伊谈判无果→风险偏好承压</b>：21小时谈判"无协议"，核心分歧（核问题）未解。停火可延续但协议难落地。这意味着地缘不确定性将在较长时间内持续压制全球风险偏好。</li>
+    <li><b>特朗普威胁升级→油价上行风险</b>：威胁封锁霍尔木兹海峡+打击水电设施→若执行，油价可能再度飙升。目前WTI 97.87美元，若海峡封锁升级→110-120美元区间。</li>
+    <li><b>伊朗强硬回应→短期难缓和</b>：革命卫队警告"致命漩涡"，海峡在"完全掌控之下"→双方对峙格局短期难以改变。</li>
+    <li><b>对A股具体影响路径</b>：①油价上行→利好油气/能源股，利空航空/化工下游；②避险情绪→黄金股受益；③地缘不确定→成长股估值承压；④但中国内需政策对冲+央行宽松→下行空间有限。</li>
+  </ul>
+  <p class="src">来源：金十数据/华尔街见闻/腾讯新闻, 2026-04-12</p>
+</div>
+
+<!-- ===== 四、下周重要事件 ===== -->
+<h2>四、下周重要事件与数据日历（金十数据整理）</h2>
+
+<div class="card">
+  <table>
+    <thead><tr><th>日期</th><th>事件/数据</th><th>对A股影响</th></tr></thead>
+    <tbody>
+      <tr><td><b>周一 4/14</b></td><td>OPEC月报；IMF/世行春季会议；日本央行行长访美</td><td>OPEC月报影响油价→能源板块；周末地缘消息消化</td></tr>
+      <tr><td><b>周二 4/15</b></td><td><b>中国3月贸易帐</b>；美国3月PPI；IEA月报；IMF世界经济展望</td><td>贸易数据直接影响出口/制造业板块情绪</td></tr>
+      <tr><td><b>周三 4/16</b></td><td>API/EIA原油库存；<b>美联储密集发言</b>（古尔斯比/巴尔/保尔森/巴尔金/柯林斯）；欧洲央行行长拉加德讲话</td><td>美联储表态影响全球利率预期→成长股估值</td></tr>
+      <tr style="background:#fff3cd"><td><b>周四 4/17</b></td><td><b>中国Q1 GDP</b>；中国3月社零/工业增加值；<b>台积电财报</b>；美联储褐皮书；70城房价；G20财长会议</td><td><b>本周最重要一天</b>：GDP数据定调全年预期，台积电财报影响半导体板块</td></tr>
+      <tr><td><b>周五 4/18</b></td><td>欧元区经常帐/贸易帐</td><td>影响有限</td></tr>
+    </tbody>
+  </table>
+  <p class="src">来源：金十数据www.jin10.com一周预告, 2026-04-12</p>
+</div>
+
+<!-- ===== 五、A股板块深度分析 ===== -->
+<h2>五、A股六大板块深度分析</h2>
+
+<!-- 科技 -->
+<div class="card" style="border-top:3px solid #7c3aed">
+  <h3>💻 科技（电子/半导体/AI/消费电子）</h3>
+  <div class="g2">
+    <div class="card-inner">
+      <b>📊 4/10数据</b><br>
+      涨幅：<span class="up">居前</span><br>
+      <b>主力净流入：76.47亿元（全行业第一）</b><br>
+      个股净流入第一：立讯精密 +23.17亿<br>
+      龙虎榜：机构抢筹多股
+    </div>
+    <div class="card-inner">
+      <b>📰 驱动</b><br>
+      ①全球AI资本开支持续高增<br>
+      ②消费电子新品周期（苹果/华为）<br>
+      ③半导体国产替代加速<br>
+      ④下周台积电财报（周四）→催化预期
+    </div>
+  </div>
+  <div class="card-inner" style="border-left:3px solid var(--gold)">
+    <b>🔗 产业链</b>：上游（设备/材料/EDA）→中游（芯片设计/制造/封测）→下游（终端品牌/AI应用）。AI资本开支↑→算力芯片需求↑→设备材料订单↑；消费电子复苏→终端出货↑。
+  </div>
+  <div class="g2" style="margin-top:12px">
+    <div class="stock"><div class="nm">🏆 立讯精密（002475）— 主力净流入第一</div><div class="rs">苹果产业链核心，消费电子精密制造龙头。AI终端+AR/VR新品催化。PE约25x。下游终端核心。</div></div>
+    <div class="stock hl"><div class="nm">🏆 海光信息（688041）</div><div class="rs">国产CPU/DCU龙头，信创+AI双驱动。PE约60x。中游设计。</div></div>
+  </div>
+  <div class="g2" style="margin-top:12px">
+    <div class="stock"><div class="nm">中芯国际（688981）</div><div class="rs">国内最大晶圆代工，PB约2.5x。中游制造核心。</div></div>
+    <div class="stock hl"><div class="nm">韦尔股份（603501）</div><div class="rs">CIS芯片龙头，手机+车载双驱动。PE约35x。中游设计。</div></div>
+  </div>
+  <div class="pred pred-up">🔮 <b>周一预测：偏强</b> — 4/10主力净流入76亿+立讯23亿→机构明确看多。台积电财报周四催化。但需警惕周末地缘恶化对风险偏好冲击，若大盘承压科技可能回调→<b>逢低关注</b>。</div>
+  <p class="src">来源：证券时报, 2026-04-10</p>
+</div>
+
+<!-- 新能源 -->
+<div class="card" style="border-top:3px solid #059669">
+  <h3>⚡ 新能源（光伏/锂电/风电）</h3>
+  <div class="g2">
+    <div class="card-inner">
+      <b>📊 4/10数据</b><br>
+      涨幅：<span class="up">居前，概念大爆发</span><br>
+      板块：券商、锂矿、半导体涨幅居前<br>
+      002074等直线涨停
+    </div>
+    <div class="card-inner">
+      <b>📰 驱动</b><br>
+      ①WTI 97.87美元→新能源经济性凸显<br>
+      ②碳酸锂16万/吨，年内+40%<br>
+      ③光伏装机旺季<br>
+      ④周末美伊未果→油价上行风险→更利好替代逻辑
+    </div>
+  </div>
+  <div class="card-inner" style="border-left:3px solid var(--gold)">
+    <b>🔗 产业链</b>：上游（锂矿/硅料）→中游（电池/组件）→下游（整车/运营商）。高油价→替代需求↑→全产业链受益。碳酸锂年内+40%→锂矿盈利修复→电池成本传导。
+  </div>
+  <div class="g2" style="margin-top:12px">
+    <div class="stock"><div class="nm">🏆 宁德时代（300750）</div><div class="rs">全球动力电池龙头，市占率35%+。PE约22x（历史20%分位）。储能+海外工厂催化。中游核心。</div></div>
+    <div class="stock hl"><div class="nm">🏆 天齐锂业（002466）</div><div class="rs">锂资源龙头，碳酸锂16万/吨年内+40%。津巴禁令供给收紧。PE约15x。上游资源端。</div></div>
+  </div>
+  <div class="pred pred-up">🔮 <b>周一预测：看涨</b> — 美伊未果→油价上行风险→更利好新能源替代逻辑。碳酸锂趋势向上+装机旺季。板块是地缘不确定环境下的"受益方向"。</div>
+  <p class="src">来源：东方财富/证券时报, 2026-04-10</p>
+</div>
+
+<!-- 券商 -->
+<div class="card" style="border-top:3px solid #2563eb">
+  <h3>🏦 券商</h3>
+  <div class="g2">
+    <div class="card-inner">
+      <b>📊 4/10数据</b><br>
+      涨幅：<span class="up">居前</span><br>
+      全天主力净流入131.52亿→成交活跃<br>
+      沪深300净流入144.97亿
+    </div>
+    <div class="card-inner">
+      <b>📰 驱动</b><br>
+      ①指数突破+成交放大→经纪收入↑<br>
+      ②IPO/并购重组政策松绑<br>
+      ③中特估+高股息
+    </div>
+  </div>
+  <div class="stock" style="margin-top:8px"><div class="nm">🏆 中信证券（600030）</div><div class="rs">券商龙头，PB约1.5x，ROE约10%。市场弹性最大。</div></div>
+  <div class="pred pred-n">🔮 <b>周一预测：震荡</b> — 取决于成交量能否维持。若地缘冲击压制大盘→券商beta放大跌幅。若稳市→弹性最大。</div>
+</div>
+
+<!-- 消费 -->
+<div class="card" style="border-top:3px solid #ea580c">
+  <h3>🛒 消费（白酒/食品/零售）</h3>
+  <div class="g2">
+    <div class="card-inner">
+      <b>📊 4/10数据</b><br>
+      表现：温和上涨<br>
+      中国3月CPI同比+1.0%，PPI转正<br>
+      五一假期临近
+    </div>
+    <div class="card-inner">
+      <b>📰 驱动</b><br>
+      ①CPI温和回升+PPI转正<br>
+      ②下周四Q1 GDP→若超预期则催化<br>
+      ③央行宽松延续
+    </div>
+  </div>
+  <div class="stock" style="margin-top:8px"><div class="nm">🏆 贵州茅台（600519）</div><div class="rs">白酒龙头，PE约28x（历史30%分位），ROE超30%，股息率1.8%。防御+消费复苏。</div></div>
+  <div class="pred pred-n">🔮 <b>周一预测：震荡</b> — 等待周四GDP数据定调。消费复苏预期部分price-in。</div>
+</div>
+
+<!-- 医疗 -->
+<div class="card" style="border-top:3px solid #dc2626">
+  <h3>🏥 医疗（创新药/CXO）</h3>
+  <div class="card-inner">
+    <b>📊</b>：跟随大盘，弹性弱。创新药出海持续。板块防御属性在地缘不确定环境下有配置价值。
+  </div>
+  <div class="stock" style="margin-top:8px"><div class="nm">🏆 药明康德（603259）</div><div class="rs">全球CXO龙头，PE约20x（历史低位）。地缘风险缓和利好。</div></div>
+  <div class="pred pred-n">🔮 <b>周一预测：震荡偏防御</b></div>
+</div>
+
+<!-- 能源 -->
+<div class="card" style="border-top:3px solid #b45309">
+  <h3>🛢️ 能源（油气/煤炭）</h3>
+  <div class="g2">
+    <div class="card-inner">
+      <b>📊 4/10数据</b><br>
+      WTI：97.87美元/桶（+3.66%）<br>
+      布伦特：~95美元<br>
+      霍尔木兹海峡仍关闭
+    </div>
+    <div class="card-inner">
+      <b>🔴 周末最新（金十）</b><br>
+      ①特朗普："将封锁霍尔木兹海峡"<br>
+      ②伊朗："海峡在完全掌控之下"<br>
+      ③→<b>油价上行风险显著增大</b><br>
+      ④OPEC月报周一公布
+    </div>
+  </div>
+  <div class="g2" style="margin-top:12px">
+    <div class="stock"><div class="nm">🏆 中国海油（600938）</div><div class="rs">桶油成本~30美元，PE约8x，股息率~6%。高油价弹性极大。</div></div>
+    <div class="stock hl"><div class="nm">🏆 中国石油（601857）</div><div class="rs">全产业链，PE约9x，PB约0.8x破净，股息率~5%。</div></div>
+  </div>
+  <div class="pred pred-up">🔮 <b>周一预测：看涨</b> — 周末特朗普封锁威胁+伊朗强硬→油价上行风险大增。能源股是直接受益方向。但需注意：若后续停火突破→油价暴跌→板块反向。适合短线博弈而非长期持有。</div>
+  <p class="src">来源：金十数据/财联社, 2026-04-10~12</p>
+</div>
+
+<!-- ===== 六、有色金属专项 ===== -->
+<h2>六、有色金属板块专项分析</h2>
+
+<div class="card">
+  <h3>📊 主要品种数据</h3>
+  <table>
+    <thead><tr><th>品种</th><th>价格</th><th>来源/日期</th><th>涨跌</th><th>供需矛盾</th></tr></thead>
+    <tbody>
+      <tr><td><b>铜</b></td><td>12,709美元/吨</td><td>LME 4/8</td><td class="up">+396美元</td><td>TC创新低，矿端极紧缺</td></tr>
+      <tr><td><b>铝</b></td><td>3,455美元/吨</td><td>LME 4/8</td><td class="up">3月+10.4%</td><td>高盛上调Q2目标至3450</td></tr>
+      <tr><td><b>锂</b></td><td>~16万元/吨</td><td>现货</td><td class="up">年内+40%</td><td>津巴禁令+需求增</td></tr>
+      <tr><td><b>黄金</b></td><td>4,755美元/盎司</td><td>伦敦 4/10</td><td class="up">+1.06%</td><td>冲高4800后回落，多头获利了结</td></tr>
+    </tbody>
+  </table>
+  <p class="desc" style="margin-top:8px"><b>黄金特别注意</b>：金投网4/12报道——4/10现货黄金冲高4800后遭遇"毁灭性抛压"，日线收看跌小阴线，"多头动能彻底衰竭，资金疯狂获利了结"。周线仍收阳但上影线极长。短期支撑4700美元。</p>
+  <p class="src">来源：界面新闻/金投网, 2026-04-08~12</p>
+</div>
+
+<div class="card">
+  <h3>🏆 有色潜力股</h3>
+  <div class="stock" style="margin-bottom:12px">
+    <div class="nm">🥇 紫金矿业（601899）</div>
+    <div class="rs">铜矿国内第一全球前十，金矿国内第一。铜12709+黄金4755双受益。PE约12x，股息率~3%，ROE~20%。上游资源龙头。</div>
+  </div>
+  <div class="stock hl" style="margin-bottom:12px">
+    <div class="nm">🥇 洛阳钼业（603993）</div>
+    <div class="rs">全球第二大钴生产商，KFM达产铜钴双放量。PE约10x，PB约1.8x。上游资源端。</div>
+  </div>
+  <div class="stock">
+    <div class="nm">🥇 天齐锂业（002466）</div>
+    <div class="rs">锂资源龙头，碳酸锂16万/吨年内+40%。津巴禁令供给收紧。PE约15x。最上游。</div>
+  </div>
+</div>
+
+<div class="card" style="border-left:4px solid var(--accent)">
+  <h3>🔮 有色板块周一预测</h3>
+  <div class="g2">
+    <div class="card-inner"><b>铜</b><div class="pred pred-up" style="margin-top:6px">看涨偏强</div><p class="desc">矿端紧缺+美元弱。地缘不确定压制风险偏好但工业金属受益于中国旺季。</p></div>
+    <div class="card-inner"><b>铝</b><div class="pred pred-up" style="margin-top:6px">看涨</div><p class="desc">高盛上调目标价，新能源用铝驱动。</p></div>
+    <div class="card-inner"><b>黄金</b><div class="pred pred-n" style="margin-top:6px">震荡</div><p class="desc">冲高4800后获利了结，短期多头衰竭。但地缘支撑仍在→4700-4800区间震荡。</p></div>
+    <div class="card-inner"><b>锂</b><div class="pred pred-up" style="margin-top:6px">看涨</div><p class="desc">16万/吨趋势向上，新能源旺季。</p></div>
+  </div>
+  <div class="pred pred-up" style="margin-top:14px">📊 <b>有色整体：偏强</b> — 铜铝锂向上趋势明确。黄金短期获利了结但中期支撑。紫金/洛钼/天齐为核心配置。</div>
+</div>
+
+<!-- ===== 七、周一预判 ===== -->
+<h2>七、下周一（4/14）A股开盘预判</h2>
+
+<div class="card" style="border-left:4px solid var(--accent)">
+  <h3>⚡ 总体判断：地缘利空 vs 内部动能，结构性分化</h3>
+  <div class="g2" style="margin-top:14px">
+    <div class="card-inner" style="border-left:3px solid var(--green)">
+      <b>🟢 内部利好</b><br>
+      ①4/10收盘强势，创业板创4年半新高<br>
+      ②主力净流入131亿，电子76亿→机构看好<br>
+      ③CPI+1.0%，PPI转正<br>
+      ④下周四Q1 GDP→政策发力预期
+    </div>
+    <div class="card-inner" style="border-left:3px solid var(--red)">
+      <b>🔴 外部利空</b><br>
+      ①美伊谈判无果→地缘不确定持续<br>
+      ②特朗普威胁封锁海峡→油价上行风险<br>
+      ③道指-0.56%，标普-0.11%→外部偏谨慎<br>
+      ④黄金冲高4800后获利了结→避险情绪降温<br>
+      ⑤美CPI+3.3%→降息推迟
+    </div>
+  </div>
+
+  <div style="margin-top:16px;padding:14px 16px;background:#f8f9fe;border-radius:10px">
+    <b>📊 分板块预判</b>
+    <table>
+      <thead><tr><th>板块</th><th>方向</th><th>核心逻辑</th></tr></thead>
+      <tbody>
+        <tr><td>科技/电子</td><td class="up">偏强（逢低关注）</td><td>4/10主力净流入76亿+台积电财报催化，但大盘承压可能回调→低吸机会</td></tr>
+        <tr><td>新能源</td><td class="up">看涨</td><td>油价上行风险→替代逻辑更受益。碳酸锂趋势+旺季</td></tr>
+        <tr><td>能源/油气</td><td class="up">看涨（短线）</td><td>特朗普封锁威胁直接受益。但波动极大，非长期配置</td></tr>
+        <tr><td>有色（铜铝锂）</td><td class="up">看涨</td><td>矿端紧缺+旺季+美元弱势。紫金/洛钼/天齐</td></tr>
+        <tr><td>券商</td><td>震荡</td><td>取决于成交量，beta属性强，涨跌放大器</td></tr>
+        <tr><td>消费</td><td>震荡</td><td>等周四GDP定调，茅台防御属性</td></tr>
+        <tr><td>医疗</td><td>震荡偏防御</td><td>缺催化，但地缘环境下有配置价值</td></tr>
+        <tr><td>黄金股</td><td>震荡</td><td>黄金冲高获利了结→短期承压。但中期地缘支撑</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pred pred-n" style="margin-top:16px">
+    📊 <b>综合判断：上证预计3960-4020区间震荡，深证/创业板可能相对更强</b><br>
+    周末地缘利空（美伊未果+特朗普威胁）对周一大盘有压制，但A股内部动能（主力净流入+创业板新高趋势）提供支撑。预计<b>低开后震荡修复</b>。板块分化明显：能源/新能源/有色偏强，科技逢低关注，消费/券商/医疗偏震荡。
+  </div>
+</div>
+
+<!-- ===== 八、投资策略 ===== -->
+<h2>八、投资策略与风险提示</h2>
+
+<div class="box-dark">
+  <h3>💎 A股下周核心策略</h3>
+  <div style="margin-top:12px">
+    <div class="tip" style="display:block;margin-bottom:10px"><b>主线一（最强）：新能源+有色</b><br>油价上行风险→新能源替代逻辑强化。碳酸锂年内+40%+装机旺季。铜铝矿端紧缺。→ 宁德时代、天齐锂业、紫金矿业、洛阳钼业</div>
+    <div class="tip" style="display:block;margin-bottom:10px"><b>主线二（弹性）：科技/电子</b><br>4/10主力净流入76亿+立讯23亿→机构重仓方向。台积电财报周四催化。若周一低开→逢低布局。→ 立讯精密、海光信息、中芯国际</div>
+    <div class="tip" style="display:block;margin-bottom:10px"><b>主线三（短线博弈）：能源/油气</b><br>特朗普封锁威胁→油价上行风险大→中国海油/中国石油直接受益。但波动极大，适合短线非长期。</div>
+    <div class="tip" style="display:block;margin-bottom:10px"><b>主线四（防御）：高股息银行+消费</b><br>地缘不确定+等GDP数据→招商银行（5.5%股息）+贵州茅台（ROE超30%）提供安全垫。</div>
+    <div class="tip" style="display:block"><b>回避方向</b>：①航空/化工等油价下游（成本承压）；②纯黄金股（冲高获利了结中）；③高估值无业绩支撑的题材股（风险偏好可能回落）</div>
+  </div>
+</div>
+
+<div class="alert-box">
+  <h3>🔴 核心风险</h3>
+  <ul>
+    <li><b>地缘风险（最高）</b>：美伊谈判无果，特朗普威胁封锁海峡+打击水电设施，伊朗强硬回应→任何升级都可能引发全球市场剧烈波动</li>
+    <li><b>油价风险</b>：若海峡封锁升级→WTI可能冲击110-120美元→通胀失控→美联储被迫更鹰→全球资产承压</li>
+    <li><b>周四GDP风险</b>：若Q1 GDP低于预期→经济复苏逻辑受质疑→A股可能大幅调整</li>
+    <li><b>技术面</b>：创业板4年半新高后获利回吐压力累积</li>
+    <li><b>外部传导</b>：美股道指-0.56%，降息推迟→外部环境偏冷</li>
+  </ul>
+</div>
+
+<footer>
+  <p>📋 <b>免责声明</b>：本报告仅供学习研究参考，不构成投资建议。投资有风险，入市需谨慎。</p>
+  <p>📊 <b>数据来源</b>：金十数据www.jin10.com（4/12实时快讯）、证券时报【10日资金路线图】、东方财富、中财网（美股4/10收盘）、国家统计局、美国劳工统计局、路透社、LME、COMEX、金投网、界面新闻、华尔街见闻、新华社、央视新闻</p>
+  <p>📅 <b>数据截止</b>：A股/美股4月10日收盘 + 金十数据4月12日22:38实时快讯</p>
+  <p>⚠️ 涨跌颜色：<span style="color:#e63946">红色=上涨</span> | <span style="color:#2d9c4a">绿色=下跌</span></p>
+  <p style="margin-top:8px">AI基于公开权威数据生成 | 2026年4月12日 A股专题报告（修正版v2·含金十实时）</p>
+</footer>
+
+</div>
+</body>
+</html>
