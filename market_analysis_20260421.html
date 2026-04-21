@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球行情分析 · 2026年4月21日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:#f5f6fa;color:#2d3436;line-height:1.7}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+header{text-align:center;padding:40px 20px;background:linear-gradient(135deg,#0c2461,#1e3799);color:#fff;border-radius:16px;margin-bottom:30px}
+header h1{font-size:2em;margin-bottom:8px}
+header .date{font-size:1.1em;opacity:.85}
+header .tagline{margin-top:12px;font-size:.9em;opacity:.7}
+.disclaimer{text-align:center;color:#636e72;font-size:.82em;margin:-20px 0 20px;padding:10px;background:#ffeaa7;border-radius:8px}
+.section-title{font-size:1.5em;font-weight:700;margin:30px 0 16px;padding-bottom:8px;border-bottom:3px solid #1e3799;display:flex;align-items:center;gap:10px}
+.card{background:#fff;border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.card h3{font-size:1.1em;margin-bottom:8px}
+.card p{color:#636e72;font-size:.95em}
+.impact-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.78em;font-weight:600;color:#fff;vertical-align:middle;margin-left:8px}
+.impact-extreme{background:#d63031}
+.impact-high{background:#e17055}
+.impact-mid-high{background:#fdcb6e;color:#2d3436}
+.impact-mid{background:#74b9ff;color:#2d3436}
+.impact-low{background:#dfe6e9;color:#2d3436}
+.tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.82em;padding:2px 8px;border-radius:4px;font-weight:500}
+.tag-up{background:#ffe8e8;color:#d63031}
+.tag-down{background:#e8fff0;color:#00a86b}
+.tag-neutral{background:#e8f4fd;color:#0984e3}
+.tag-risk{background:#fff3e0;color:#e17055}
+.source{font-size:.78em;color:#b2bec3;margin-top:8px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.92em}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #eee}
+th{background:#f8f9fa;font-weight:600;color:#2d3436;position:sticky;top:0}
+.price-up{color:#d63031;font-weight:600}
+.price-down{color:#00a86b;font-weight:600}
+.sector-card{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.sector-card h3{font-size:1.2em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sector-meta{display:flex;flex-wrap:wrap;gap:16px;margin-bottom:16px;padding:12px;background:#f8f9fa;border-radius:8px;font-size:.9em}
+.sector-meta span{display:flex;align-items:center;gap:4px}
+.strategy-box{border-radius:10px;padding:16px;margin-bottom:12px}
+.strategy-conservative{border-left:4px solid #27ae60;background:#f0faf5}
+.strategy-growth{border-left:4px solid #f39c12;background:#fef9ed}
+.strategy-aggressive{border-left:4px solid #e55039;background:#fef2f0}
+.strategy-label{display:inline-block;padding:3px 10px;border-radius:4px;font-size:.8em;font-weight:700;color:#fff;margin-bottom:8px}
+.label-conservative{background:#27ae60}
+.label-growth{background:#f39c12}
+.label-aggressive{background:#e55039}
+.stock-item{padding:10px;margin:8px 0;background:#fff;border-radius:8px;border:1px solid #eee}
+.stock-item h4{font-size:1em;margin-bottom:6px}
+.stock-detail{font-size:.88em;color:#636e72}
+.stock-detail p{margin:3px 0}
+.risk-warning{background:#fff3e0;border:1px solid #ffcc80;border-radius:8px;padding:10px;margin-top:8px;font-size:.88em;color:#e65100}
+.tomorrow-prediction{margin-top:12px;padding:10px;background:#f0f4ff;border-radius:8px;font-size:.9em}
+.star{color:#f39c12}
+.star-empty{color:#dfe6e9}
+.warning-box{background:#fff3e0;border-left:4px solid #ff9800;border-radius:8px;padding:16px;margin:12px 0}
+.bullish-box{background:#e8f5e9;border-left:4px solid #4caf50;border-radius:8px;padding:16px;margin:12px 0}
+.deep-analysis{background:#fff;border-radius:12px;padding:24px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.deep-analysis h3{font-size:1.15em;margin-bottom:12px;color:#c0392b}
+.summary-table{margin:16px 0}
+.summary-table th{text-align:center}
+.summary-table td{text-align:center}
+.footer{text-align:center;padding:30px;color:#b2bec3;font-size:.85em;border-top:1px solid #eee;margin-top:40px}
+@media(max-width:768px){
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  header h1{font-size:1.5em}
+  .container{padding:12px}
+  .card,.sector-card,.deep-analysis{padding:14px}
+  table{font-size:.82em}
+  th,td{padding:6px 8px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>📊 全球行情分析大师</h1>
+  <div class="date">2026年4月21日 · 星期二</div>
+  <div class="tagline">数据截止至2026年4月21日A股收盘</div>
+</header>
+
+<div class="disclaimer">⚠️ 免责声明：本报告仅供参考，不构成任何投资建议。投资有风险，入市需谨慎。</div>
+
+<!-- ======== 一、全球重磅焦点消息 ======== -->
+<div class="section-title">🔥 一、全球重磅焦点消息</div>
+
+<div class="card">
+  <h3>🇺🇸🦅 美伊停火协议进入最后48小时，特朗普称"极不可能"延长 <span class="impact-badge impact-extreme">极高</span></h3>
+  <p>美伊两周停火协议将于华盛顿时间22日晚到期。特朗普多次警告若无法达成长期协议将恢复军事打击。副总统万斯已赴巴基斯坦斡旋。伊朗方面信号矛盾——议会要员称愿意继续谈判，外交部却否认有第二轮计划。</p>
+  <div class="tags"><span class="tag tag-up">🔴原油↑↑</span><span class="tag tag-up">🔴黄金↑</span><span class="tag tag-down">🟢风险资产↓</span></div>
+  <div class="source">来源：新华社、央视新闻、金十数据 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇺🇸⚓ 美军三航母打击群同时部署中东，海上封锁持续升级 <span class="impact-badge impact-extreme">极高</span></h3>
+  <p>"林肯"号在阿曼湾执行封锁，"福特"号在红海北部，"布什"号正驶入阿拉伯海——三航母同框极为罕见。科威特因霍尔木兹海峡受阻宣布不可抗力。自封锁以来已有27艘船只被迫掉头。</p>
+  <div class="tags"><span class="tag tag-up">🔴原油↑↑</span><span class="tag tag-up">🔴军工↑</span><span class="tag tag-risk">⚠️能源供应链中断</span></div>
+  <div class="source">来源：新华社、路透社、CCTV国际时讯 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🌍🛢️ 霍尔木兹海峡通航混乱，全球已损失超5亿桶原油 <span class="impact-badge impact-extreme">极高</span></h3>
+  <p>自2月底危机以来全球市场损失超5亿桶原油和凝析油，现代史上最大能源供应中断。伊朗划定"拉腊克走廊"新航线并拟立法禁止以色列关联船只通行。化肥贸易被切断三分之一，硫磺供应中断波及铜镍冶炼。</p>
+  <div class="tags"><span class="tag tag-up">🔴原油↑↑</span><span class="tag tag-up">🔴化肥↑</span><span class="tag tag-up">🔴铜镍↑</span><span class="tag tag-risk">⚠️通胀压力↑</span></div>
+  <div class="source">来源：Kpler、国际海事组织、央视财经 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇺🇸🍎 苹果官宣：库克9月卸任CEO，特努斯接棒 <span class="impact-badge impact-high">高</span></h3>
+  <p>苹果公司宣布蒂姆·库克将于2026年9月1日卸任CEO，转任执行董事长。硬件工程高级副总裁约翰·特努斯接任CEO并加入董事会。市场预期苹果将强化硬件创新战略。</p>
+  <div class="tags"><span class="tag tag-up">🔴苹果硬件供应链↑</span><span class="tag tag-neutral">🟢苹果软件观望</span></div>
+  <div class="source">来源：苹果官网、新华社 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇨🇳🔋 宁德时代举办2026年"超级科技日"，发布钠电/凝聚态/快充技术 <span class="impact-badge impact-high">高</span></h3>
+  <p>宁德时代发布钠电、凝聚态、快充等相关技术产品。蔚来乐道宣布2026款L90搭载神玑NX9031芯片及蔚来世界模型NWM。新能源车产业链催化密集。</p>
+  <div class="tags"><span class="tag tag-up">🔴锂电池↑</span><span class="tag tag-up">🔴钠电池↑</span><span class="tag tag-up">🟢固态电池↑</span></div>
+  <div class="source">来源：东方财富网、宁德时代公告 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇨🇳📊 国新办发布一季度工业和信息化发展情况 <span class="impact-badge impact-high">高</span></h3>
+  <p>工信部副部长张云明介绍2026年一季度情况。一季度消费数据方面汽车、彩电、空调全线下跌，反映内需偏弱。但工信部强调加快新质生产力发展，推进数字化智能化转型。</p>
+  <div class="tags"><span class="tag tag-up">🟢智能制造↑</span><span class="tag tag-up">🟢数字经济↑</span><span class="tag tag-down">🟢传统消费↓</span></div>
+  <div class="source">来源：国务院新闻办、21经济网 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇨🇳💰 央行维持LPR不变，连续11个月按兵不动 <span class="impact-badge impact-mid-high">中高</span></h3>
+  <p>一年期LPR维持3%，五年期LPR维持3.5%。央行5亿元逆回购零投放零回笼。货币政策稳健基调延续，降息预期后移。</p>
+  <div class="tags"><span class="tag tag-neutral">🟢银行息差→</span><span class="tag tag-down">🟢地产降息落空</span></div>
+  <div class="source">来源：央行公告 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇺🇸💼 美联储主席提名人沃什今晚出席听证会 <span class="impact-badge impact-mid-high">中高</span></h3>
+  <p>凯文·沃什将出席参议院银行委员会听证会，承诺维护美联储货币政策独立性。市场关注其对通胀及利率路径的表态。</p>
+  <div class="tags"><span class="tag tag-neutral">🟢美元→观望</span><span class="tag tag-neutral">🟢美债→</span></div>
+  <div class="source">来源：路透社、金十数据 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇨🇳📉 多只A股被实施ST/退市风险警示 <span class="impact-badge impact-mid">中</span></h3>
+  <p>奥特迅、ST赛为、明德生物、中化岩土、亚光科技等被实施风险警示。海通期货停牌筹备与国泰君安期货合并重组。退市常态化推进。</p>
+  <div class="tags"><span class="tag tag-up">🟢绩优蓝筹↑</span><span class="tag tag-down">🟢壳资源↓</span></div>
+  <div class="source">来源：东方财富网、各公司公告 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇨🇳🏭 2026全球6G技术与产业生态大会在南京召开 <span class="impact-badge impact-mid">中</span></h3>
+  <p>4月21-23日以"极致连接智能融合"为主题的6G大会在南京举行。同期第十四届数控机床展在上海举办。两会催化智能制造、通信板块。</p>
+  <div class="tags"><span class="tag tag-up">🔴6G通信↑</span><span class="tag tag-up">🟢工业母机↑</span></div>
+  <div class="source">来源：东方财富网 · 2026-04-21</div>
+</div>
+
+<div class="card">
+  <h3>🇨🇳🚢 上海出口集装箱运价指数（欧洲航线）跌6.8% <span class="impact-badge impact-mid">中低</span></h3>
+  <p>报1610.42点。霍尔木兹封锁导致航运路线调整，部分航线运价结构性变化。3月中国进口碳酸锂同比大增65%，压制锂价跌近4%。</p>
+  <div class="tags"><span class="tag tag-down">🟢集运↓</span><span class="tag tag-up">🔴油运↑</span><span class="tag tag-down">🟢碳酸锂↓</span></div>
+  <div class="source">来源：上海航运交易所、海关总署 · 2026-04-21</div>
+</div>
+
+<!-- ======== 二、深度量化影响分析 ======== -->
+<div class="section-title">📈 二、政策与全球事件量化影响分析</div>
+
+<div class="deep-analysis">
+  <h3>⚠️ 事件一：美伊停火协议到期与霍尔木兹海峡封锁</h3>
+  <div class="warning-box">
+    <strong>影响路径：</strong>美伊谈判破裂 → 霍尔木兹海峡持续封锁 → 全球原油供应链断裂 → 国际油价飙升 → 全球通胀预期抬升 → 风险资产承压 / 避险资产走强
+  </div>
+  <p><strong>量化估计：</strong></p>
+  <ul style="margin:8px 0 8px 20px;font-size:.92em">
+    <li>原油：若停火破裂，WTI可能冲击 <strong>$95-105/桶</strong>（当前$85.87），极端情景达$120</li>
+    <li>黄金：避险需求推升至 <strong>$4900-5200/盎司</strong> 区间</li>
+    <li>全球GDP：油价每上涨10%，全球GDP增速下降约0.1-0.2个百分点（IMF模型）</li>
+    <li>A股：石化板块+3-8%，航空/交运-2-5%，大盘整体受情绪压制</li>
+  </ul>
+  <p><strong>核心风险：</strong>最坏情景为美伊全面冲突→全球经济衰退风险骤升</p>
+  <div class="source">来源：新华社、央视新闻、Kpler、IMF</div>
+</div>
+
+<div class="deep-analysis">
+  <h3>⚠️ 事件二：宁德时代"超级科技日"与新能源产业链催化</h3>
+  <div class="bullish-box">
+    <strong>影响路径：</strong>宁德发布钠电/凝聚态/快充技术 → 技术路线突破 → 产业链上下游估值重塑 → 新能源板块整体催化
+  </div>
+  <p><strong>量化估计：</strong></p>
+  <ul style="margin:8px 0 8px 20px;font-size:.92em">
+    <li>锂电板块：短期情绪催化 +2-5%，钠电池概念标的弹性更大</li>
+    <li>快充产业链：充电桩、功率器件等潜在涨幅 +5-10%</li>
+    <li>钠电池：产业化超预期，相关材料企业估值重估</li>
+  </ul>
+  <div class="source">来源：宁德时代公告、东方财富网</div>
+</div>
+
+<div class="deep-analysis">
+  <h3>⚠️ 事件三：苹果CEO更替与全球科技产业链</h3>
+  <div class="warning-box">
+    <strong>影响路径：</strong>库克卸任 → 市场担忧战略延续性 → 短期波动 → 特努斯上任（硬件背景）→ 强化硬件创新 → 苹果供应链企业中长期受益
+  </div>
+  <p><strong>量化估计：</strong>苹果股价短期±2-3%波动，A股苹果供应链±1-3%</p>
+  <div class="source">来源：苹果官网、路透社</div>
+</div>
+
+<!-- ======== 三、全球局势分析 ======== -->
+<div class="section-title">🌐 三、全球局势分析</div>
+
+<div class="card">
+  <h3>地缘政治与军事</h3>
+  <p>美伊博弈进入最关键的48小时。三航母压境史无前例，霍尔木兹海峡通航混乱已造成现代史上最大能源供应中断。以黎方向停火脆弱，外交渠道未完全断绝但前景不明。</p>
+</div>
+
+<div class="card">
+  <h3>市场情绪指标</h3>
+  <table>
+    <tr><th>指标</th><th>数值</th><th>解读</th></tr>
+    <tr><td>美元指数</td><td>~106.5 偏强</td><td>避险+加息预期支撑</td></tr>
+    <tr><td>美债10Y收益率</td><td>~4.45%</td><td>通胀预期+风险定价</td></tr>
+    <tr><td>VIX恐慌指数</td><td>~22-25 偏高</td><td>地缘风险推升恐慌情绪</td></tr>
+    <tr><td>现货黄金</td><td>$4816/oz</td><td>避险买盘强劲</td></tr>
+  </table>
+</div>
+
+<!-- ======== 四、全球市场概览 ======== -->
+<div class="section-title">📊 四、全球市场概览</div>
+
+<div class="grid-2">
+<div class="card">
+  <h3>📈 主要股指</h3>
+  <table>
+    <tr><th>指数</th><th>收盘价</th><th>涨跌幅</th></tr>
+    <tr><td>上证指数</td><td>4085.08</td><td class="price-up">+0.07%</td></tr>
+    <tr><td>深证成指</td><td>14982.14</td><td class="price-up">+0.10%</td></tr>
+    <tr><td>创业板指</td><td>—</td><td class="price-up">+0.31%</td></tr>
+    <tr><td>科创综指</td><td>—</td><td class="price-down">-0.81%</td></tr>
+    <tr><td>北证50</td><td>—</td><td class="price-down">-1.52%</td></tr>
+    <tr><td>恒生指数</td><td>—</td><td class="price-up">+0.31%</td></tr>
+    <tr><td>恒生科技</td><td>—</td><td class="price-up">+0.53%</td></tr>
+    <tr><td>道琼斯</td><td>49442.56</td><td class="price-down">-0.01%</td></tr>
+    <tr><td>标普500</td><td>7109</td><td class="price-down">-0.24%</td></tr>
+    <tr><td>纳斯达克</td><td>—</td><td class="price-down">-0.26%</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h3>💰 关键资产</h3>
+  <table>
+    <tr><th>品种</th><th>最新价</th><th>涨跌</th></tr>
+    <tr><td>COMEX黄金</td><td>$4836.70/oz</td><td class="price-down">微跌</td></tr>
+    <tr><td>现货黄金</td><td>$4816.34/oz</td><td class="price-down">-0.28%</td></tr>
+    <tr><td>现货白银</td><td>$79.702/oz</td><td class="price-down">-1.56%</td></tr>
+    <tr><td>WTI原油</td><td>$85.87/bbl</td><td class="price-up">+1.91%</td></tr>
+    <tr><td>布伦特原油</td><td>$93.80/bbl</td><td class="price-up">+2.51%</td></tr>
+    <tr><td>LME铜</td><td>$13,275/t</td><td class="price-down">-72美元</td></tr>
+    <tr><td>LME铝</td><td>$3,557.5/t</td><td class="price-down">-7美元</td></tr>
+    <tr><td>LME锡</td><td>$50,625/t</td><td class="price-up">+460美元</td></tr>
+    <tr><td>沪铜主力</td><td>102,490元/t</td><td class="price-down">微跌</td></tr>
+    <tr><td>沪锡主力</td><td>396,210元/t</td><td class="price-up">+0.79%</td></tr>
+  </table>
+</div>
+</div>
+
+<div class="card" style="text-align:center">
+  <h3>A股市场概况</h3>
+  <div class="sector-meta" style="justify-content:center">
+    <span>💰 总成交额：<strong>2.41万亿</strong>（缩量1702亿）</span>
+    <span>🔴 主力净流出：<strong>392.29亿</strong></span>
+    <span>📈 涨停：<strong>65只</strong></span>
+    <span>📉 跌停：<strong>15只</strong></span>
+  </div>
+</div>
+
+<!-- ======== 五、板块分析 ======== -->
+<div class="section-title">🎯 五、股票市场多板块分析</div>
+
+<!-- 能源 -->
+<div class="sector-card">
+  <h3>🔥 能源（煤炭/油气）</h3>
+  <div class="sector-meta">
+    <span>📊 涨跌幅：<strong class="price-up">+2.31%</strong></span>
+    <span>💰 资金流向：<strong class="price-up">净流入15.76亿（全行业第一）</strong></span>
+    <span>🏆 领涨：煤炭开采29涨</span>
+  </div>
+  <p style="font-size:.9em;color:#636e72;margin-bottom:12px"><strong>驱动事件：</strong>美伊停火到期倒计时 → 霍尔木兹封锁持续 → 原油供应中断 → 煤炭替代需求与能源安全逻辑强化</p>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略（低风险·价值底仓）</span>
+    <div class="stock-item">
+      <h4>中国神华（601088）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>最大煤炭央企，煤电运一体化，股息率5.5%+，霍尔木兹封锁强化能源安全叙事</p>
+        <p><strong>估值：</strong>PE~10x（历史25%分位），PB稳定</p>
+        <p><strong>位置：</strong>上游+中游+下游一体化</p>
+        <p><strong>安全边际：</strong>央企分红稳定，净现金充裕</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>陕西煤业（601225）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>陕西优质动力煤龙头，长协占比高，股息率约6%</p>
+        <p><strong>估值：</strong>PE~9x，PB~1.5x，历史低分位</p>
+        <p><strong>位置：</strong>上游（优质动力煤）</p>
+        <p><strong>安全边际：</strong>负债率极低，现金流充沛</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略（中风险·事件驱动）</span>
+    <div class="stock-item">
+      <h4>兖矿能源（600188）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>国际化煤炭龙头，澳洲产能释放，海外煤价弹性更大</p>
+        <p><strong>催化剂：</strong>中东冲突推升全球能源价格，澳洲动力煤突破$200/吨</p>
+        <p><strong>估值：</strong>PE~8x，与增速匹配</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>中国海油（600938）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>最大海上油气商，油价$90+直接增厚利润</p>
+        <p><strong>催化剂：</strong>美伊冲突升级→Q2业绩预期大幅改善</p>
+        <p><strong>估值：</strong>PE~7x，明显低估</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略（高风险·短线弹性）</span>
+    <div class="stock-item">
+      <h4>广汇能源（600256）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>天然气+煤炭双主业，LNG价格弹性标的</p>
+        <p><strong>催化剂：</strong>霍尔木兹封锁→LNG价格飙升→贸易业务利润弹性大</p>
+        <p><strong>估值：</strong>PE~15x，题材弹性溢价</p>
+      </div>
+      <div class="risk-warning">⚠️ 风险提示：波动剧烈，受国际能源价格影响显著。若美伊快速和解油价暴跌，该股将大幅回调。止损-5%，持仓1-2周，WTI回落$80以下及时止盈。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★★★</span> <strong>强看涨</strong> — 美伊停火到期在即，能源价格高位运行，资金净流入全行业第一
+  </div>
+</div>
+
+<!-- 科技 -->
+<div class="sector-card">
+  <h3>💻 科技</h3>
+  <div class="sector-meta">
+    <span>📊 涨跌幅：<strong class="price-down">算力/液冷回调</strong></span>
+    <span>💰 科创板：<strong class="price-up">净流入24.37亿</strong></span>
+    <span>📌 盛合晶微上市首日净流入23.48亿</span>
+  </div>
+  <p style="font-size:.9em;color:#636e72;margin-bottom:12px"><strong>驱动事件：</strong>苹果CEO变动引发情绪波动，算力板块前期涨幅需消化，6G大会开幕形成部分催化</p>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略</span>
+    <div class="stock-item">
+      <h4>工业富联（601138）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>全球AI服务器龙头，客户覆盖头部云厂商，订单确定性强</p>
+        <p><strong>估值：</strong>PE~20x，PEG<0.5（AI服务器增速>50%）</p>
+        <p><strong>安全边际：</strong>大客户长约锁单，富士康体系背书</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>海康威视（002415）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>AI+安防绝对龙头，创新业务打开第二曲线</p>
+        <p><strong>估值：</strong>PE~22x，历史中低分位</p>
+        <p><strong>安全边际：</strong>现金流极充沛，回购+分红</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略</span>
+    <div class="stock-item">
+      <h4>盛合晶微（688820）🆕今日上市</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>半导体先进封装龙头，国产替代核心标的，首日净流入23.48亿</p>
+        <p><strong>催化剂：</strong>新股上市+先进封装国产化+HBM需求爆发</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>中际旭创（300308）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>光模块龙头，800G/1.6T量产，6G大会催化</p>
+        <p><strong>估值：</strong>PE~30x，与40%+增速匹配</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略</span>
+    <div class="stock-item">
+      <h4>金富科技（003018）🔥7天4板</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>PCB+算力概念叠加，市场辨识度最高题材龙头</p>
+      </div>
+      <div class="risk-warning">⚠️ 风险提示：纯题材炒作，无基本面支撑，高位追涨风险极大。仅限T+1快进快出，跌破5日均线立即止损。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★</span><span class="star-empty">☆</span> <strong>震荡偏弱</strong> — 算力板块需消化浮筹，缺乏强催化
+  </div>
+</div>
+
+<!-- 新能源 -->
+<div class="sector-card">
+  <h3>🔋 新能源</h3>
+  <div class="sector-meta">
+    <span>📊 固态电池/钠电池概念活跃</span>
+    <span>📌 宁德超级科技日催化</span>
+  </div>
+  <p style="font-size:.9em;color:#636e72;margin-bottom:12px"><strong>驱动事件：</strong>宁德时代发布钠电/凝聚态/快充技术，蔚来乐道L90发布</p>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略</span>
+    <div class="stock-item">
+      <h4>宁德时代（300750）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>全球动力电池+储能绝对龙头，今日发布三大新技术打开增长空间</p>
+        <p><strong>估值：</strong>PE~25x，储能+钠电+海外扩产增量支撑</p>
+        <p><strong>安全边际：</strong>技术壁垒极高，客户绑定深</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>阳光电源（300274）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>光伏逆变器+储能全球龙头，海外收入占比高</p>
+        <p><strong>估值：</strong>PE~18x，历史中低分位</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略</span>
+    <div class="stock-item">
+      <h4>天齐锂业（002466）📈预告净利增超15倍</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>锂资源龙头，预告增1530%-1818%，成本优势显著</p>
+        <p><strong>催化剂：</strong>一季报超预期+锂价触底后库存回补</p>
+        <p><strong>估值：</strong>PE~12x（按预告业绩），极具性价比</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>亿纬锂能（300014）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>锂电第二梯队，钠电池技术储备丰富，宁德催化受益</p>
+        <p><strong>催化剂：</strong>钠电产业化+海外储能订单</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略</span>
+    <div class="stock-item">
+      <h4>传艺科技（002866）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>钠电池正极材料核心标的，宁德催化直接，市场辨识度高</p>
+      </div>
+      <div class="risk-warning">⚠️ 风险提示：钠电池商业化仍存不确定性，历史波动率极高。快进快出，不超过5个交易日，止损-7%。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★★</span> <strong>偏强</strong> — 宁德催化仍在发酵，但碳酸锂跌价压制部分情绪
+  </div>
+</div>
+
+<!-- 消费 -->
+<div class="sector-card">
+  <h3>🛒 消费</h3>
+  <div class="sector-meta">
+    <span>📊 消费板块整体平淡</span>
+    <span>📌 一季度数据：汽车/彩电/空调全线下跌</span>
+  </div>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略</span>
+    <div class="stock-item">
+      <h4>贵州茅台（600519）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>白酒绝对龙头，品牌壁垒不可复制，PE~25x（历史中位偏低）</p>
+        <p><strong>安全边际：</strong>分红稳定，现金储备充裕，品牌护城河深</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>中国中免（601888）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>免税龙头，海南政策+国际旅游恢复，PE~20x（历史低位）</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略</span>
+    <div class="stock-item">
+      <h4>爱美客（300896）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>医美龙头，新品获批加快，PE~35x与30%+增速匹配</p></div>
+    </div>
+    <div class="stock-item">
+      <h4>海底捞（港股6862）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>餐饮龙头，门店优化后盈利提升，消费复苏弹性大</p></div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略</span>
+    <div class="stock-item">
+      <h4>豆神教育（300010）🆕今日发布AI新品</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>AI教育新品"豆神超级学练课"发布，题材弹性</p></div>
+      <div class="risk-warning">⚠️ 风险提示：教育政策风险仍存，基本面偏弱，纯题材炒作。不超过3个交易日，止损-5%。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★</span> <strong>震荡</strong> — 一季度数据疲弱，缺乏强催化，防御配置为主
+  </div>
+</div>
+
+<!-- 金融 -->
+<div class="sector-card">
+  <h3>🏦 金融</h3>
+  <div class="sector-meta">
+    <span>📊 银行稳健，券商/保险分化</span>
+    <span>📌 LPR连续11月不变，海通期货与国泰君安期货合并</span>
+  </div>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略</span>
+    <div class="stock-item">
+      <h4>工商银行（601398）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>宇宙行，股息率>6%，PE仅5x，PB~0.6x破净，安全垫极厚</p></div>
+    </div>
+    <div class="stock-item">
+      <h4>招商银行（600036）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>零售银行标杆，资产质量同业最优，PE~7x</p></div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略</span>
+    <div class="stock-item">
+      <h4>东方财富（300059）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>互联网券商龙头，万亿成交额直接增厚业绩，PE~25x</p></div>
+    </div>
+    <div class="stock-item">
+      <h4>中信证券（600030）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>券商龙头，并购整合潮催化，PE~18x</p></div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略</span>
+    <div class="stock-item">
+      <h4>国泰君安（601211）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>海通期货合并催化，券商并购概念热度高</p></div>
+      <div class="risk-warning">⚠️ 风险提示：合并进度不确定性，短线持有，止损-4%。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★★</span> <strong>偏强</strong> — LPR稳定利好银行息差，低估值+高股息是避风港
+  </div>
+</div>
+
+<!-- 医疗 -->
+<div class="sector-card">
+  <h3>🏥 医疗</h3>
+  <div class="sector-meta">
+    <span>📊 板块整体震荡</span>
+    <span>📌 明德生物被ST，创新药政策持续推进</span>
+  </div>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略</span>
+    <div class="stock-item">
+      <h4>恒瑞医药（600276）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>创新药龙头，管线最丰富，PE~40x（历史中低分位）</p></div>
+    </div>
+    <div class="stock-item">
+      <h4>迈瑞医疗（300760）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>医疗器械龙头，国际化逻辑顺畅，PE~28x（历史低位）</p></div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略</span>
+    <div class="stock-item">
+      <h4>百济神州（688235）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>创新药出海标杆，泽布替尼全球销售超预期</p></div>
+    </div>
+    <div class="stock-item">
+      <h4>药明康德（603259）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>CXO龙头，订单恢复增长，PE~22x</p></div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略</span>
+    <div class="stock-item">
+      <h4>科伦药业（002422）</h4>
+      <div class="stock-detail"><p><strong>逻辑：</strong>ADC管线价值被低估，产品获批预期</p></div>
+      <div class="risk-warning">⚠️ 风险提示：创新药研发不确定性，中线持有1-3个月，止损-10%。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★</span> <strong>震荡</strong> — 板块缺乏催化，但龙头估值低位，中长期配置价值
+  </div>
+</div>
+
+<!-- ======== 六、有色金属专项 ======== -->
+<div class="section-title">⛏️ 六、有色金属板块专项分析</div>
+
+<div class="card">
+  <h3>有色金属价格数据</h3>
+  <table>
+    <tr><th>品种</th><th>最新价</th><th>涨跌</th><th>市场</th></tr>
+    <tr><td>LME铜</td><td>$13,275/吨</td><td class="price-down">-72美元</td><td>LME</td></tr>
+    <tr><td>LME铝</td><td>$3,557.5/吨</td><td class="price-down">-7.0美元</td><td>LME</td></tr>
+    <tr><td>LME锌</td><td>$3,408.5/吨</td><td class="price-down">-37.5美元</td><td>LME</td></tr>
+    <tr><td>LME铅</td><td>$1,974/吨</td><td class="price-up">+12美元</td><td>LME</td></tr>
+    <tr><td>LME锡</td><td>$50,625/吨</td><td class="price-up">+460美元</td><td>LME</td></tr>
+    <tr><td>沪铜主力</td><td>102,490元/吨</td><td class="price-down">微跌</td><td>SHFE</td></tr>
+    <tr><td>沪锡主力</td><td>396,210元/吨</td><td class="price-up">+0.79%</td><td>SHFE</td></tr>
+    <tr><td>碳酸锂期货</td><td>—</td><td class="price-down">-近4%</td><td>国内期货</td></tr>
+    <tr><td>氧化铝</td><td>—</td><td class="price-up">+超2%</td><td>国内期货</td></tr>
+    <tr><td>多晶硅</td><td>—</td><td class="price-up">+超2%</td><td>国内期货</td></tr>
+  </table>
+  <p style="font-size:.88em;color:#636e72;margin-top:8px"><strong>供给面：</strong>全球原铝3月产量630.2万吨（同比+1.0%）；霍尔木兹封锁导致硫磺供应中断波及铜镍冶炼<br><strong>需求面：</strong>新能源对铜铝需求持续增长，但传统制造业偏弱</p>
+</div>
+
+<div class="sector-card">
+  <h3>有色金属多策略潜力股</h3>
+
+  <div class="strategy-box strategy-conservative">
+    <span class="strategy-label label-conservative">🛡️ 稳健策略</span>
+    <div class="stock-item">
+      <h4>紫金矿业（601899）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>中国最大金铜矿企业，金价$4800+和铜价$13000+带来丰厚利润</p>
+        <p><strong>估值：</strong>PE~12x，历史中低分位</p>
+        <p><strong>安全边际：</strong>资源储量增长+分红提升+全球化分散风险</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>中国铝业（601600）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>中国最大铝企，一体化产业链，铝价中枢上移受益</p>
+        <p><strong>估值：</strong>PE~10x</p>
+        <p><strong>安全边际：</strong>央企背景，产能规模优势</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-growth">
+    <span class="strategy-label label-growth">🚀 成长策略</span>
+    <div class="stock-item">
+      <h4>洛阳钼业（603993）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>全球钴铜龙头，刚果金矿山产能释放</p>
+        <p><strong>催化剂：</strong>铜价高位+钴价触底反弹，PE~14x</p>
+      </div>
+    </div>
+    <div class="stock-item">
+      <h4>天齐锂业（002466）📈预告增超15倍</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>锂资源龙头，成本端改善，PE~12x（按预告业绩）</p>
+        <p><strong>催化剂：</strong>一季报超预期+锂价触底</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="strategy-box strategy-aggressive">
+    <span class="strategy-label label-aggressive">⚔️ 进攻策略</span>
+    <div class="stock-item">
+      <h4>北方稀土（600111）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>稀土龙头，中国整合推进+出口管制预期</p>
+      </div>
+      <div class="risk-warning">⚠️ 风险提示：稀土价格波动大，政策变化风险高。短线为主，止损-6%。</div>
+    </div>
+    <div class="stock-item">
+      <h4>华友钴业（603799）</h4>
+      <div class="stock-detail">
+        <p><strong>逻辑：</strong>钴镍一体化，硫磺供应中断推升钴镍价格</p>
+      </div>
+      <div class="risk-warning">⚠️ 风险提示：钴价长期低迷，负债率偏高。T+1~T+3快进快出，止损-5%。</div>
+    </div>
+  </div>
+
+  <div class="tomorrow-prediction">
+    <strong>📅 明日走势预测：</strong> <span class="star">★★</span> <strong>震荡偏强</strong> — 地缘避险+硫磺供给中断推升价格，但需求端偏弱形成压制
+  </div>
+</div>
+
+<!-- ======== 七、预测汇总 ======== -->
+<div class="section-title">📋 七、各板块明日走势预测汇总</div>
+
+<div class="card summary-table">
+  <table>
+    <tr><th>板块</th><th>明日判断</th><th>核心依据</th></tr>
+    <tr><td>🔥 能源（煤炭/油气）</td><td><span class="star">★★★</span> 强看涨</td><td>美伊停火到期，能源价格高位，资金净流入全行业第一</td></tr>
+    <tr><td>💻 科技</td><td><span class="star">★</span><span class="star-empty">☆</span> 震荡偏弱</td><td>算力板块回调消化浮筹，缺乏强催化</td></tr>
+    <tr><td>🔋 新能源</td><td><span class="star">★★</span> 偏强</td><td>宁德超级科技日催化发酵，钠电/快充延续</td></tr>
+    <tr><td>🛒 消费</td><td><span class="star">★</span> 震荡</td><td>一季度数据疲弱，板块缺乏强催化</td></tr>
+    <tr><td>🏦 金融</td><td><span class="star">★★</span> 偏强</td><td>LPR稳定利好银行息差，低估值+高股息安全垫</td></tr>
+    <tr><td>🏥 医疗</td><td><span class="star">★</span> 震荡</td><td>板块缺乏催化，龙头估值低位</td></tr>
+    <tr><td>⛏️ 有色金属</td><td><span class="star">★★</span> 震荡偏强</td><td>地缘避险+硫磺供给中断，但需求偏弱</td></tr>
+  </table>
+</div>
+
+<!-- ======== 八、风险提示与总结 ======== -->
+<div class="section-title">🛡️ 八、风险提示与投资总结</div>
+
+<div class="warning-box">
+  <h3 style="margin-bottom:10px">核心风险事件（按紧迫程度排序）</h3>
+  <ol style="margin-left:20px;font-size:.92em">
+    <li><strong style="color:#d63031">🔴 美伊停火协议到期（48小时内）</strong>：若谈判破裂，中东全面冲突概率骤升</li>
+    <li><strong style="color:#e17055">🟠 霍尔木兹海峡封锁持续</strong>：全球已损失超5亿桶原油，供应链断裂</li>
+    <li><strong style="color:#fdcb6e">🟡 美联储利率路径不确定性</strong>：沃什听证会+今晚零售销售数据</li>
+    <li><strong style="color:#fdcb6e">🟡 碳酸锂价格持续下跌</strong>：供应充裕压制锂电板块</li>
+    <li><strong style="color:#fdcb6e">🟡 A股成交量缩量</strong>：2.41万亿较前日缩量1702亿，做多动能减弱</li>
+  </ol>
+</div>
+
+<div class="bullish-box">
+  <h3 style="margin-bottom:10px">投资总结</h3>
+  <p><strong>主线一：能源安全（★★★）</strong><br>逻辑：美伊冲突→霍尔木兹封锁→全球能源供应中断→油价/煤价高位<br>重点个股：<strong>中国神华、中国海油、兖矿能源</strong><br>策略：<em>核心配置，当前确定性最高主线</em></p>
+  <br>
+  <p><strong>主线二：新能源技术突破（★★）</strong><br>逻辑：宁德发布钠电/快充技术→产业链估值重塑<br>重点个股：<strong>宁德时代、天齐锂业、传艺科技（进攻）</strong><br>策略：<em>均衡配置，稳健+成长为主</em></p>
+  <br>
+  <p><strong>主线三：避险+高股息（★★）</strong><br>逻辑：地缘风险升温→避险推升黄金→高股息受追捧<br>重点个股：<strong>紫金矿业、工商银行、招商银行</strong><br>策略：<em>防御配置，安全港</em></p>
+</div>
+
+<div class="card">
+  <h3>📅 明日核心变量（需持续跟踪）</h3>
+  <ol style="margin-left:20px;font-size:.92em">
+    <li><strong>美伊谈判进展</strong>：48小时内是否达成协议，直接决定全球风险偏好</li>
+    <li><strong>美国3月零售销售数据</strong>（20:30公布）：反映美国消费韧性</li>
+    <li><strong>沃什听证会表态</strong>（22:00）：利率路径和央行独立性</li>
+    <li><strong>WTI原油走势</strong>：若突破$90将引发更广泛的通胀交易</li>
+    <li><strong>A股成交额变化</strong>：若继续缩量至2万亿以下需警惕调整</li>
+  </ol>
+</div>
+
+<div class="footer">
+  <p><strong>数据来源：</strong>金十数据、东方财富、证券时报、新华社、央视新闻、路透社、金投网、我的钢铁网、上海航运交易所、海关总署、LME、COMEX、NYMEX、ICE、各公司公告</p>
+  <p style="margin-top:8px">📅 报告生成日期：2026年4月21日 | ⚠️ 本报告仅供参考，不构成投资建议</p>
+</div>
+
+</div>
+</body>
+</html>
