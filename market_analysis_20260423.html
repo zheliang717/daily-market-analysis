@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球行情分析大师 | 2026年4月23日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:#f5f7fa;color:#2c3e50;line-height:1.7}
+.container{max-width:1200px;margin:0 auto;padding:16px}
+.header{text-align:center;padding:32px 0 24px;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;border-radius:16px;margin-bottom:24px}
+.header h1{font-size:28px;margin-bottom:8px;letter-spacing:2px}
+.header .date{font-size:14px;opacity:.8}
+.header .subtitle{font-size:13px;opacity:.6;margin-top:4px}
+.section{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.section-title{font-size:20px;font-weight:700;margin-bottom:16px;padding-bottom:10px;border-bottom:3px solid #3498db;display:flex;align-items:center;gap:8px}
+.news-item{padding:14px 0;border-bottom:1px solid #f0f0f0}
+.news-item:last-child{border-bottom:none}
+.news-header{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
+.news-title{font-weight:700;font-size:15px}
+.badge{display:inline-block;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600;color:#fff}
+.badge-extreme{background:#e74c3c}.badge-high{background:#e67e22}.badge-mid-high{background:#f39c12}.badge-mid{background:#3498db}.badge-mid-low{background:#95a5a6}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600}
+.tag-up{background:#ffeaea;color:#e74c3c}.tag-down{background:#e8f5e9;color:#27ae60}
+.news-detail{font-size:13px;color:#555;margin-top:4px}
+.news-source{font-size:11px;color:#999;margin-top:4px}
+.analysis-box{padding:16px;border-radius:10px;margin-bottom:16px}
+.analysis-box.warning{background:#fff8e1;border-left:4px solid #f39c12}
+.analysis-box.bullish{background:#e8f5e9;border-left:4px solid #27ae60}
+.analysis-box.info{background:#e3f2fd;border-left:4px solid #2196f3}
+.analysis-box h4{font-size:15px;margin-bottom:8px}
+.analysis-box p,.analysis-box li{font-size:13px;color:#444}
+.analysis-box ul{padding-left:18px}
+.market-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.market-card{background:#f8f9fa;border-radius:10px;padding:16px;border:1px solid #e8e8e8}
+.market-card h4{font-size:14px;margin-bottom:10px;color:#333;border-bottom:2px solid #3498db;padding-bottom:6px}
+.data-row{display:flex;justify-content:content-between;align-items:center;padding:5px 0;font-size:13px;border-bottom:1px solid #f0f0f0}
+.data-row:last-child{border-bottom:none}
+.data-name{flex:1;color:#555}
+.data-value{font-weight:600;min-width:100px;text-align:right}
+.up{color:#e74c3c}.down{color:#27ae60}
+.sector-card{background:#fff;border-radius:12px;padding:20px;margin-bottom:16px;border:1px solid #e8e8e8;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.sector-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px}
+.sector-name{font-size:18px;font-weight:700}
+.sector-data{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;margin-bottom:16px;background:#f8f9fa;padding:12px;border-radius:8px;font-size:13px}
+.strategy-group{margin-bottom:16px}
+.strategy-label{display:inline-block;padding:4px 14px;border-radius:8px;font-size:13px;font-weight:700;color:#fff;margin-bottom:10px}
+.strategy-label.stable{background:#27ae60}.strategy-label.growth{background:#f39c12}.strategy-label.aggressive{background:#e55039}
+.stock-item{padding:10px 14px;background:#fafafa;border-radius:8px;margin-bottom:8px;border-left:4px solid #ddd}
+.stock-item.stable{border-left-color:#27ae60}.stock-item.growth{border-left-color:#f39c12}.stock-item.aggressive{border-left-color:#e55039}
+.stock-name{font-weight:700;font-size:14px}
+.stock-detail{font-size:12px;color:#555;margin-top:4px}
+.stock-detail span{display:inline-block;margin-right:12px}
+.risk-warning{background:#fff3e0;border:1px solid #ff9800;border-radius:6px;padding:8px 12px;font-size:12px;margin-top:6px;color:#e65100}
+.prediction{display:inline-block;padding:4px 12px;border-radius:8px;font-size:13px;font-weight:600;margin-top:8px}
+.prediction.strong-up{background:#e8f5e9;color:#27ae60}.prediction.slight-up{background:#f1f8e9;color:#689f38}.prediction.neutral{background:#fff8e1;color:#f57f17}.prediction.slight-down{background:#fce4ec;color:#c62828}
+.summary-table{width:100%;border-collapse:collapse;font-size:13px}
+.summary-table th{background:#f0f4f8;padding:10px;text-align:left;font-weight:600;border-bottom:2px solid #ddd}
+.summary-table td{padding:10px;border-bottom:1px solid #f0f0f0}
+.summary-table tr:hover{background:#f8f9fa}
+.stars{color:#f39c12;font-weight:700}
+.risk-list{list-style:none;padding:0}
+.risk-list li{padding:10px 14px;margin-bottom:8px;border-radius:8px;font-size:13px}
+.risk-list li:nth-child(1){background:#fce4ec;border-left:4px solid #e74c3c}
+.risk-list li:nth-child(2){background:#fff3e0;border-left:4px solid #ff9800}
+.risk-list li:nth-child(3){background:#fff8e1;border-left:4px solid #fbc02d}
+.risk-list li:nth-child(4){background:#e8f5e9;border-left:4px solid #66bb6a}
+.risk-list li:nth-child(5){background:#e3f2fd;border-left:4px solid #42a5f5}
+.conclusion-item{padding:14px;background:#f8f9fa;border-radius:8px;margin-bottom:10px;border-left:4px solid #3498db}
+.conclusion-item h4{font-size:14px;margin-bottom:4px}
+.conclusion-item p{font-size:12px;color:#666}
+.footer{text-align:center;padding:20px;font-size:11px;color:#999;line-height:1.8}
+.disclaimer{background:#fff3e0;border-radius:8px;padding:14px;font-size:12px;color:#e65100;margin-bottom:16px;border:1px solid #ffe0b2}
+@media(max-width:768px){
+.container{padding:10px}
+.header h1{font-size:22px}
+.section{padding:16px}
+.market-grid{grid-template-columns:1fr}
+.sector-data{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>🌍 全球行情分析大师</h1>
+<div class="date">📅 2026年4月23日 星期四</div>
+<div class="subtitle">数据截止当前日期 | 来源：金十数据、证券时报、东方财富、央视新闻等权威渠道</div>
+</div>
+
+<!-- 一、全球重磅焦点消息 -->
+<div class="section">
+<div class="section-title">📢 一、全球重磅焦点消息（Top 12）</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-extreme">极高</span>
+<span class="news-title">🇺🇸 美伊和谈僵局持续，霍尔木兹海峡封锁延续</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴原油↑↑</span>
+<span class="tag tag-up">🔴油气开采↑</span>
+<span class="tag tag-down">🟢航空↓</span>
+<span class="tag tag-down">🟢化工↓</span>
+</div>
+<div class="news-detail">美伊临时停火于北京时间23日上午到期，特朗普称最快周五重启和谈，但伊朗否认称"特朗普又说谎了"。霍尔木兹海峡仍由伊朗革命卫队海军严密控制，已有船只遭袭。</div>
+<div class="news-source">来源：今日头条、央视新闻、我的钢铁网 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-extreme">极高</span>
+<span class="news-title">🇺🇸 美股三大指数收涨，标普500与纳指再创收盘新高</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴科技股↑</span>
+<span class="tag tag-up">🔴AI概念↑</span>
+<span class="tag tag-down">🟢避险资产↓</span>
+</div>
+<div class="news-detail">道指涨0.69%，标普500涨1.05%，纳指涨1.64%。英伟达涨超1%，谷歌、博通等科技股普涨。标普500与纳指均创收盘历史新高。</div>
+<div class="news-source">来源：第一财经、网易财经 | 2026-04-22</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-high">高</span>
+<span class="news-title">🇯🇵🇰🇷 日韩股市双双创历史新高</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴日韩股市↑</span>
+<span class="tag tag-up">🔴亚太风险偏好↑</span>
+</div>
+<div class="news-detail">日经225指数首次突破6万点关口，续创历史新高。韩国KOSPI指数涨幅超1%，同样创下历史新高。</div>
+<div class="news-source">来源：央视新闻、财联社 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-high">高</span>
+<span class="news-title">🌍 欧元区4月制造业PMI初值超预期，服务业意外走弱</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴欧洲制造业↑</span>
+<span class="tag tag-down">🟢欧洲服务业↓</span>
+</div>
+<div class="news-detail">欧元区制造业PMI初值52.2（预期50.9），大幅超预期。但服务业PMI仅47.4（预期49.8），意外跌入收缩区间。德国制造业PMI 51.2，法国48.9。</div>
+<div class="news-source">来源：我的钢铁网 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-high">高</span>
+<span class="news-title">🇨🇳 A股三大指数集体回调，成交额放量至2.8万亿</span>
+</div>
+<div class="tags">
+<span class="tag tag-down">🟢科技股回调↓</span>
+<span class="tag tag-up">🔴电力/煤炭↑</span>
+<span class="tag tag-up">🔴白酒↑</span>
+</div>
+<div class="news-detail">上证指数跌0.32%报4093.25点，深成指跌0.88%，创业板指跌0.87%。沪深两市成交额2.8万亿元，放量2447亿。全市场近4100只个股下跌，主力资金净流出802亿元。</div>
+<div class="news-source">来源：证券时报、界面新闻、东方财富 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-high">高</span>
+<span class="news-title">🛢️ 国际油价大涨，WTI冲上95美元</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴原油↑↑</span>
+<span class="tag tag-up">🔴油气服务↑</span>
+<span class="tag tag-down">🟢航空↓</span>
+</div>
+<div class="news-detail">WTI 6月原油期货收涨3.58%报95.15美元/桶，布伦特原油收涨3.48%报101.91美元/桶，重返100美元上方。受美伊僵局及美国库存下降推动。</div>
+<div class="news-source">来源：网易财经、我的钢铁网 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-mid-high">中高</span>
+<span class="news-title">🇨🇳 中国央行净投放55亿元，货币政策维持宽松</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴债市稳定</span>
+<span class="tag tag-up">🔴流动性充裕</span>
+</div>
+<div class="news-detail">央行开展60亿元7天期逆回购操作，净投放55亿元。Shibor隔夜报1.2190%，7天报1.3270%，维持低位。</div>
+<div class="news-source">来源：金投网、东方财富 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-mid-high">中高</span>
+<span class="news-title">🥇 贵金属板块集体回调，现货黄金跌破4700美元</span>
+</div>
+<div class="tags">
+<span class="tag tag-down">🟢黄金↓</span>
+<span class="tag tag-down">🟢白银↓</span>
+<span class="tag tag-down">🟢贵金属板块↓</span>
+</div>
+<div class="news-detail">现货黄金跌破4700美元，日内跌0.87%。A股贵金属板块重挫，湖南白银跌近7%，招金黄金、山金国际、中金黄金跌超5%。</div>
+<div class="news-source">来源：财联社、证券时报 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-mid-high">中高</span>
+<span class="news-title">⚡ 绿色电力板块掀涨停潮，12只个股涨停</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴电力板块↑↑</span>
+<span class="tag tag-up">🔴绿色电力↑</span>
+<span class="tag tag-up">🔴AI算力用电↑</span>
+</div>
+<div class="news-detail">节能风电、绿发电力、广西能源、华电辽能（3连板）、晶科科技等涨停。主力资金净流入超25亿元。</div>
+<div class="news-source">来源：证券时报、新浪财经 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-mid">中</span>
+<span class="news-title">🔋 INSG：2026年全球镍产量预计下降，供需缺口扩大</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴镍价↑</span>
+<span class="tag tag-up">🔴新能源金属↑</span>
+</div>
+<div class="news-detail">全球镍产量预计降至372万吨，需求升至375万吨。印尼加速B50生物柴油政策。</div>
+<div class="news-source">来源：金投网 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-mid">中</span>
+<span class="news-title">🇮🇱🇱🇧 以色列与黎巴嫩会谈，黎方要求延长停火</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🔴避险情绪支撑</span>
+</div>
+<div class="news-detail">黎巴嫩要求将停火期限延长一个月。中东地缘局势整体紧张。</div>
+<div class="news-source">来源：金投网 | 2026-04-23</div>
+</div>
+
+<div class="news-item">
+<div class="news-header">
+<span class="badge badge-mid">中</span>
+<span class="news-title">💰 美元指数小幅上涨，收于98.60</span>
+</div>
+<div class="tags">
+<span class="tag tag-up">🟢美元↑</span>
+</div>
+<div class="news-detail">美元指数上涨0.21%，收于98.60。对大宗商品形成一定压制。</div>
+<div class="news-source">来源：证券时报 | 2026-04-23</div>
+</div>
+</div>
+
+<!-- 二、政策与全球事件量化影响分析 -->
+<div class="section">
+<div class="section-title">📊 二、政策与全球事件量化影响分析</div>
+
+<div class="analysis-box warning">
+<h4>📌 事件一：美伊和谈僵局 + 霍尔木兹海峡封锁</h4>
+<p><strong>影响路径：</strong>美伊停火到期 → 海峡封锁 → 原油供应中断风险 → 油价飙升</p>
+<ul>
+<li>原油：WTI短期目标95-100美元/桶（+5%-8%）</li>
+<li>A股油气板块：预估+3%-5%</li>
+<li>航空板块：燃油成本压力，预估-2%-4%</li>
+</ul>
+<p><strong>核心风险：</strong>若美伊突然达成协议，油价可能回落10%-15%</p>
+<p style="font-size:11px;color:#999">来源：我的钢铁网、央视新闻</p>
+</div>
+
+<div class="analysis-box bullish">
+<h4>📌 事件二：A股风格切换——防御板块崛起</h4>
+<p><strong>影响路径：</strong>地缘风险+贵金属回调+获利兑现 → 资金流入电力/煤炭/白酒</p>
+<ul>
+<li>公用事业：净流入25.25亿元，预估+3%-5%</li>
+<li>贵金属板块：短期超跌，预估-3%-5%</li>
+<li>科技板块：获利回吐后企稳，预估-1%-3%</li>
+</ul>
+<p><strong>核心风险：</strong>地缘缓解后资金可能快速回流成长板块</p>
+<p style="font-size:11px;color:#999">来源：证券时报、东方财富</p>
+</div>
+
+<div class="analysis-box info">
+<h4>📌 事件三：欧元区PMI分化</h4>
+<p><strong>影响路径：</strong>制造业超预期+服务业收缩 → 欧央行决策复杂化</p>
+<ul>
+<li>欧洲制造业：预估+1%-3%</li>
+<li>欧元兑美元：短期承压-0.3%-0.5%</li>
+</ul>
+<p><strong>核心风险：</strong>服务业持续收缩可能触发衰退担忧</p>
+<p style="font-size:11px;color:#999">来源：我的钢铁网</p>
+</div>
+
+<div class="analysis-box bullish">
+<h4>📌 事件四：绿色电力板块爆发</h4>
+<p><strong>影响路径：</strong>AI算力需求激增 → 电力供需缺口 → 政策催化 → 电力基建加速</p>
+<ul>
+<li>绿色电力指数：短期+3%-8%空间</li>
+<li>电力设备：预估+2%-5%</li>
+</ul>
+<p><strong>核心风险：</strong>涨停潮后获利回吐</p>
+<p style="font-size:11px;color:#999">来源：证券时报、新浪财经</p>
+</div>
+</div>
+
+<!-- 三、全球市场概览 -->
+<div class="section">
+<div class="section-title">🌐 三、全球市场概览</div>
+<div class="market-grid">
+<div class="market-card">
+<h4>🇨🇳 A股</h4>
+<div class="data-row"><span class="data-name">上证指数</span><span class="data-value down">4,093.25 (-0.32%)</span></div>
+<div class="data-row"><span class="data-name">深证成指</span><span class="data-value down">15,043.45 (-0.88%)</span></div>
+<div class="data-row"><span class="data-name">创业板指</span><span class="data-value down">3,720.25 (-0.87%)</span></div>
+<div class="data-row"><span class="data-name">北证50</span><span class="data-value down">— (-3.04%)</span></div>
+<div class="data-row"><span class="data-name">成交额</span><span class="data-value">2.80万亿 (+2447亿)</span></div>
+<div class="data-row"><span class="data-name">主力资金</span><span class="data-value down">净流出802亿</span></div>
+</div>
+<div class="market-card">
+<h4>🇭🇰 港股</h4>
+<div class="data-row"><span class="data-name">恒生指数</span><span class="data-value down">25,915.20 (-0.95%)</span></div>
+<div class="data-row"><span class="data-name">恒生科技</span><span class="data-value down">4,865.52 (-1.98%)</span></div>
+<div class="data-row"><span class="data-name">领涨</span><span class="data-value up">中石油、中海油</span></div>
+<div class="data-row"><span class="data-name">领跌</span><span class="data-value down">芯片股</span></div>
+</div>
+<div class="market-card">
+<h4>🇺🇸 美股（4/22收盘）</h4>
+<div class="data-row"><span class="data-name">道琼斯</span><span class="data-value up">+0.69%</span></div>
+<div class="data-row"><span class="data-name">标普500</span><span class="data-value up">+1.05% 🆕</span></div>
+<div class="data-row"><span class="data-name">纳斯达克</span><span class="data-value up">+1.64% 🆕</span></div>
+</div>
+<div class="market-card">
+<h4>🇯🇵🇰🇷 亚太</h4>
+<div class="data-row"><span class="data-name">日经225</span><span class="data-value up">首破6万点 🆕</span></div>
+<div class="data-row"><span class="data-name">KOSPI</span><span class="data-value up">+1%+ 🆕</span></div>
+</div>
+</div>
+
+<div style="margin-top:16px">
+<table class="summary-table">
+<thead><tr><th>品种</th><th>最新价</th><th>涨跌</th><th>来源</th></tr></thead>
+<tbody>
+<tr><td>COMEX黄金</td><td>4,761.80美元/盎司</td><td class="up">+0.07%</td><td>金投网</td></tr>
+<tr><td>现货黄金</td><td>~4,700美元/盎司</td><td class="down">-0.87%</td><td>财联社</td></tr>
+<tr><td>现货白银</td><td>76.54美元/盎司</td><td class="down">-1.47%</td><td>财联社</td></tr>
+<tr><td>WTI原油(6月)</td><td>95.15美元/桶</td><td class="up">+3.58%</td><td>网易财经</td></tr>
+<tr><td>布伦特原油(6月)</td><td>101.91美元/桶</td><td class="up">+3.48%</td><td>网易财经</td></tr>
+<tr><td>美元指数</td><td>98.60</td><td class="up">+0.21%</td><td>证券时报</td></tr>
+<tr><td>沪金主力</td><td>1,047.04元/克</td><td class="down">-0.41%</td><td>金投网</td></tr>
+<tr><td>沪铜主力</td><td>102,780元/吨</td><td class="up">+0.30%</td><td>我的钢铁网</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- 四、板块分析 -->
+<div class="section">
+<div class="section-title">📈 四、股票市场多板块分析</div>
+
+<!-- 电力板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">⚡ 电力/公用事业</span>
+<span class="prediction strong-up">★★★ 强看涨</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="up">+2.5%</strong>（领涨）</div>
+<div>💰 资金流向：<strong class="up">净流入25.25亿</strong></div>
+<div>🔺 领涨：华电辽能（3连板）、节能风电、绿发电力</div>
+<div>📌 驱动：AI算力用电+绿色电力政策</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略（低风险·价值底仓）</span>
+<div class="stock-item stable">
+<div class="stock-name">长江电力（600900）</div>
+<div class="stock-detail">
+<span>PE~22倍 | 股息率3.2%</span>
+<span>全球最大水电公司</span>
+<span>分红率超70%</span>
+</div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">华能国际（600011）</div>
+<div class="stock-detail">
+<span>PE~15倍 | PB~1.2倍</span>
+<span>火电+新能源双轮驱动</span>
+<span>煤价下行利润修复</span>
+</div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略（中风险·事件驱动）</span>
+<div class="stock-item growth">
+<div class="stock-name">三峡能源（600905）</div>
+<div class="stock-detail">
+<span>PE~25倍 | 新能源发电龙头</span>
+<span>催化剂：新增装机超预期，Q1发电量+15%</span>
+</div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">节能风电（601016）</div>
+<div class="stock-detail">
+<span>PE~20倍 | 风电运营龙头</span>
+<span>催化剂：今日涨停，政策持续加码</span>
+</div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略（高风险·短线弹性）</span>
+<div class="stock-item aggressive">
+<div class="stock-name">华电辽能（600396）</div>
+<div class="stock-detail">
+<span>3连板龙头 | 板块最强势标的</span>
+</div>
+<div class="risk-warning">⚠️ 风险提示：连板后获利盘丰厚，随时面临回调。止损设5日均线，持仓1-3天。</div>
+</div>
+<div class="stock-item aggressive">
+<div class="stock-name">晶科科技（601778）</div>
+<div class="stock-detail">
+<span>光伏电站+绿色电力 | 今日涨停</span>
+</div>
+<div class="risk-warning">⚠️ 风险提示：光伏产业链价格波动大。止损设涨停前收盘价下方5%。</div>
+</div>
+</div>
+</div>
+
+<!-- 科技板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">💻 科技/半导体</span>
+<span class="prediction slight-up">★★ 偏强</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="down">-1.5%</strong>（冲高回落）</div>
+<div>🔺 领涨：大族激光（净流入8.73亿）</div>
+<div>🔻 领跌：壁仞科技-7%、华虹半导体-6%</div>
+<div>📌 驱动：获利回吐；国产替代+AI长期逻辑</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略</span>
+<div class="stock-item stable">
+<div class="stock-name">中芯国际（688981）</div>
+<div class="stock-detail"><span>PB~2.5倍 | 国内晶圆代工龙头 | 国产替代不可逆</span></div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">海光信息（688041）</div>
+<div class="stock-detail"><span>PE~60倍但增速50%+ | 国产CPU/DCU龙头</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略</span>
+<div class="stock-item growth">
+<div class="stock-name">大族激光（002008）</div>
+<div class="stock-detail"><span>PE~25倍 | 今日主力净流入8.73亿居首 | 机构抢筹</span></div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">中微公司（688012）</div>
+<div class="stock-detail"><span>PE~40倍 | 刻蚀设备龙头 | 订单饱满</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略</span>
+<div class="stock-item aggressive">
+<div class="stock-name">寒武纪（688256）</div>
+<div class="stock-detail"><span>AI芯片龙头 | PS~50倍 | 纯预期驱动</span></div>
+<div class="risk-warning">⚠️ 风险提示：尚未盈利，估值极高，波动剧烈。止损设20日均线，持仓3-5天。</div>
+</div>
+</div>
+</div>
+
+<!-- 消费板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">🍷 消费/白酒</span>
+<span class="prediction slight-up">★★ 偏强</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="up">+1.2%</strong>（领涨）</div>
+<div>🔺 领涨：贵州茅台、五粮液、泸州老窖</div>
+<div>📌 驱动：防御风格切换，高股息+业绩确定性</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略</span>
+<div class="stock-item stable">
+<div class="stock-name">贵州茅台（600519）</div>
+<div class="stock-detail"><span>PE~25倍 | 股息率2.5% | 品牌护城河不可复制</span></div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">五粮液（000858）</div>
+<div class="stock-detail"><span>PE~18倍 | 股息率3% | 估值偏低</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略</span>
+<div class="stock-item growth">
+<div class="stock-name">泸州老窖（000568）</div>
+<div class="stock-detail"><span>PE~20倍 | 国窖1573持续放量 | Q1超预期</span></div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">山西汾酒（600809）</div>
+<div class="stock-detail"><span>PE~28倍 | 清香龙头 | 全国化扩张</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略</span>
+<div class="stock-item aggressive">
+<div class="stock-name">金种子酒（600199）</div>
+<div class="stock-detail"><span>华润入主 | 改革预期强烈 | 弹性最大</span></div>
+<div class="risk-warning">⚠️ 风险提示：业绩尚未兑现，改革进度不确定。止损设前期低点，持仓5-10天。</div>
+</div>
+</div>
+</div>
+
+<!-- 金融板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">🏦 金融</span>
+<span class="prediction neutral">★ 弱/震荡</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="down">-0.3%</strong>（小幅回调）</div>
+<div>🔺 领涨：工商银行、建设银行</div>
+<div>📌 驱动：央行宽松，银行息差企稳</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略</span>
+<div class="stock-item stable">
+<div class="stock-name">工商银行（601398）</div>
+<div class="stock-detail"><span>PB~0.7倍 | 股息率5.5% | 拨备覆盖率200%+</span></div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">招商银行（600036）</div>
+<div class="stock-detail"><span>PB~1.1倍 | PE~6倍 | 股息率4% | 零售银行标杆</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略</span>
+<div class="stock-item growth">
+<div class="stock-name">宁波银行（002142）</div>
+<div class="stock-detail"><span>PB~1.2倍 | ROE超15% | 城商行龙头</span></div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">中信证券（600030）</div>
+<div class="stock-detail"><span>PB~1.5倍 | 券商龙头 | 成交量高位利好</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略</span>
+<div class="stock-item aggressive">
+<div class="stock-name">东方财富（300059）</div>
+<div class="stock-detail"><span>PE~30倍 | 互联网券商龙头 | 弹性最大</span></div>
+<div class="risk-warning">⚠️ 风险提示：业绩与行情高度相关。止损设20日均线，持仓3-7天。</div>
+</div>
+</div>
+</div>
+
+<!-- 医疗板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">🏥 医疗/医药</span>
+<span class="prediction neutral">★ 弱/震荡</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="down">-0.65%</strong></div>
+<div>📌 驱动：集采压力，创新药出海长期有效</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略</span>
+<div class="stock-item stable">
+<div class="stock-name">恒瑞医药（600276）</div>
+<div class="stock-detail"><span>PE~35倍 | 创新药龙头 | 管线60+</span></div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">迈瑞医疗（300760）</div>
+<div class="stock-detail"><span>PE~30倍 | ROE超25% | 海外收入40%+</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略</span>
+<div class="stock-item growth">
+<div class="stock-name">百济神州（688235）</div>
+<div class="stock-detail"><span>PS~15倍 | 泽布替尼全球销售高增 | 管线丰富</span></div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">药明康德（603259）</div>
+<div class="stock-detail"><span>PE~25倍 | CRO龙头 | 海外订单回暖</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略</span>
+<div class="stock-item aggressive">
+<div class="stock-name">青蒿素概念标的</div>
+<div class="stock-detail"><span>今日板块涨幅居前 | 题材轮动</span></div>
+<div class="risk-warning">⚠️ 风险提示：题材持续性不确定，缺乏基本面支撑。止损设5日均线，持仓1-2天。</div>
+</div>
+</div>
+</div>
+
+<!-- 能源板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">🛢️ 能源（传统与转型）</span>
+<span class="prediction strong-up">★★★ 强看涨</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="up">+1.8%</strong></div>
+<div>🔺 领涨：中国石油（港股+4%）、中海油（+3%）</div>
+<div>📌 驱动：美伊僵局+油价飙升+库存下降</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略</span>
+<div class="stock-item stable">
+<div class="stock-name">中国石油（601857）</div>
+<div class="stock-detail"><span>PB~1.2倍 | 股息率4% | 国内最大油气商</span></div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">中国海洋石油（600938）</div>
+<div class="stock-detail"><span>PB~1.5倍 | 股息率5% | 桶油成本最低</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略</span>
+<div class="stock-item growth">
+<div class="stock-name">中国神华（601088）</div>
+<div class="stock-detail"><span>PB~1.8倍 | 股息率5%+ | 煤电一体化</span></div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">广汇能源（600256）</div>
+<div class="stock-detail"><span>PE~12倍 | 煤油气一体化 | LNG高增</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略</span>
+<div class="stock-item aggressive">
+<div class="stock-name">昊华能源（601101）</div>
+<div class="stock-detail"><span>今日涨停 | 煤炭弹性标的</span></div>
+<div class="risk-warning">⚠️ 风险提示：煤炭价格波动大，政策调控风险。止损设涨停前收盘价下方5%。</div>
+</div>
+</div>
+</div>
+
+<!-- 有色金属板块 -->
+<div class="sector-card">
+<div class="sector-header">
+<span class="sector-name">🏗️ 有色金属</span>
+<span class="prediction neutral">★ 弱/震荡</span>
+</div>
+<div class="sector-data">
+<div>📊 涨跌幅：<strong class="down">-3.86%</strong>（跌幅居前）</div>
+<div>🔻 领跌：兴业银锡-7%、厦门钨业-6.3%、北方稀土-5.8%</div>
+<div>📌 驱动：贵金属回调拖累，获利兑现</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label stable">🛡️ 稳健策略</span>
+<div class="stock-item stable">
+<div class="stock-name">紫金矿业（601899）</div>
+<div class="stock-detail"><span>PE~15倍 | 全球矿业龙头 | 铜金锌锂多品种</span></div>
+</div>
+<div class="stock-item stable">
+<div class="stock-name">洛阳钼业（603993）</div>
+<div class="stock-detail"><span>PE~12倍 | 铜钴龙头 | 刚果金产能释放</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label growth">🚀 成长策略</span>
+<div class="stock-item growth">
+<div class="stock-name">天齐锂业（002466）</div>
+<div class="stock-detail"><span>PB~2倍（历史低位）| 锂资源龙头 | 锂价回升</span></div>
+</div>
+<div class="stock-item growth">
+<div class="stock-name">中国铝业（601600）</div>
+<div class="stock-detail"><span>PE~15倍 | 电解铝龙头 | 供给侧改革红利</span></div>
+</div>
+</div>
+
+<div class="strategy-group">
+<span class="strategy-label aggressive">⚔️ 进攻策略</span>
+<div class="stock-item aggressive">
+<div class="stock-name">兴业银锡（000426）</div>
+<div class="stock-detail"><span>今日跌超7% | 超跌反弹概率大</span></div>
+<div class="risk-warning">⚠️ 风险提示：板块整体弱势延续。止损设今日低点下方3%，持仓1-3天。</div>
+</div>
+<div class="stock-item aggressive">
+<div class="stock-name">北方稀土（600111）</div>
+<div class="stock-detail"><span>今日跌5.76% | 稀土龙头</span></div>
+<div class="risk-warning">⚠️ 风险提示：稀土价格承压，政策调控不确定。止损设前低，持仓3-5天。</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 五、有色金属专项 -->
+<div class="section">
+<div class="section-title">🔬 五、有色金属板块专项分析</div>
+<table class="summary-table">
+<thead><tr><th>品种</th><th>价格</th><th>涨跌</th><th>供需要点</th></tr></thead>
+<tbody>
+<tr><td>铜（沪铜2606）</td><td>102,780元/吨</td><td class="up">+0.30%</td><td>库存下降支撑，海外套利活跃</td></tr>
+<tr><td>铝（沪铝2606）</td><td>24,970元/吨</td><td class="down">-0.12%</td><td>供给侧改革，产能天花板</td></tr>
+<tr><td>铅（沪铅2606）</td><td>16,660元/吨</td><td class="down">-0.63%</td><td>需求平稳，库存增加</td></tr>
+<tr><td>镍（沪镍2606）</td><td>142,120元/吨</td><td class="up">+0.3%</td><td>INSG预计供需缺口扩大</td></tr>
+<tr><td>黄金（现货）</td><td>~4,700美元/盎司</td><td class="down">-0.87%</td><td>美元压制，避险需求支撑</td></tr>
+<tr><td>白银（现货）</td><td>76.54美元/盎司</td><td class="down">-1.47%</td><td>ETF持仓减少77吨</td></tr>
+<tr><td>稀土</td><td>—</td><td class="down">下跌</td><td>北方稀土-5.76%，板块承压</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 六、预测汇总表 -->
+<div class="section">
+<div class="section-title">📋 六、各板块明日走势预测汇总表</div>
+<table class="summary-table">
+<thead><tr><th>板块</th><th>明日判断</th><th>核心依据</th></tr></thead>
+<tbody>
+<tr><td>⚡ 电力/公用事业</td><td><span class="stars">★★★</span> 强看涨</td><td>主力净流入25亿，政策催化持续</td></tr>
+<tr><td>💻 科技/半导体</td><td><span class="stars">★★</span> 偏强</td><td>超跌反弹，AI+国产替代长期逻辑</td></tr>
+<tr><td>🍷 消费/白酒</td><td><span class="stars">★★</span> 偏强</td><td>防御风格延续，资金流入稳定</td></tr>
+<tr><td>🏦 金融</td><td><span class="stars">★</span> 弱/震荡</td><td>缺乏催化，跟随大盘波动</td></tr>
+<tr><td>🏥 医疗/医药</td><td><span class="stars">★</span> 弱/震荡</td><td>集采压力，等待Q1业绩</td></tr>
+<tr><td>🛢️ 能源</td><td><span class="stars">★★★</span> 强看涨</td><td>油价高位，美伊僵局短期难解</td></tr>
+<tr><td>🏗️ 有色金属</td><td><span class="stars">★</span> 弱/震荡</td><td>贵金属回调压力，等待企稳</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- 七、风险提示 -->
+<div class="section">
+<div class="section-title">⚠️ 七、风险提示与投资总结</div>
+
+<h4 style="margin-bottom:12px">🔴 核心风险事件</h4>
+<ul class="risk-list">
+<li><strong>1. 美伊冲突升级</strong> — 和谈破裂→海峡危机扩大→油价冲110美元→全球通胀</li>
+<li><strong>2. A股获利盘兑现</strong> — 2.8万亿放量但个股普跌，资金博弈加剧</li>
+<li><strong>3. 贵金属超跌蔓延</strong> — 黄金破4700可能引发连锁止损</li>
+<li><strong>4. 欧央行决策不确定</strong> — PMI分化，政策路径模糊</li>
+<li><strong>5. 日韩高位回调</strong> — 日经首破6万点后获利了结压力</li>
+</ul>
+
+<h4 style="margin:16px 0 12px">💡 投资总结</h4>
+<div class="conclusion-item">
+<h4>主线一：能源+电力 ★★★</h4>
+<p>重点：中国石油、中国海洋石油、长江电力、华电辽能 | 油价高位+AI算力用电</p>
+</div>
+<div class="conclusion-item">
+<h4>主线二：防御配置（白酒+银行）★★</h4>
+<p>重点：贵州茅台、五粮液、工商银行、招商银行 | 高股息+业绩确定性</p>
+</div>
+<div class="conclusion-item">
+<h4>主线三：科技超跌反弹窗口 ★</h4>
+<p>重点：中芯国际、大族激光、海光信息 | 短期回吐，长期AI+国产替代</p>
+</div>
+
+<h4 style="margin:16px 0 12px">📌 明日核心变量</h4>
+<ul style="padding-left:18px;font-size:13px;color:#555">
+<li>美伊和谈最新进展——是否周五重启谈判</li>
+<li>美国4月PMI数据——今晚21:45公布</li>
+<li>A股成交量变化——能否维持2.8万亿以上</li>
+<li>贵金属能否企稳——黄金能否重回4700上方</li>
+<li>EIA天然气库存数据——今晚22:30公布</li>
+</ul>
+</div>
+
+<!-- 免责声明 -->
+<div class="disclaimer">
+<strong>免责声明：</strong>本报告基于公开数据整理分析，不构成投资建议。市场有风险，投资需谨慎。部分数据标注"基于最新公布数据估算"。
+</div>
+
+<div class="footer">
+数据来源：金十数据、证券时报、东方财富、央视新闻、财联社、我的钢铁网、金投网、界面新闻、第一财经、汇通网等权威渠道<br>
+报告生成时间：2026年4月23日 | 全球行情分析大师 v2.0
+</div>
+
+</div>
+</body>
+</html>
