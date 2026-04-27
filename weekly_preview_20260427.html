@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下周重磅前瞻 | 2026年4月27日-5月4日</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#0f1923;color:#e0e6ed;line-height:1.7;padding:16px;max-width:1400px;margin:0 auto}
+.header{text-align:center;padding:36px 20px;background:linear-gradient(135deg,#0d1b2a,#1b2838,#243447);border-radius:16px;border:1px solid #2a3a4a;margin-bottom:24px}
+.header h1{font-size:26px;color:#00d4ff;margin-bottom:6px;letter-spacing:3px}
+.header .subtitle{font-size:14px;color:#8899aa}
+.header .tags{display:flex;justify-content:center;gap:10px;margin-top:14px;flex-wrap:wrap}
+.header .htag{display:inline-block;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700}
+.ht-red{background:rgba(231,76,60,.2);color:#e74c3c;border:1px solid rgba(231,76,60,.4)}
+.ht-blue{background:rgba(52,152,219,.2);color:#3498db;border:1px solid rgba(52,152,219,.4)}
+.ht-gold{background:rgba(243,156,18,.2);color:#f39c12;border:1px solid rgba(243,156,18,.4)}
+.ht-green{background:rgba(39,174,96,.2);color:#27ae60;border:1px solid rgba(39,174,96,.4)}
+.section{background:#151f2b;border-radius:12px;padding:22px;margin-bottom:20px;border:1px solid #1e2d3d}
+.section h2{font-size:18px;color:#00d4ff;border-left:3px solid #00d4ff;padding-left:12px;margin-bottom:16px}
+.day-card{background:#1a2736;border-radius:10px;padding:16px;margin-bottom:14px;border-left:3px solid #2a3a4a}
+.day-card.highlight{border-left-color:#e74c3c}
+.day-card.super{border-left-color:#f39c12;background:linear-gradient(135deg,#1a2736,#1e2e3e)}
+.day-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.day-label{display:inline-block;padding:3px 12px;border-radius:8px;font-size:12px;font-weight:700;color:#fff}
+.day-mon{background:#3498db}.day-tue{background:#9b59b6}.day-wed{background:#e67e22}.day-thu{background:#e74c3c}.day-fri{background:#27ae60}.day-sat{background:#1abc9c}.day-sun{background:#f39c12}
+.day-title{font-weight:700;font-size:15px}
+.impact-stars{color:#f39c12;font-size:14px}
+.event-group{margin:8px 0}
+.event-group-title{font-size:12px;font-weight:700;color:#8899aa;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.event-item{font-size:13px;padding:3px 0;padding-left:12px;position:relative}
+.event-item::before{content:"•";position:absolute;left:0;color:#00d4ff}
+.event-item.hot{color:#e74c3c;font-weight:600}
+.event-item.warm{color:#f39c12}
+.event-item.cool{color:#27ae60}
+.earnings-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;margin-top:6px}
+.earnings-chip{display:inline-block;padding:3px 10px;border-radius:6px;font-size:11px;background:#1e2d3d;border:1px solid #2a3a4a}
+.earnings-chip.us{border-color:#3498db;color:#3498db}
+.earnings-chip.hk{border-color:#e74c3c;color:#e74c3c}
+.holiday-tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;background:rgba(149,165,166,.15);color:#95a5a6;margin:2px}
+.analysis-box{background:linear-gradient(135deg,#1a2736,#1e2e3e);border:1px solid #2a3a4a;border-radius:10px;padding:16px;margin:12px 0}
+.analysis-box h3{font-size:15px;color:#f39c12;margin-bottom:8px}
+.analysis-box p{font-size:13px;color:#b0bec5}
+.key-point{display:flex;align-items:flex-start;gap:8px;margin:6px 0;font-size:13px}
+.key-icon{flex-shrink:0;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff}
+.ki-red{background:#e74c3c}.ki-blue{background:#3498db}.ki-gold{background:#f39c12}.ki-green{background:#27ae60}
+.impact-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12px}
+.impact-table th{background:#1e2d3d;padding:8px;text-align:left;font-weight:600;border-bottom:2px solid #2a3a4a;color:#00d4ff}
+.impact-table td{padding:7px 8px;border-bottom:1px solid #1e2d3d}
+.impact-table tr:hover{background:rgba(0,212,255,.03)}
+.tag-up{color:#e74c3c}.tag-down{color:#27ae60}
+.scenario-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin:10px 0}
+.scenario-card{border-radius:10px;padding:14px;font-size:13px}
+.scenario-bull{background:linear-gradient(135deg,rgba(39,174,96,.1),rgba(39,174,96,.05));border:1px solid rgba(39,174,96,.3)}
+.scenario-bear{background:linear-gradient(135deg,rgba(231,76,60,.1),rgba(231,76,60,.05));border:1px solid rgba(231,76,60,.3)}
+.scenario-base{background:linear-gradient(135deg,rgba(52,152,219,.1),rgba(52,152,219,.05));border:1px solid rgba(52,152,219,.3)}
+.scenario-card h4{margin-bottom:6px}
+.strategy-box{background:#1a2736;border:1px solid #2a3a4a;border-radius:10px;padding:14px;margin:10px 0}
+.strategy-box h4{font-size:14px;margin-bottom:8px}
+.risk-warn{background:rgba(231,76,60,.08);border-left:3px solid #e74c3c;padding:10px 14px;border-radius:6px;font-size:12px;margin:8px 0;color:#e74c3c}
+.opportunity{background:rgba(39,174,96,.08);border-left:3px solid #27ae60;padding:10px 14px;border-radius:6px;font-size:12px;margin:8px 0;color:#27ae60}
+.timeline{position:relative;padding-left:24px;margin:12px 0}
+.timeline::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,#3498db,#e74c3c,#27ae60)}
+.timeline-item{position:relative;margin-bottom:14px;font-size:13px}
+.timeline-item::before{content:'';position:absolute;left:-20px;top:6px;width:10px;height:10px;border-radius:50%;border:2px solid #00d4ff;background:#151f2b}
+.timeline-item.hot::before{border-color:#e74c3c;background:#e74c3c}
+.timeline-date{font-weight:700;color:#00d4ff;font-size:12px}
+.source-list{font-size:11px;color:#546e7a;text-align:center;padding:14px;border-top:1px solid #1e2d3d;margin-top:16px}
+.badge{display:inline-block;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:700;margin-left:4px}
+.badge-new{background:#e74c3c;color:#fff}
+.badge-key{background:#f39c12;color:#fff}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>⚡ 下周重磅前瞻 ⚡</h1>
+<div class="subtitle">2026年4月27日（周一）— 5月4日（周日）| 数据来源：金十数据</div>
+<div class="tags">
+<span class="htag ht-red">🏦 超级央行周</span>
+<span class="htag ht-blue">📊 超级财报周</span>
+<span class="htag ht-gold">🛢️ OPEC+会议</span>
+<span class="htag ht-green">🇨🇳 五一假期</span>
+</div>
+</div>
+
+<!-- 一句话总结 -->
+<div class="section" style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-color:#0f3460">
+<h2 style="color:#f39c12;border-color:#f39c12">📌 一句话总结</h2>
+<p style="font-size:15px;color:#e0e6ed">下周是2026年迄今<strong style="color:#e74c3c">最重要的一周</strong>：美联储、英国央行、欧洲央行、日本央行同周议息；苹果、微软、Meta、亚马逊、谷歌五大科技巨头集中发财报；中国PMI、美国GDP/PCE重磅数据密集公布；OPEC+周日讨论6月产油政策。<strong style="color:#f39c12">五一假期</strong>期间A股休市5天（5月1日-5日），但全球市场不等人——外盘波动可能在节后集中释放。</p>
+</div>
+
+<!-- 每日详解 -->
+<div class="section">
+<h2>📅 每日事件详解</h2>
+
+<!-- 周一 -->
+<div class="day-card">
+<div class="day-header">
+<span class="day-label day-mon">周一 4/27</span>
+<span class="day-title">开工日·MLF到期·天齐锂业财报</span>
+<span class="impact-stars">★★★☆</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据</div>
+<div class="event-item">中国3月今年迄今规模以上工业企业利润年率</div>
+<div class="event-item warm">中国3月规模以上工业企业利润年率 <span class="badge badge-key">关键</span></div>
+<div class="event-item">德国5月Gfk消费者信心指数</div>
+<div class="event-item">英国4月CBI零售销售差值</div>
+<div class="event-item">美国4月达拉斯联储商业活动指数</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件</div>
+<div class="event-item hot">国家能源局举行季度例行新闻发布会 <span class="badge badge-key">关注</span></div>
+<div class="event-item hot">6000亿元1年期MLF到期（央行已预告4000亿续作，净回笼2000亿？） <span class="badge badge-new">重要</span></div>
+<div class="event-item">5亿元7天期逆回购到期</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 港股财报</div>
+<div class="earnings-grid">
+<span class="earnings-chip hk">天齐锂业 09696.HK</span>
+<span class="earnings-chip hk">药明康德 02359.HK</span>
+</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏖️ 假期</div>
+<span class="holiday-tag">🇳🇿 新西兰证券交易所休市</span>
+<span class="holiday-tag">🇻🇳 胡志明交易所休市</span>
+</div>
+
+<div class="analysis-box">
+<h3>💡 周一焦点解读</h3>
+<p><strong>MLF到期量：</strong>6000亿元到期，央行已预告4月27日开展4000亿元MLF操作。若仅续作4000亿，则净回笼2000亿，但考虑到五一假期前的流动性需求，央行可能通过逆回购补充，整体流动性无忧。</p>
+<p><strong>天齐锂业财报：</strong>作为锂矿龙头，一季报是验证锂价触底回升逻辑的关键窗口。若业绩超预期，将强化能源金属板块的上涨逻辑。</p>
+<p><strong>能源局发布会：</strong>关注新能源装机数据和"十五五"碳达峰考核细则。</p>
+</div>
+</div>
+
+<!-- 周二 -->
+<div class="day-card highlight">
+<div class="day-header">
+<span class="day-label day-tue">周二 4/28</span>
+<span class="day-title">🇯🇵 日本央行议息·比亚迪/中海油/招行财报</span>
+<span class="impact-stars">★★★★</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据</div>
+<div class="event-item">日本3月失业率</div>
+<div class="event-item">美国当周ADP就业人数周度变动</div>
+<div class="event-item">美国2月FHFA房价指数月率</div>
+<div class="event-item">美国2月S&P/CS20座大城市未季调房价指数年率</div>
+<div class="event-item warm">美国4月谘商会消费者信心指数 <span class="badge badge-key">关注</span></div>
+<div class="event-item">美国4月里奇蒙德联储制造业指数</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件</div>
+<div class="event-item hot">🇯🇵 日本央行公布利率决议+经济前景展望报告 <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">日本央行行长植田和男召开货币政策新闻发布会 <span class="badge badge-new">重磅</span></div>
+<div class="event-item">欧洲央行公布银行贷款调查报告</div>
+<div class="event-item">欧洲央行执委施纳贝尔参加专题小组讨论</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 港股财报</div>
+<div class="earnings-grid">
+<span class="earnings-chip hk">中国平安 02318.HK</span>
+<span class="earnings-chip hk">比亚迪股份 01211.HK</span>
+<span class="earnings-chip hk">中国海洋石油 00883.HK</span>
+<span class="earnings-chip hk">中国石油化工 00386.HK</span>
+<span class="earnings-chip hk">康希诺生物 06185.HK</span>
+<span class="earnings-chip hk">招商银行 03968.HK</span>
+</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 美股财报</div>
+<div class="earnings-grid">
+<span class="earnings-chip us">英国石油 BP.N</span>
+<span class="earnings-chip us">Robinhood HOOD.O</span>
+</div>
+</div>
+
+<div class="analysis-box">
+<h3>💡 周二焦点解读</h3>
+<p><strong>日本央行：</strong>在日元持续贬值压力下，市场关注日本央行是否会调整YCC（收益率曲线控制）政策或暗示加息。若释放鹰派信号，日元可能大幅升值，日股承压，全球资金流向生变。</p>
+<p><strong>比亚迪财报：</strong>新能源车龙头一季报是验证"碳考核+出海"逻辑的关键。关注毛利率变化和海外销量数据。</p>
+<p><strong>中国海油/中国石化：</strong>霍尔木兹海峡封锁下的高油价受益标的，一季报利润有望大增。</p>
+<p><strong>招商银行：</strong>零售银行标杆，关注净息差变化和资产质量。</p>
+</div>
+</div>
+
+<!-- 周三 -->
+<div class="day-card super">
+<div class="day-header">
+<span class="day-label day-wed">周三 4/29</span>
+<span class="day-title">🔥 五大科技巨头财报日·加拿大央行·EIA库存</span>
+<span class="impact-stars">★★★★★</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据</div>
+<div class="event-item">美国当周API原油库存</div>
+<div class="event-item">澳大利亚3月CPI</div>
+<div class="event-item">瑞士4月ZEW投资者信心指数</div>
+<div class="event-item warm">欧元区4月工业景气指数、经济景气指数</div>
+<div class="event-item warm">德国4月CPI <span class="badge badge-key">关注</span></div>
+<div class="event-item warm">美国3月耐用品订单月率 <span class="badge badge-key">关注</span></div>
+<div class="event-item">美国3月新屋开工总数年化</div>
+<div class="event-item">美国3月营建许可总数</div>
+<div class="event-item hot">美国当周EIA原油库存、库欣原油库存、战略石油储备库存 <span class="badge badge-new">重要</span></div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件</div>
+<div class="event-item hot">🇨🇦 加拿大央行公布利率决议+货币政策报告 <span class="badge badge-new">重要</span></div>
+<div class="event-item">加拿大央行行长麦克勒姆和高级副行长罗杰斯召开新闻发布会</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 港股财报（密集！）</div>
+<div class="earnings-grid">
+<span class="earnings-chip hk">万科企业 02202.HK</span>
+<span class="earnings-chip hk">中国人寿 02628.HK</span>
+<span class="earnings-chip hk">工商银行 01398.HK</span>
+<span class="earnings-chip hk">中国人民保险 01339.HK</span>
+<span class="earnings-chip hk">中国南方航空 01055.HK</span>
+<span class="earnings-chip hk">中国石油 00857.HK</span>
+<span class="earnings-chip hk">中国银行 01988.SH</span>
+<span class="earnings-chip hk">中金公司 03908.HK</span>
+<span class="earnings-chip hk">交通银行 03328.HK</span>
+<span class="earnings-chip hk">农业银行 01288.HK</span>
+<span class="earnings-chip hk">吉利汽车 00175.HK</span>
+</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 美股财报（超级重磅！）</div>
+<div class="earnings-grid">
+<span class="earnings-chip us" style="border-width:2px">🔵 Alphabet GOOG.O</span>
+<span class="earnings-chip us" style="border-width:2px">🔵 Meta Platforms META.O</span>
+<span class="earnings-chip us" style="border-width:2px">🔵 亚马逊 AMZN.O</span>
+<span class="earnings-chip us" style="border-width:2px">🔵 微软 MSFT.O</span>
+<span class="earnings-chip us">高通 QCOM.O</span>
+</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏖️ 假期</div>
+<span class="holiday-tag">🇯🇵 东京证券交易所休市（昭和日）</span>
+</div>
+
+<div class="risk-warn">
+<strong>⚠️ 核心关注：</strong>周三晚间是本周最关键的时段！Alphabet、Meta、亚马逊、微软四大科技巨头同日盘后财报。这将决定AI/科技板块的后续走向。若业绩超预期，纳斯达克可能再创新高；若不及预期，可能引发科技股大幅回调。
+</div>
+
+<div class="analysis-box">
+<h3>💡 周三焦点解读</h3>
+<p><strong>五大科技巨头：</strong>这是2026年Q1财报季最关键的一天。四大科技巨头同日发财报，市场将据此判断AI投资回报是否兑现。重点关注：①云计算收入增速（Azure/AWS/GCP）；②AI业务商业化进展；③资本开支指引；④下一季度业绩展望。</p>
+<p><strong>港股银行密集披露：</strong>工行、中行、交行、农行四大行集中发布一季报，是验证"MLF宽松+高股息"逻辑的关键窗口。</p>
+<p><strong>中国石油/中国海油：</strong>高油价下一季报利润有望大幅增长，但需关注霍尔木兹海峡局势对后续业绩的影响。</p>
+<p><strong>EIA原油库存：</strong>霍尔木兹海峡封锁下的库存数据尤为关键，若库存下降超预期，油价可能进一步走高。</p>
+</div>
+</div>
+
+<!-- 周四 -->
+<div class="day-card super" style="border-left-color:#e74c3c">
+<div class="day-header">
+<span class="day-label day-thu">周四 4/30</span>
+<span class="day-title">🔴 美联储FOMC决议·英央行·欧央行·中国PMI·美国GDP/PCE·苹果财报</span>
+<span class="impact-stars">★★★★★</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据（爆炸级数据日！）</div>
+<div class="event-item hot">🇨🇳 中国4月官方制造业PMI <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">🇨🇳 中国4月RatingDog制造业PMI <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">🇺🇸 美国第一季度实际GDP年化季率初值 <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">🇺🇸 美国3月核心PCE物价指数年率/月率 <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">🇺🇸 美国第一季度核心PCE物价指数年化季率初值 <span class="badge badge-new">重磅</span></div>
+<div class="event-item warm">🇫🇷 法国第一季度GDP初值</div>
+<div class="event-item warm">🇩🇪 德国第一季度未季调GDP年率初值</div>
+<div class="event-item warm">🇪🇺 欧元区4月CPI初值</div>
+<div class="event-item warm">🇪🇺 欧元区第一季度GDP初值</div>
+<div class="event-item warm">🇪🇺 欧元区3月失业率</div>
+<div class="event-item">🇩🇪 德国4月季调后失业人数/失业率</div>
+<div class="event-item">🇨🇭 瑞士4月KOF经济领先指标</div>
+<div class="event-item">🇫🇷 法国4月CPI初值</div>
+<div class="event-item">🇺🇸 美国至4月25日当周初请失业金人数</div>
+<div class="event-item">🇺🇸 美国3月个人支出月率</div>
+<div class="event-item">🇺🇸 美国第一季度劳工成本指数季率</div>
+<div class="event-item">🇺🇸 美国第一季度实际个人消费支出季率初值</div>
+<div class="event-item">🇺🇸 美国4月芝加哥PMI</div>
+<div class="event-item">🇺🇸 美国3月谘商会领先指标月率</div>
+<div class="event-item">🇨🇦 加拿大2月GDP月率</div>
+<div class="event-item">🇺🇸 美国当周EIA天然气库存</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件（三央行同日议息！）</div>
+<div class="event-item hot">🇺🇸 美联储FOMC公布利率决议 <span class="badge badge-new">超级重磅</span></div>
+<div class="event-item hot">🇺🇸 美联储主席鲍威尔召开货币政策新闻发布会 <span class="badge badge-new">超级重磅</span></div>
+<div class="event-item hot">🇬🇧 英国央行公布利率决议+会议纪要+货币政策报告 <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">🇬🇧 英国央行行长贝利召开货币政策新闻发布会</div>
+<div class="event-item hot">🇪🇺 欧洲央行公布利率决议 <span class="badge badge-new">重磅</span></div>
+<div class="event-item hot">🇪🇺 欧洲央行行长拉加德召开货币政策新闻发布会</div>
+<div class="event-item">谷歌财报电话会</div>
+<div class="event-item">微软、亚马逊、Meta财报电话会</div>
+<div class="event-item">三星电子财报电话会</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 美股财报</div>
+<div class="earnings-grid">
+<span class="earnings-chip us" style="border-width:2px">🍎 苹果 AAPL.O</span>
+<span class="earnings-chip us">默沙东 MRK.N</span>
+<span class="earnings-chip us">Rivian RIVN.O</span>
+</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏖️ 假期</div>
+<span class="holiday-tag">🇻🇳 胡志明交易所休市（统一日）</span>
+<span class="holiday-tag">🇨🇳 上金所/上期所/郑商所/大商所无夜盘</span>
+</div>
+
+<div class="risk-warn">
+<strong>⚠️ 极端风险日：</strong>周四可能是2026年市场波动最大的一天！三大央行同日议息+中国PMI+美国GDP/PCE+苹果财报，任何一个数据超预期都可能引发剧烈波动。A股投资者需特别注意——周五起进入五一假期，无法及时应对外盘变化！
+</div>
+
+<div class="analysis-box">
+<h3>💡 周四焦点解读</h3>
+<p><strong>美联储FOMC：</strong>市场预期维持利率不变（概率99%），但焦点在于鲍威尔的新闻发布会——是否释放6月降息信号？若鲍威尔偏鹰（暗示推迟降息），美元走强、黄金承压、新兴市场承压；若偏鸽（暗示6月可能降息），风险资产全面反弹。</p>
+<p><strong>中国4月PMI：</strong>这是五一假期前最后一个重磅国内数据。3月制造业PMI处于荣枯线附近，4月数据将反映碳考核政策+高油价对制造业的实际影响。若PMI超预期回升，节后A股有望反弹。</p>
+<p><strong>美国Q1 GDP + 核心PCE：</strong>这两个数据共同描绘美国经济图景——GDP反映增长动能，PCE反映通胀压力。若"强GDP+高PCE"组合，美联储降息预期将进一步推迟，全球风险资产承压。</p>
+<p><strong>苹果财报：</strong>全球市值最大的公司发财报，重点关注iPhone销量、服务收入增长和AI功能（Apple Intelligence）的商业化进展。</p>
+<p><strong>英央行/欧央行：</strong>市场预期两大央行均将降息25个基点。若超预期降息50bp，欧元/英镑可能大幅贬值。</p>
+</div>
+</div>
+
+<!-- 周五 -->
+<div class="day-card highlight" style="border-left-color:#27ae60">
+<div class="day-header">
+<span class="day-label day-fri">周五 5/1</span>
+<span class="day-title">🏖️ 劳动节·ISM制造业PMI·苹果财报电话会</span>
+<span class="impact-stars">★★★☆</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据</div>
+<div class="event-item">英国4月Nationwide房价指数月率</div>
+<div class="event-item">瑞士3月实际零售销售年率</div>
+<div class="event-item">英国4月制造业PMI终值</div>
+<div class="event-item warm">🇺🇸 美国4月ISM制造业PMI <span class="badge badge-key">关注</span></div>
+<div class="event-item">🇺🇸 美国4月标普全球制造业PMI终值</div>
+<div class="event-item">英国3月央行抵押贷款许可</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件</div>
+<div class="event-item">英国央行首席经济学家皮尔发表讲话</div>
+<div class="event-item warm">🍎 苹果财报电话会（解读周四盘后公布的财报） <span class="badge badge-key">关注</span></div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📈 美股财报</div>
+<div class="earnings-grid">
+<span class="earnings-chip us">埃克森美孚 XOM.N</span>
+<span class="earnings-chip us">雪佛龙 CVX.N</span>
+</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏖️ 假期（大面积休市！）</div>
+<div style="display:flex;flex-wrap:wrap;gap:4px">
+<span class="holiday-tag">🇨🇳 沪深/北交所 5/1-5/5休市</span>
+<span class="holiday-tag">🇨🇳 国内期货交易所 5/1-5/5休市</span>
+<span class="holiday-tag">🇭🇰 港交所休市（南/北向关闭）</span>
+<span class="holiday-tag">🇩🇪 德意志交易所休市</span>
+<span class="holiday-tag">🇫🇷 巴黎交易所休市</span>
+<span class="holiday-tag">🇰🇷 首尔交易所休市</span>
+<span class="holiday-tag">🇪🇸 马德里交易所休市</span>
+<span class="holiday-tag">🇮🇹 米兰交易所休市</span>
+<span class="holiday-tag">🇻🇳 胡志明交易所休市</span>
+<span class="holiday-tag">🇹🇼 台湾交易所休市</span>
+<span class="holiday-tag">🇮🇳 印度交易所休市（马哈拉施特拉节）</span>
+</div>
+</div>
+
+<div class="analysis-box">
+<h3>💡 周五焦点解读</h3>
+<p><strong>A股五一假期：</strong>5月1日至5日休市，5月6日（周三）恢复交易。这意味着A股投资者将错过周四晚间美联储决议、美国GDP/PCE数据、苹果财报等重磅事件的即时市场反应。建议在周四收盘前做好仓位管理。</p>
+<p><strong>埃克森美孚/雪佛龙：</strong>两大石油巨头财报，是验证高油价对油企利润影响的直接证据。若业绩大超预期，能源板块可能继续走强。</p>
+<p><strong>ISM制造业PMI：</strong>美国制造业景气度指标，关注是否回到扩张区间（>50）。</p>
+</div>
+</div>
+
+<!-- 周六 -->
+<div class="day-card">
+<div class="day-header">
+<span class="day-label day-sat">周六 5/2</span>
+<span class="day-title">🇺🇸 伯克希尔年度股东大会</span>
+<span class="impact-stars">★★★☆</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据</div>
+<div class="event-item">美国当周石油钻井总数</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件</div>
+<div class="event-item warm">🇺🇸 伯克希尔·哈撒韦2026年度股东大会举行 <span class="badge badge-key">关注</span></div>
+</div>
+
+<div class="analysis-box">
+<h3>💡 周六焦点解读</h3>
+<p><strong>巴菲特股东大会：</strong>全球投资者的年度盛事。关注巴菲特对当前市场的看法——尤其是对高估值科技股、油价走势、美元前景、以及"股神"最新的持仓变化。任何关于经济衰退或市场泡沫的警告都可能影响下周一全球市场情绪。</p>
+</div>
+</div>
+
+<!-- 周日 -->
+<div class="day-card" style="border-left-color:#f39c12">
+<div class="day-header">
+<span class="day-label day-sun">周日 5/3</span>
+<span class="day-title">🛢️ OPEC+产油国会议</span>
+<span class="impact-stars">★★★★</span>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">📊 数据</div>
+<div class="event-item">🇻🇳 越南4月CPI</div>
+<div class="event-item">🇻🇳 越南4月进出口年率</div>
+<div class="event-item">🇻🇳 越南4月贸易帐</div>
+</div>
+
+<div class="event-group">
+<div class="event-group-title">🏛️ 事件</div>
+<div class="event-item hot">🛢️ 欧佩克+八个产油国就6月产油政策举行会议 <span class="badge badge-new">重磅</span></div>
+</div>
+
+<div class="analysis-box">
+<h3>💡 周日焦点解读</h3>
+<p><strong>OPEC+会议：</strong>在霍尔木兹海峡封锁、油价高企的背景下，OPEC+讨论6月产油政策。核心问题：是否会增产以缓解高油价压力？若宣布增产，油价可能回调5%-10%，利空能源股但利好航空/化工；若维持产量不变，油价可能继续走高，通胀担忧加剧。</p>
+<p><strong>对下周一全球市场的影响：</strong>OPEC+会议结果将直接影响周一（5月4日）全球油价和能源板块走势。由于A股仍在假期中，影响将在5月6日（周三）开盘集中释放。</p>
+</div>
+</div>
+</div>
+
+<!-- 下周核心矛盾 -->
+<div class="section">
+<h2>🎯 下周核心矛盾与市场影响路径</h2>
+
+<div class="analysis-box" style="border-color:#e74c3c">
+<h3>矛盾一：美联储"鹰"还是"鸽"？</h3>
+<p><strong>背景：</strong>市场预期4月维持利率不变（概率99%），但6月降息概率仅2.6%-5.1%。关键在于鲍威尔的措辞。</p>
+<p><strong>鹰派情景（概率40%）：</strong>鲍威尔强调通胀粘性，暗示降息需更多数据支持 → 美元走强、黄金承压、新兴市场资金外流、A股节后承压</p>
+<p><strong>鸽派情景（概率35%）：</strong>鲍威尔承认经济放缓迹象，暗示6月可能降息 → 风险资产反弹、黄金走强、A股节后利好</p>
+<p><strong>中性情景（概率25%）：</strong>维持现状，强调数据依赖 → 市场反应有限，等待更多数据</p>
+</div>
+
+<div class="analysis-box" style="border-color:#3498db">
+<h3>矛盾二：科技巨头AI变现是否兑现？</h3>
+<p><strong>背景：</strong>Alphabet、Meta、亚马逊、微软、苹果同周发财报。市场对AI投资回报的验证进入关键期。</p>
+<p><strong>超预期情景：</strong>云计算收入大增+AI商业化加速 → 纳指创新高，A股科技板块联动上涨</p>
+<p><strong>不及预期情景：</strong>资本开支过高拖累利润+AI变现不及预期 → 科技股大幅回调，全球科技板块承压</p>
+</div>
+
+<div class="analysis-box" style="border-color:#f39c12">
+<h3>矛盾三：中国PMI能否确认复苏？</h3>
+<p><strong>背景：</strong>碳考核政策出台+央行4000亿MLF+高油价影响，4月制造业PMI是验证政策效果的关键。</p>
+<p><strong>超预期（>50.5）：</strong>制造业扩张加速，节后A股有望迎来开门红</p>
+<p><strong>不及预期（<49.5）：</strong>制造业收缩加深，节后A股可能延续调整</p>
+</div>
+
+<div class="analysis-box" style="border-color:#27ae60">
+<h3>矛盾四：OPEC+增产还是维持？</h3>
+<p><strong>背景：</strong>霍尔木兹海峡封锁推高油价，全球通胀压力加大。OPEC+面临增产压力。</p>
+<p><strong>增产情景：</strong>油价回调5%-10%，利空能源股但利好航空/化工/消费</p>
+<p><strong>维持不变：</strong>油价继续走高，通胀担忧加剧，能源股继续走强</p>
+</div>
+</div>
+
+<!-- 下周重点关注资产 -->
+<div class="section">
+<h2>📊 下周重点关注资产与策略</h2>
+
+<table class="impact-table">
+<tr><th>时间</th><th>事件</th><th>直接影响资产</th><th>影响方向</th><th>影响等级</th></tr>
+<tr><td>周二</td><td>日本央行利率决议</td><td>日元/日股/亚太股市</td><td>取决于政策方向</td><td>★★★★</td></tr>
+<tr><td>周三</td><td>四大科技巨头财报</td><td>纳斯达克/全球科技股</td><td>取决于业绩</td><td>★★★★★</td></tr>
+<tr><td>周三</td><td>EIA原油库存</td><td>WTI/布伦特原油</td><td>库存降→油价涨</td><td>★★★</td></tr>
+<tr><td>周四</td><td>中国4月PMI</td><td>A股/人民币/商品</td><td>超预期→利好</td><td>★★★★★</td></tr>
+<tr><td>周四</td><td>美联储FOMC+鲍威尔</td><td>美元/黄金/全球股市</td><td>鹰→美元强/鸽→风险资产涨</td><td>★★★★★</td></tr>
+<tr><td>周四</td><td>美国Q1 GDP+核心PCE</td><td>美元/美股/美债</td><td>强数据→推迟降息</td><td>★★★★★</td></tr>
+<tr><td>周四</td><td>苹果财报</td><td>苹果/AAPL/消费电子</td><td>取决于业绩</td><td>★★★★</td></tr>
+<tr><td>周四</td><td>英央行/欧央行利率决议</td><td>英镑/欧元/欧股</td><td>降息→本币贬值</td><td>★★★★</td></tr>
+<tr><td>周五</td><td>ISM制造业PMI</td><td>美元/美股</td><td>>50→利好</td><td>★★★</td></tr>
+<tr><td>周日</td><td>OPEC+产油政策会议</td><td>原油/能源股/化工</td><td>增产→油价跌</td><td>★★★★</td></tr>
+</table>
+</div>
+
+<!-- 情景推演 -->
+<div class="section">
+<h2>🎭 下周三大情景推演</h2>
+
+<div class="scenario-grid">
+<div class="scenario-card scenario-bull">
+<h4>🟢 乐观情景（概率25%）</h4>
+<p><strong>触发条件：</strong>美联储偏鸽+科技巨头业绩超预期+中国PMI超50+OPEC+增产</p>
+<p><strong>市场反应：</strong>纳指涨3%+，A股节后开门红涨2%+，黄金涨，油价跌</p>
+<p><strong>受益板块：</strong>科技、新能源、消费</p>
+<p><strong>受损板块：</strong>传统能源</p>
+</div>
+<div class="scenario-card scenario-base">
+<h4>🔵 基准情景（概率50%）</h4>
+<p><strong>触发条件：</strong>美联储中性+科技业绩符合预期+中国PMI持平+OPEC+维持</p>
+<p><strong>市场反应：</strong>各市场小幅波动，纳指±1%，A股节后平开</p>
+<p><strong>受益板块：</strong>有色金属（资金延续流入）、高股息（防御）</p>
+<p><strong>受损板块：</strong>无明显受损</p>
+</div>
+<div class="scenario-card scenario-bear">
+<h4>🔴 悲观情景（概率25%）</h4>
+<p><strong>触发条件：</strong>美联储偏鹰+科技业绩不及预期+中国PMI低于49.5+OPEC+不增产</p>
+<p><strong>市场反应：</strong>纳指跌3%+，A股节后补跌2%+，美元强，黄金跌</p>
+<p><strong>受益板块：</strong>黄金避险（中期）、油服</p>
+<p><strong>受损板块：</strong>科技、消费、航空</p>
+</div>
+</div>
+</div>
+
+<!-- 五一假期特别提醒 -->
+<div class="section" style="background:linear-gradient(135deg,#1a2736,#2c1810);border-color:#e74c3c">
+<h2 style="color:#e74c3c;border-color:#e74c3c">🏖️ 五一假期特别提醒</h2>
+
+<div class="risk-warn">
+<strong>⚠️ 假期风险窗口：</strong>A股5月1日-5日休市，但外盘不休市！以下事件将在A股假期期间发生：
+<ul style="margin-top:6px;padding-left:20px">
+<li>周四（4/30）：美联储决议+美国GDP/PCE+苹果财报 → 周五美股反应A股无法应对</li>
+<li>周五（5/1）：ISM制造业PMI+埃克森美孚/雪佛龙财报</li>
+<li>周日（5/3）：OPEC+产油政策会议 → 影响5月4日（周一）全球油价</li>
+</ul>
+<p style="margin-top:8px"><strong>建议：</strong>①周四收盘前适当降低仓位，控制假期风险敞口；②关注港股周二-周三的走势（港股周五也休市，但周四正常交易）；③5月6日（周三）开盘可能因假期期间的外盘变化出现大幅波动。</p>
+</div>
+
+<div class="opportunity">
+<strong>✅ 假期机会：</strong>①若假期期间外盘大涨（科技业绩超预期+美联储偏鸽），5月6日A股可能跳空高开，可提前布局科技/新能源板块；②若OPEC+增产导致油价下跌，航空/化工板块可能在节后受益。
+</div>
+</div>
+
+<!-- 一周数据日历 -->
+<div class="section">
+<h2>📅 一周关键数据日历</h2>
+
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-date">周一 4/27</div>
+中国工业企业利润 | 6000亿MLF到期 | 天齐锂业/药明康德财报
+</div>
+<div class="timeline-item">
+<div class="timeline-date">周二 4/28</div>
+日本央行决议 | 美国消费者信心 | 比亚迪/中海油/招行/中石化财报
+</div>
+<div class="timeline-item hot">
+<div class="timeline-date">周三 4/29 ⚡</div>
+Alphabet/Meta/亚马逊/微软/高通财报 | 加拿大央行 | EIA原油库存 | 工行/中行/中石油财报
+</div>
+<div class="timeline-item hot">
+<div class="timeline-date">周四 4/30 🔥</div>
+美联储FOMC+鲍威尔 | 英央行 | 欧央行 | 中国PMI | 美国GDP+PCE | 苹果财报
+</div>
+<div class="timeline-item">
+<div class="timeline-date">周五 5/1 🏖️</div>
+ISM制造业PMI | 埃克森美孚/雪佛龙财报 | A股/港股/欧洲大面积休市
+</div>
+<div class="timeline-item">
+<div class="timeline-date">周六 5/2</div>
+伯克希尔股东大会 | 美国石油钻井数
+</div>
+<div class="timeline-item hot">
+<div class="timeline-date">周日 5/3 🛢️</div>
+OPEC+八国产油政策会议
+</div>
+</div>
+</div>
+
+<!-- 投资建议 -->
+<div class="section">
+<h2>📌 下周投资建议</h2>
+
+<div class="strategy-box">
+<h4>🛡️ 稳健策略：防守为主，等待节后明朗</h4>
+<p>五一假期风险窗口较长，建议维持高股息防御配置（银行/水电），适当降低仓位至6-7成。周四前可考虑减持部分科技/成长仓位，控制假期风险敞口。</p>
+<p><strong>关注：</strong>工商银行、招商银行、长江电力一季报（周三港股披露）</p>
+</div>
+
+<div class="strategy-box">
+<h4>🚀 成长策略：科技财报定方向，锂矿看天齐</h4>
+<p>周三四大科技巨头财报是关键。若超预期，可在港股/美股加仓科技标的；若不及预期，及时止盈。天齐锂业周一财报验证锂价回升逻辑，关注业绩兑现情况。</p>
+<p><strong>关注：</strong>天齐锂业（周一）、比亚迪（周二）、中芯国际/华虹半导体（港股）</p>
+</div>
+
+<div class="strategy-box">
+<h4>⚔️ 进攻策略：超级周博弈，快进快出</h4>
+<p>本周波动极大，适合短线交易者。可围绕科技财报+美联储决议进行方向性博弈。但务必严格止损，假期前清空短线仓位。</p>
+<p><strong>关注：</strong>纳斯达克100 ETF（财报前后波动）、原油期货（OPEC+会议）、黄金（美联储决议）</p>
+<p style="color:#e74c3c;font-size:12px">⚠️ 风险提示：超级央行周+超级财报周叠加，波动率将显著放大。进攻策略务必严格止损，建议持仓不超过24小时。</p>
+</div>
+</div>
+
+<div class="source-list">
+数据来源：金十数据 | 报告生成时间：2026年4月26日 | 仅供参考，不构成投资建议
+</div>
+
+</body>
+</html>
